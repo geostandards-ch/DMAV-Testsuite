@@ -1,0 +1,10 @@
+# Project-specific files and folders
+test_data/models/
+test_data/output/
+misc/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
