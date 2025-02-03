@@ -32,7 +32,7 @@ jobs:
           curl -L -o igcheck2.zip https://www.interlis.ch/download/interlis2/igcheck2_20241218.zip
           tar -xf igcheck2.zip
           .\igcheck2.exe /S
-          $env:PATH += ";C:\igcheck2\system\bin"
+          echo "C:\igcheck2\system\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
 
       - name: DMAV.Einzelobjekte
         run: igcheck2 ./Testsuite_DMAV-1/DMAVTYM_Alles_V1_0.xtf
