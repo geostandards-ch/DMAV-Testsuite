@@ -28,13 +28,15 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install IGCheck
+        env: 
+          IGCHECK_LICENSE: ${{ secrets.IGCHECK_LICENSE }}
         run: |
           curl -L -o igcheck2.zip https://www.interlis.ch/download/interlis2/igcheck2_20241218.zip
           tar -xf igcheck2.zip
           .\igcheck2.exe /S
           echo "C:\igcheck2\system\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
           mkdir c:\igcheck2\data\temp
-          cat C:\igcheck2\user\license\igcheck2.lic
+          $env.IGCHECK_LICENSE | Out-File -FilePath  C:\igcheck2\user\license\igcheck2.lic -Encoding utf8
 
       - name: DMAV.Einzelobjekte
         run: igcheck2 ./Testsuite_DMAV-1/DMAVTYM_Alles_V1_0.xtf
