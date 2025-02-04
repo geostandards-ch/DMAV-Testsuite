@@ -44,6 +44,12 @@ jobs:
           Get-Command igcheck2
           Get-Command igcheck2 | cat
           Get-ChildItem C:\igcheck2
+          Get-ChildItem C:\igcheck2\user\
+          Get-ChildItem C:\igcheck2\user\www\models\
+          Get-Content C:\igcheck2\user\www\models\ilimodels.xml
+          Get-Content C:\igcheck2\user\www\models\ilisite.xml
+          
+
 
       - name: DMAV.Einzelobjekte
         run: igcheck2 .\Testsuite_DMAV-1\DMAVTYM_Alles_V1_0.xtf .\Testsuite_DMAV-1\DMAV_Einzelobjekte_V1_0.ili
