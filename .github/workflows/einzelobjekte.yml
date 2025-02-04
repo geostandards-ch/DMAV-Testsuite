@@ -41,5 +41,5 @@ jobs:
           cat C:\igcheck2\user\license\igcheck2.lic
 
       - name: DMAV.Einzelobjekte
-        run: igcheck2 ./Testsuite_DMAV-1/DMAVTYM_Alles_V1_0.xtf
+        run: igcheck2 .\Testsuite_DMAV-1\DMAVTYM_Alles_V1_0.xtf .\Testsuite_DMAV-1\DMAV_Einzelobjekte_V1_0.ili
 
