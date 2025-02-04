@@ -34,6 +34,7 @@ jobs:
           .\igcheck2.exe /S
           echo "C:\igcheck2\system\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
           mkdir c:\igcheck2\data\temp
+          cat C:\igcheck2\user\license\igcheck2.lic
 
       - name: DMAV.Einzelobjekte
         run: igcheck2 ./Testsuite_DMAV-1/DMAVTYM_Alles_V1_0.xtf
