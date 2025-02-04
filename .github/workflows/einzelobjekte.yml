@@ -38,7 +38,6 @@ jobs:
           mkdir c:\igcheck2\data\temp
           mkdir C:\igcheck2\user\license
           $env:IGCHECK_LICENSE | Out-File -FilePath  C:\igcheck2\user\license\igcheck2.lic -Encoding utf8
-          cat C:\igcheck2\user\license\igcheck2.lic
 
       - name: DMAV.Einzelobjekte
         run: igcheck2 .\Testsuite_DMAV-1\DMAVTYM_Alles_V1_0.xtf .\Testsuite_DMAV-1\DMAV_Einzelobjekte_V1_0.ili
