@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ili:transfer xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS" xmlns="http://www.interlis.ch/xtf/2.4/ModelA">
+    <ili:datasection>
+        <DMAV_Grundstuecke_V1_0:Bodenbedeckung ili:bid="testDELa-c8f5-40dc-a959-bf0fb52a561b" ili:kind="UPDATE">
+            <!-- Fail Case DELETE: Der MANDATORY CONSTRAINT CH042402 wird verletzt, in dem das Selbständige Dauernde Recht 73b015bb-1be6-4230-a00d-41b8f303bd80 gelöscht wird, das von Grundstück 8904bd52-8da6-4eda-9c5c-29539529c960 referenziert wird.-->
+            <DMAV_Grundstuecke_V1_0:SelbstaendigesDauerndesRecht ili:tid="73b015bb-1be6-4230-a00d-41b8f303bd80" ili:operation="DELETE">
+                <DMAV_Grundstuecke_V1_0:Geometrie><geom:surface><geom:exterior><geom:polyline><geom:coord><geom:c1>2587749.221</geom:c1><geom:c2>1225027.407</geom:c2></geom:coord><geom:coord><geom:c1>2587760.041</geom:c1><geom:c2>1225033.783</geom:c2></geom:coord><geom:coord><geom:c1>2587766.548</geom:c1><geom:c2>1225022.739</geom:c2></geom:coord><geom:coord><geom:c1>2587771.579</geom:c1><geom:c2>1225025.705</geom:c2></geom:coord><geom:coord><geom:c1>2587773.309</geom:c1><geom:c2>1225022.767</geom:c2></geom:coord><geom:coord><geom:c1>2587768.278</geom:c1><geom:c2>1225019.802</geom:c2></geom:coord><geom:coord><geom:c1>2587770.588</geom:c1><geom:c2>1225015.882</geom:c2></geom:coord><geom:coord><geom:c1>2587759.769</geom:c1><geom:c2>1225009.506</geom:c2></geom:coord><geom:coord><geom:c1>2587749.221</geom:c1><geom:c2>1225027.407</geom:c2></geom:coord></geom:polyline></geom:exterior></geom:surface></DMAV_Grundstuecke_V1_0:Geometrie>
+                <DMAV_Grundstuecke_V1_0:Flaechenmass>281</DMAV_Grundstuecke_V1_0:Flaechenmass>
+                <DMAV_Grundstuecke_V1_0:Grundstueck ili:ref="8904bd52-8da6-4eda-9c5c-29539529c960"></DMAV_Grundstuecke_V1_0:Grundstueck>
+            </DMAV_Grundstuecke_V1_0:SelbstaendigesDauerndesRecht>
+            
+        </DMAV_Grundstuecke_V1_0:Bodenbedeckung>
+    </ili:datasection>
+</ili:transfer>
