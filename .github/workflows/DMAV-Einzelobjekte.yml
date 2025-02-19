@@ -1,0 +1,21 @@
+name: DMAV-Einzelobjekte
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-failcases:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v3
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Run DMAV_Einzelobjekte_V1_0
+        run: java -jar ./_Runner/interlis-testbed-runner-1.0.1/lib/interlis-testbed-runner-1.0.1-SNAPSHOT.jar -v ./_Runner/ilivalidator-1.14.6/ilivalidator-1.14.6-SNAPSHOT.jar --config  ./Testsuite_DMAV/DMAV_V1_0_Validierung-meta.ini ./Testsuite_DMAV/DMAV_Einzelobjekte_V1_0

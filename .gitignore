@@ -1,6 +1,6 @@
 # Project-specific files and folders
 test_data/models/
-test_data/output/
+**/output/
 misc/
 
 ### VS Code ###
