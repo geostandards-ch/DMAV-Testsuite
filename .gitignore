@@ -2,6 +2,9 @@
 test_data/models/
 test_data/output/
 misc/
+Testsuite_DMAV/DMAV_Einzelobjekte_V1_0/output/
+Testsuite_DMAV/DMAV_Bodenbedeckung_V1_0/output/
+Testsuite_DMAV/DMAV_Grundstuecke_V1_0/output/
 
 ### VS Code ###
 .vscode/
