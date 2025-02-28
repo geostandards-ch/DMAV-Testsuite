@@ -59,3 +59,7 @@ Im Untermodell **DMAV_Grundstuecke_V1_0** wird der
 MANDATORY CONSTRAINT CH041201: NOT(DEFINED(Streitig)) OR DMAVTYM_Topologie_V1_0.covers(THIS,>>Geometrie,THIS,>>Streitig)
 ```
 verletzt, indem die Geometrie eines Objekts der Klasse _Liegenschaft_, indem die Sekundärgeometrie (Attribut _Streitig_) an der X-Koordinate des ersten Stützpunktes um 3 Meter verschoben wird, sodass die Sekundärgeometrie keine Teilmenge der Primärgeometrie desselben Objekts mehr ist (Die strittige Grenze entspricht nicht mehr der Grundstücksgrenze).
+
+## Weitere Hinweise
+
+* Abklärungen zur Integration von iG/Check (inkl. CheckDMAV) als weitere Validator siehe https://github.com/GeoWerkstatt/interlis-testbed-runner/issues/18
