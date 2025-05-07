@@ -17,6 +17,8 @@ IMPORTS DMAV_HoheitsgrenzenAV_V1_0;
 IMPORTS DMAV_HoheitsgrenzenLV_V1_0;
 IMPORTS DMAV_Toleranzstufen_V1_0;
 IMPORTS DMAV_Gebaeudeadressen_V1_0;
+IMPORTS DMAVTYM_Topologie_V1_0;
+IMPORTS Utils;
 
     VIEW TOPIC FixpunkteKategorie3_Validierung = 
     DEPENDS ON DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3;
@@ -468,6 +470,22 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
                 (THIS->IstVollstaendig AND elementCount(Liegenschaft) == 1) => NOT(DEFINED(Liegenschaft->NummerTeilgrundstueck)) 
             );
 
+            !!@ ilivalid.msg="Summe der Teilflaechen aus Flaechenmass ist ungleich Gesamtflaechenmass";
+            !!@ ilivalid.msg_de="Summe der Teilflaechen aus Flaechenmass ist ungleich Gesamtflaechenmass";
+            !!@ ilivalid.msg_fr="La somme des parties de surface inscrite sous Superficie n'est pas égale à la donnée correspondante sous SuperficieTotale";
+            !!@ ilivalid.msg_it="La somma delle superfici delle parti di Bene_immobile/DSSP/Miniera non corrisponde alla superficie totale del fondo";
+            MANDATORY CONSTRAINT CH085952: (
+                Gesamtflaechenmass == (Math_V2.sum("THIS->Liegenschaft->Flaechenmass") + Math_V2.sum("THIS->SelbstaendigesDauerndesRecht->Flaechenmass") + Math_V2.sum("THIS->Bergwerk->Flaechenmass"))
+            );
+
+            !!@ ilivalid.msg="Bei Grundstueck mit IstVollstaendig=true und mit nur 1 Objekt in SelbstaendigDauerndesRecht muss NummerTeilgrundstueck leer sein";
+            !!@ ilivalid.msg_de="Bei Grundstueck mit IstVollstaendig=true und mit nur 1 Objekt in SelbstaendigDauerndesRecht muss NummerTeilgrundstueck leer sein";
+            !!@ ilivalid.msg_fr="Pour un immeuble dont l'attribut EstComplete=true, et formé d'un seul objet dans la table droit_distinct_permanent, l'attribut PartieNumeroImmeuble doit être vide";
+            !!@ ilivalid.msg_it="Per i fondi con integralità=true, e un solo oggetto in DPSSP, numero_parte_fondo deve restare vuoto";
+            MANDATORY CONSTRAINT CH087252: (
+                (IstVollstaendig AND INTERLIS.objectCount(THIS->SelbstaendigesDauerndesRecht) == 1) => NOT(DEFINED(THIS->SelbstaendigesDauerndesRecht->NummerTeilgrundstueck))
+            );
+
         END v_Grundstueck;
 
         VIEW v_Liegenschaft
@@ -567,7 +585,18 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
         =
             ALL OF Bezirksgrenzabschnitt;
 
-            !! TODO: CH120153
+            !!@ ilivalid.msg="Grenzverlauf der Bezirksgrenze muss identisch mit Gemeindegrenze sein";
+            !!@ ilivalid.msg_de="Grenzverlauf der Bezirksgrenze muss identisch mit Gemeindegrenze sein";
+            !!@ ilivalid.msg_fr="Le tracé de la limite de district doit être identique au tracé de la limite communale";
+            !!@ ilivalid.msg_it="L'andamento dei confini distrettuali deve corrispondere con quelli comunali";
+            MANDATORY CONSTRAINT CH120153: (
+                DMAVTYM_Topologie_V1_0.coversWithTolerance(
+                    Utils.findObjects(>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Gemeindegrenze),
+                    >>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Gemeindegrenze->Geometrie,
+                    THIS,
+                    >>Geometrie,
+                    0.002)
+            );
         
         END v_Bezirksgrenzabschnitt;
 
