@@ -439,6 +439,9 @@ IMPORTS Utils;
             ALL OF Grundstueck;
 
             !! TODO: CH085551
+            MANDATORY CONSTRAINT CH085551: (
+                toNumeric(substring(EGRID, 12, 14)) == (97 - mod(toNumeric(substring(EGRID, 2, 12)), 97))
+            );
 
             !!@ ilivalid.msg="EGRID darf nicht mit der Zahl 0 beginnen";            
             !!@ ilivalid.msg_de="EGRID darf nicht mit der Zahl 0 beginnen";
