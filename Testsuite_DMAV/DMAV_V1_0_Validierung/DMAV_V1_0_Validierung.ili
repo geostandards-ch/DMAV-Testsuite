@@ -478,7 +478,7 @@ IMPORTS Utils;
             !!@ ilivalid.msg_fr="La somme des parties de surface inscrite sous Superficie n'est pas égale à la donnée correspondante sous SuperficieTotale";
             !!@ ilivalid.msg_it="La somma delle superfici delle parti di Bene_immobile/DSSP/Miniera non corrisponde alla superficie totale del fondo";
             MANDATORY CONSTRAINT CH085952: (
-                Gesamtflaechenmass == (Math_V2.sum("THIS->Liegenschaft->Flaechenmass") + Math_V2.sum("THIS->SelbstaendigesDauerndesRecht->Flaechenmass") + Math_V2.sum("THIS->Bergwerk->Flaechenmass"))
+                Gesamtflaechenmass == (sum("THIS->Liegenschaft->Flaechenmass") + sum("THIS->SelbstaendigesDauerndesRecht->Flaechenmass") + sum("THIS->Bergwerk->Flaechenmass"))
             );
 
             !!@ ilivalid.msg="Bei Grundstueck mit IstVollstaendig=true und mit nur 1 Objekt in SelbstaendigDauerndesRecht muss NummerTeilgrundstueck leer sein";
