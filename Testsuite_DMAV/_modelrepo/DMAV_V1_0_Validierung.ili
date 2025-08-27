@@ -52,7 +52,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.FixpunkteKategorie3_Validierung.v_LFP3.CH031253)
-            /*
+            /* Pseudocode:
             MANDATORY CONSTRAINT CH031253: GeoW_FunctionsExt.IsInside(GeoW_FunctionsExt.Union(GeoW_FunctionsExt.FindObjects("DMAV_Toleranzstufen_V1_0.Toleranzstufe", Toleranzstufen->Toleranzstufe==#TS2),"Geometrie"),"Geometrie", THIS, "Geometrie") => (Lagegenauigkeit < 0.15);
             */
 
@@ -318,7 +318,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Bodenbedeckung_Validierung.v_Bodenbedeckung.CH043452)
-            /*
+            /* Pseudocode:
             MANDATORY CONSTRAINT CH043452: (
                 NOT(IsPointInPoints(THIS, "Geometrie","DMAV_FixpunkteAVKategorie3_V1_0.LFP3", "Geometrie")) AND NOT(IsPointInPoints(THIS, "Geometrie","DMAV_FixpunkteAVKategorie2_V1_0.LFP2", "Geometrie")) AND NOT(IsPointInPoints(THIS, "Geometrie","DMAV_Grundstuecke_V1_0.Grenzpunkt", "Geometrie"))
             );
@@ -884,10 +884,8 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="Il comune è sconosciuto o errato";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
-            MANDATORY CONSTRAINT CH112352: (
-                DMAV_Gemeinde(BFSNummer,Name) 
-            );
+            /* Pseudocode:
+            MANDATORY CONSTRAINT CH112352: ObjectCount(FindObjects("SWISSBOUNDARIES.Hoheitsgrenzen.Gemeinden","BFSNR={BFSNummer} AND NAME={Name}"))>0;
             */
 
         END v_Gemeinde;
