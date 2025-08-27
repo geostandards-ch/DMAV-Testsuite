@@ -51,10 +51,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 15 cm  (GT2)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
+            !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.FixpunkteKategorie3_Validierung.v_LFP3.CH031253)
             /*
-            MANDATORY CONSTRAINT CH031253: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS2") => (Lagegenauigkeit < 0.15)
-            );
+            MANDATORY CONSTRAINT CH031253: GeoW_FunctionsExt.IsInside(GeoW_FunctionsExt.Union(GeoW_FunctionsExt.FindObjects("DMAV_Toleranzstufen_V1_0.Toleranzstufe", Toleranzstufen->Toleranzstufe==#TS2),"Geometrie"),"Geometrie", THIS, "Geometrie") => (Lagegenauigkeit < 0.15);
             */
 
             !!@ ilivalid.msg="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS3)";
