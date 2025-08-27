@@ -53,7 +53,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !! Umsetzung Phase 2;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.FixpunkteKategorie3_Validierung.v_LFP3.CH031253)
             /* Pseudocode:
-            MANDATORY CONSTRAINT CH031253: GeoW_FunctionsExt.IsInside(GeoW_FunctionsExt.Union(GeoW_FunctionsExt.FindObjects("DMAV_Toleranzstufen_V1_0.Toleranzstufe", Toleranzstufen->Toleranzstufe==#TS2),"Geometrie"),"Geometrie", THIS, "Geometrie") => (Lagegenauigkeit < 0.15);
+            MANDATORY CONSTRAINT CH031253: IsInside(Union(FindObjects("DMAV_Toleranzstufen_V1_0.Toleranzstufe", Toleranzstufen->Toleranzstufe==#TS2),"Geometrie"),"Geometrie", THIS, "Geometrie") => (Lagegenauigkeit < 0.15);
             */
 
             !!@ ilivalid.msg="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS3)";
@@ -1001,9 +1001,10 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="L'ingresso dell'edificio deve trovarsi all'interno di un'area edificabile o il valore dell'attributo NelModulo non è corretto.";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
+            !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194254)
+            /* Pseudocode:
             MANDATORY CONSTRAINT CH194254: (
-                DEFINED(ImModul) => DMAV_GebaeudeIn(Geometrie,ImModul)
+                DEFINED(ImModul) => IsInside(THIS,"Geometrie", FindObjects("DMAV_Bodenbedeckung_V1_0.Bodenbedeckung.Bodenbedeckung", Bodenbedeckungsart == #Gebaeude), "Geometrie");
             );
             */
 
