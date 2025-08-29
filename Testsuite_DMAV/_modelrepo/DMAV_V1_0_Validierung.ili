@@ -782,10 +782,11 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="Il punto deve comparire in PFP3 o in point_limite, ad eccezione degli edifici fittizi.";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
-            MANDATORY CONSTRAINT CH086951: (
-                NOT(Fiktiv) => DMAV_PunktIn(Geometrie,"LFP3,Grenzpunkt") 
-            );
+            !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Grundstuecke_Validierung.v_Liegenschaft_CH086951)
+            /* Pseudocode:
+            MANDATORY CONSTRAINT CH086951: 
+                NOT(Fiktiv) => IsPointInPoints(THIS, "Geometrie","DMAV_FixpunkteAVKategorie3_V1_0.LFP3", "Geometrie") OR IsPointInPoints(THIS, "Geometrie","DMAV_Grundstuecke_V1_0.Grenzpunkt", "Geometrie")
+            ;
             */
 
             !!@ ilivalid.msg="NummerTeilgrundstueck muss innerhalb des gleichen Grundstuecks eindeutig sein";
