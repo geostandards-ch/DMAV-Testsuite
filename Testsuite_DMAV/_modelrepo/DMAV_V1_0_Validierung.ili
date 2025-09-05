@@ -6,7 +6,9 @@ VERSION "2025-03-30" =
   
 IMPORTS UNQUALIFIED INTERLIS;
 IMPORTS UNQUALIFIED Text_V2;
-IMPORTS UNQUALIFIED Math_V2;
+IMPORTS UNQUALIFIED Math_V2_1;
+IMPORTS UNQUALIFIED ObjectPool;
+IMPORTS DMAVTYM_Topologie_V1_1;
 IMPORTS DMAV_FixpunkteAVKategorie3_V1_0;
 IMPORTS DMAV_Bodenbedeckung_V1_0;
 IMPORTS DMAV_Einzelobjekte_V1_0;
@@ -330,7 +332,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="L'edificio non ha un EGID";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            MANDATORY CONSTRAINT CH043453 WHERE (Objektstatus == #real) AND (Bodenbedeckungsart == #Gebaeude): DEFINED(EGID);
+            MANDATORY CONSTRAINT CH043453 : (Objektstatus == #real) AND (Bodenbedeckungsart == #Gebaeude) => DEFINED(EGID);
 
             !!@ ilivalid.msg="Der gleiche EGID (Topic BB) wird für verschiedene Gebäude verwendet";
             !!@ ilivalid.msg_de="Der gleiche EGID (Topic BB) wird für verschiedene Gebäude verwendet";
@@ -754,7 +756,8 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La somma delle superfici delle parti di Bene_immobile/DSSP/Miniera non corrisponde alla superficie totale del fondo";
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Grundstuecke_Validierung.v_Grundstueck.CH085952)
             MANDATORY CONSTRAINT CH085952: 
-                Gesamtflaechenmass == Math_V2.add(Math_V2.add(Math_V2.sum("THIS->Liegenschaft->Flaechenmass"),Math_V2.sum("THIS->SelbstaendigesDauerndesRecht->Flaechenmass")),Math_V2.sum("THIS->Bergwerk->Flaechenmass"));
+                Gesamtflaechenmass == Math_V2_1.add(Math_V2_1.add(Math_V2_1.sum("THIS->Liegenschaft->Flaechenmass"),Math_V2_1.sum("THIS->SelbstaendigesDauerndesRecht->Flaechenmass")),Math_V2_1.sum("THIS->Bergwerk->Flaechenmass")
+            );
 
             !!@ ilivalid.msg="EGRID Prüfziffer stimmt nicht";
             !!@ ilivalid.msg_de="EGRID Prüfziffer stimmt nicht";
@@ -762,11 +765,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La cifra di controllo EGRID è errata";
             !! Umsetzung Phase 1;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Grundstuecke_Validierung.v_Grundstueck.CH085551)
-            /*
             MANDATORY CONSTRAINT CH085551: (
-                DMAV_EGRID(EGRID) 
+                Math_V2_1.toNumeric(substring(EGRID, 12, 14)) == (97 - Math_V2_1.mod(Math_V2_1.toNumeric(substring(EGRID, 2, 12)), 97))
             );
-            */
 
         END v_Grundstueck;
 
@@ -921,11 +922,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="L'andamento dei confini distrettuali deve corrispondere con quelli comunali";
             !! Umsetzung Phase 1;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.HoheitsgrenzenAV_Validierung.v_Bezirksgrenzabschnitt.CH120153)
-            /*
             MANDATORY CONSTRAINT CH120153: (
-                DMAV_vergleicheGrenzverlauf(Geometrie,"Gemeindegrenze",0.002) 
+                DMAVTYM_Topologie_V1_1.coversWithTolerance(ObjectPool.allObjects(>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Gemeindegrenze), >>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Gemeindegrenze->Geometrie, THIS, >>Geometrie, 0.002)
             );
-            */
 
         END v_Bezirksgrenzabschnitt;
 
@@ -939,11 +938,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_fr="Le tracé de la limite du canton doit être identique au tracé de la limite de district";
             !!@ ilivalid.msg_it="L'andamento del confine cantonale deve corrispondere con quelli comunali";
             !! Umsetzung Phase 1;
-            /*
             MANDATORY CONSTRAINT CH130153: (
-                DMAV_vergleicheGrenzverlauf(Geometrie,"Bezirksgrenzabschnitt",0.002) 
+                DMAVTYM_Topologie_V1_1.coversWithTolerance(ObjectPool.allObjects(>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Bezirksgrenzabschnitt), >>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Bezirksgrenzabschnitt->Geometrie, THIS, >>Geometrie, 0.002)
             );
-            */
 
         END v_Kantonsgrenzabschnitt;
 
