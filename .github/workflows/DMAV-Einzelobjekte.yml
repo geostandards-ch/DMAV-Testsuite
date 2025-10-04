@@ -2,9 +2,8 @@ name: DMAV-Einzelobjekte
 
 on:
   pull_request:
-      branches:
-        - main
-        
+    types: [opened, closed]  
+       
   workflow_dispatch:
 
 jobs:
