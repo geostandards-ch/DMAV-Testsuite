@@ -41,73 +41,23 @@
         <ili:sender>ili2fme-7.2.1-aa3c48c318db91416e944ac8d2fb0142426ab234</ili:sender>
     </ili:headersection>
     <ili:datasection>
-        <!-- Der MANDATORY CONSTRAINT CH080402 wird verletzt, indem die bestehende Bodenbedeckungsart mit Attribut Fiktiv als wahrer Wert verwendet wird. -->
+        <!-- Der MANDATORY CONSTRAINT CH080902 wird verletzt, indem zur erfassten Hoehengeometrie die erforderliche Angabe zur IstHoehenzuverlaessig fehlt. -->
         <DMAV_Bodenbedeckung_V1_0:Bodenbedeckung ili:bid="a5145375-7ad2-4272-a462-afdbdd858167" ili:kind="UPDATE">
-            <DMAV_Bodenbedeckung_V1_0:Bodenbedeckung.Bodenbedeckung ili:tid="eae73ab1-4a74-464d-877a-14eab330dd49" ili:operation="UPDATE">
+            <DMAV_Bodenbedeckung_V1_0:Messpunkt ili:tid="a51b05ff-a561-43dd-a1a6-cba699d6aa67" ili:operation="UPDATE">
+                <DMAV_Bodenbedeckung_V1_0:Nummer>8862680002</DMAV_Bodenbedeckung_V1_0:Nummer>
                 <DMAV_Bodenbedeckung_V1_0:Geometrie>
-                    <geom:surface>
-                        <geom:exterior>
-                            <geom:polyline>
-                                <geom:coord>
-                                    <geom:c1>2589688.205</geom:c1>
-                                    <geom:c2>1227317.074</geom:c2>
-                                </geom:coord>
-                                <geom:coord>
-                                    <geom:c1>2589697.728</geom:c1>
-                                    <geom:c2>1227317.853</geom:c2>
-                                </geom:coord>
-                                <geom:coord>
-                                    <geom:c1>2589711.566</geom:c1>
-                                    <geom:c2>1227320.637</geom:c2>
-                                </geom:coord>
-                                <geom:coord>
-                                    <geom:c1>2589731.304</geom:c1>
-                                    <geom:c2>1227325.822</geom:c2>
-                                </geom:coord>
-                                <geom:arc>
-                                    <geom:a1>2589747.674</geom:a1>
-                                    <geom:a2>1227328.451</geom:a2>
-                                    <geom:c1>2589764.251</geom:c1>
-                                    <geom:c2>1227328.717</geom:c2>
-                                </geom:arc>
-                                <geom:coord>
-                                    <geom:c1>2589780.64</geom:c1>
-                                    <geom:c2>1227328.835</geom:c2>
-                                </geom:coord>
-                                <geom:coord>
-                                    <geom:c1>2589787.681</geom:c1>
-                                    <geom:c2>1227329.496</geom:c2>
-                                </geom:coord>
-                                <geom:coord>
-                                    <geom:c1>2589759.176</geom:c1>
-                                    <geom:c2>1227296.049</geom:c2>
-                                </geom:coord>
-                                <geom:coord>
-                                    <geom:c1>2589747.777</geom:c1>
-                                    <geom:c2>1227282.673</geom:c2>
-                                </geom:coord>
-                                <geom:coord>
-                                    <geom:c1>2589724.684</geom:c1>
-                                    <geom:c2>1227281.042</geom:c2>
-                                </geom:coord>
-                                <geom:coord>
-                                    <geom:c1>2589707.041</geom:c1>
-                                    <geom:c2>1227293.689</geom:c2>
-                                </geom:coord>
-                                <geom:coord>
-                                    <geom:c1>2589688.205</geom:c1>
-                                    <geom:c2>1227317.074</geom:c2>
-                                </geom:coord>
-                            </geom:polyline>
-                        </geom:exterior>
-                    </geom:surface>
+                    <geom:coord>
+                        <geom:c1>2588691.839</geom:c1>
+                        <geom:c2>1226804.962</geom:c2>
+                    </geom:coord>
                 </DMAV_Bodenbedeckung_V1_0:Geometrie>
-                <DMAV_Bodenbedeckung_V1_0:Qualitaetsstandard>AV93</DMAV_Bodenbedeckung_V1_0:Qualitaetsstandard>
-                <DMAV_Bodenbedeckung_V1_0:Bodenbedeckungsart>humusiert.Acker_Wiese_Weide</DMAV_Bodenbedeckung_V1_0:Bodenbedeckungsart>
-                <DMAV_Bodenbedeckung_V1_0:Fiktiv>true</DMAV_Bodenbedeckung_V1_0:Fiktiv>
-                <DMAV_Bodenbedeckung_V1_0:Objektstatus>real</DMAV_Bodenbedeckung_V1_0:Objektstatus>
+                <DMAV_Bodenbedeckung_V1_0:Hoehengeometrie>498.800</DMAV_Bodenbedeckung_V1_0:Hoehengeometrie>
+                <DMAV_Bodenbedeckung_V1_0:Lagegenauigkeit>0.040</DMAV_Bodenbedeckung_V1_0:Lagegenauigkeit>
+                <DMAV_Bodenbedeckung_V1_0:IstLagezuverlaessig>true</DMAV_Bodenbedeckung_V1_0:IstLagezuverlaessig>
+                <DMAV_Bodenbedeckung_V1_0:Hoehengenauigkeit>0.04</DMAV_Bodenbedeckung_V1_0:Hoehengenauigkeit>
+                <DMAV_Bodenbedeckung_V1_0:IstExaktDefiniert>true</DMAV_Bodenbedeckung_V1_0:IstExaktDefiniert>
                 <DMAV_Bodenbedeckung_V1_0:Entstehung ili:ref="4339999e-99a5-4f86-9c34-395dd4fcbe9d"></DMAV_Bodenbedeckung_V1_0:Entstehung>
-            </DMAV_Bodenbedeckung_V1_0:Bodenbedeckung.Bodenbedeckung>
+            </DMAV_Bodenbedeckung_V1_0:Messpunkt>
         </DMAV_Bodenbedeckung_V1_0:Bodenbedeckung>
     </ili:datasection>
 </ili:transfer>
