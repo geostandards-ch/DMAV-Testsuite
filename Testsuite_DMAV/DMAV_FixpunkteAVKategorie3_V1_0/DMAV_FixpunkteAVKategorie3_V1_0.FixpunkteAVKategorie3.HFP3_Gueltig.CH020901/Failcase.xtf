@@ -43,7 +43,7 @@
     <ili:datasection>
         <!-- Der UNIQUE CONSTRAINT CH020901 wird verletzt, indem aus einem gefilterten Datensatz bereits eine identische Nummer in Kombination mit gleichen NBIdent zum Objekt 891fbd78-c4c4-4f18-b222-4ab8e43ed9a5 besteht. -->
         <DMAV_FixpunkteAVKategorie3_V1_0:FixpunkteAVKategorie3 ili:bid="1331ee4d-9b33-466e-98a1-82eb52ed9c82" ili:kind="UPDATE">
-            <DMAV_FixpunkteAVKategorie3_V1_0:HFP3 ili:tid="891fad78-c4c4-4f18-b222-4ab8z43ed9a5" ili:operation="INSERT">
+            <DMAV_FixpunkteAVKategorie3_V1_0:HFP3 ili:tid="0bb72c96-0565-4108-b5a8-e31a0b890aba" ili:operation="INSERT">
                 <DMAV_FixpunkteAVKategorie3_V1_0:NBIdent>BE0200000108</DMAV_FixpunkteAVKategorie3_V1_0:NBIdent>
                 <DMAV_FixpunkteAVKategorie3_V1_0:Nummer>9998</DMAV_FixpunkteAVKategorie3_V1_0:Nummer>
                 <DMAV_FixpunkteAVKategorie3_V1_0:Geometrie>
