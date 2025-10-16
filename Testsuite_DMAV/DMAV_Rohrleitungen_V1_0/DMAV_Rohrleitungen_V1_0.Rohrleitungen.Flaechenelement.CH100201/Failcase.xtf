@@ -60,7 +60,7 @@
                                         </geom:coord>
                                         <geom:coord>
                                             <geom:c1>2587862.491</geom:c1>
-                                            <geom:c2>1225995.46</geom:c2>
+                                            <geom:c2>1225995.460</geom:c2>
                                         </geom:coord>
                                         <geom:coord>
                                             <geom:c1>2587866.757</geom:c1>
@@ -87,7 +87,7 @@
                                 <geom:polyline>
                                     <geom:coord>
                                         <geom:c1>2587827.463</geom:c1>
-                                        <geom:c2>1225979.417</geom:c2>
+                                        <geom:c2>1225979.4170000001</geom:c2>
                                     </geom:coord>
                                     <geom:coord>
                                         <geom:c1>2587862.491</geom:c1>
@@ -96,8 +96,8 @@
                                 </geom:polyline>
                                 <geom:polyline>
                                     <geom:coord>
-                                        <geom:c1>2587866.757</geom:c1>
-                                        <geom:c2>1225980.235</geom:c2>
+                                        <geom:c1>2587880.931</geom:c1>
+                                        <geom:c2>1225982.317</geom:c2>
                                     </geom:coord>
                                     <geom:coord>
                                         <geom:c1>2587875.762</geom:c1>
@@ -109,7 +109,7 @@
                                     </geom:coord>
                                     <geom:coord>
                                         <geom:c1>2587827.463</geom:c1>
-                                        <geom:c2>1225979.417</geom:c2>
+                                        <geom:c2>1225979.4170000001</geom:c2>
                                     </geom:coord>
                                 </geom:polyline>
                             </geom:multipolyline>
@@ -117,17 +117,17 @@
                     </DMAV_Rohrleitungen_V1_0:Flaechenelement>
                 </DMAV_Rohrleitungen_V1_0:Flaechenelement>
                 <DMAV_Rohrleitungen_V1_0:Textposition>
-                    <DMAVTYM_Grafik_V1_0:Textposition>
-                        <DMAVTYM_Grafik_V1_0:Position>
+                    <zdef-1597251524:Textposition xmlns:zdef-1597251524="http://www.interlis.ch/xtf/2.4/DMAVTYM_Grafik_V1_0">
+                        <zdef-1597251524:Position>
                             <geom:coord>
                                 <geom:c1>2587848.449</geom:c1>
                                 <geom:c2>1225970.316</geom:c2>
                             </geom:coord>
-                        </DMAVTYM_Grafik_V1_0:Position>
-                        <DMAVTYM_Grafik_V1_0:Orientierung>100.0</DMAVTYM_Grafik_V1_0:Orientierung>
-                        <DMAVTYM_Grafik_V1_0:HReferenzpunkt>Center</DMAVTYM_Grafik_V1_0:HReferenzpunkt>
-                        <DMAVTYM_Grafik_V1_0:VReferenzpunkt>Half</DMAVTYM_Grafik_V1_0:VReferenzpunkt>
-                    </DMAVTYM_Grafik_V1_0:Textposition>
+                        </zdef-1597251524:Position>
+                        <zdef-1597251524:Orientierung>100.0</zdef-1597251524:Orientierung>
+                        <zdef-1597251524:HReferenzpunkt>Center</zdef-1597251524:HReferenzpunkt>
+                        <zdef-1597251524:VReferenzpunkt>Half</zdef-1597251524:VReferenzpunkt>
+                    </zdef-1597251524:Textposition>
                 </DMAV_Rohrleitungen_V1_0:Textposition>
                 <DMAV_Rohrleitungen_V1_0:Entstehung ili:ref="dfb7ac6b-1016-44f9-95ce-9faf410658ea"></DMAV_Rohrleitungen_V1_0:Entstehung>
             </DMAV_Rohrleitungen_V1_0:Leitungsobjekt>

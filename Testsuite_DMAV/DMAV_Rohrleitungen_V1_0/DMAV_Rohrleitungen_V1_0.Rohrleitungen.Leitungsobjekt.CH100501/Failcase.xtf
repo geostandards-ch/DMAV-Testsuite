@@ -43,7 +43,7 @@
     <ili:datasection>
         <!-- Der MANDATORY CONSTRAINT CH100501 wird verletzt, indem das Objekt keinem Geometrieelement zugeordnet ist. -->
         <DMAV_Rohrleitungen_V1_0:Rohrleitungen ili:bid="59a240f8-8e77-4206-9c2c-e1ad3212a482" ili:kind="UPDATE">
-            <DMAV_Rohrleitungen_V1_0:Leitungsobjekt ili:tid="75caf4f3-1d15-46f0-bed6-775dae27ff02" ili:operation="UPDATE">
+            <DMAV_Rohrleitungen_V1_0:Leitungsobjekt ili:tid="75caf4f3-1d15-46f0-bed6-775dae27ff02" ili:operation="DELETE">
                 <DMAV_Rohrleitungen_V1_0:Betreiber>SWISSGAZ</DMAV_Rohrleitungen_V1_0:Betreiber>
                 <DMAV_Rohrleitungen_V1_0:Qualitaetsstandard>AV93</DMAV_Rohrleitungen_V1_0:Qualitaetsstandard>
                 <DMAV_Rohrleitungen_V1_0:Medium>Gas</DMAV_Rohrleitungen_V1_0:Medium>
