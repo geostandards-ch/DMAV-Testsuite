@@ -5,11 +5,6 @@ on:
     types: [opened, closed]  
     
   workflow_dispatch:
-    inputs:
-      target_branch:
-      description: 'Branch to run this workflow on'
-      required: true
-      default: 'main'
 
 jobs:
   test-failcases:
