@@ -1,3 +1,6 @@
+Abdeckung Failcases: 24%
+Constraints ready: 69%
+
 | Modell | Klasse | Constraint | Failcase | Constraint ready |
 | --- | --- | --- | --- | --- |
 | DMAV_Bodenbedeckung_V1_0 | BBNachfuehrung | CH080101 | ✅ | ✅ |
