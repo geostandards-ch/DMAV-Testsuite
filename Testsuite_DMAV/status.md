@@ -73,7 +73,7 @@
 | DMAV_HoheitsgrenzenAV_V1_0 | Gemeindegrenze  | CH030703 |  | ✅ |
 | DMAV_HoheitsgrenzenAV_V1_0 | Gemeindegrenze_Gueltig  | CH031101 |  | ✅ |
 | DMAV_HoheitsgrenzenAV_V1_0 | GemeindeGemeindegrenze  | CH031201 |  | ✅ |
-| DMAV_V1_0_Validierung | v_LFP3 | CH031151 |  |  |
+| DMAV_V1_0_Validierung | v_LFP3 | CH031151 |  | ✅ |
 | DMAV_V1_0_Validierung | v_LFP3 | CH031252 |  |  |
 | DMAV_V1_0_Validierung | v_LFP3 | CH031253 | ✅ |  |
 | DMAV_V1_0_Validierung | v_LFP3 | CH031254 |  |  |
@@ -84,7 +84,7 @@
 | DMAV_V1_0_Validierung | v_LFP3 | CH031456 |  |  |
 | DMAV_V1_0_Validierung | v_LFP3 | CH031457 |  |  |
 | DMAV_V1_0_Validierung | v_LFP3 | CH031458 |  |  |
-| DMAV_V1_0_Validierung | v_HFP3 | CH033551 |  |  |
+| DMAV_V1_0_Validierung | v_HFP3 | CH033551 |  | ✅ |
 | DMAV_V1_0_Validierung | v_HFP3 | CH033652 |  |  |
 | DMAV_V1_0_Validierung | v_HFP3 | CH033653 |  |  |
 | DMAV_V1_0_Validierung | v_HFP3 | CH033654 |  |  |
@@ -96,75 +96,78 @@
 | DMAV_V1_0_Validierung | v_HFP3 | CH033855 |  |  |
 | DMAV_V1_0_Validierung | v_HFP3 | CH033856 |  |  |
 | DMAV_V1_0_Validierung | v_Bodenbedeckung | CH043451 |  |  |
-| DMAV_V1_0_Validierung | v_Bodenbedeckung | CH043453 |  |  |
+| DMAV_V1_0_Validierung | v_Bodenbedeckung | CH043453 |  | ✅ |
 | DMAV_V1_0_Validierung | v_Bodenbedeckung | GWRA09 |  |  |
 | DMAV_V1_0_Validierung | v_Bodenbedeckung | GWRC02a |  |  |
 | DMAV_V1_0_Validierung | v_Messpunkt | CH043452 | ✅ |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051151 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051152 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051153 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051154 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051155 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051156 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051157 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051158 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051159 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051160 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051161 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051162 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051163 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051164 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051165 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051651 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051652 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051653 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051659 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051660 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052151 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052152 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052153 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052154 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052155 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052156 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052157 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052158 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052159 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052162 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052163 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052164 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052165 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052166 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052171 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052177 |  |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052178 |  |  |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051151 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051152 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051153 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051154 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051155 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051156 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051157 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051158 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051159 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051160 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051161 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051162 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051163 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051164 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051165 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051651 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051652 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051653 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051659 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051660 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052151 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052152 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052153 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052154 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052155 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052156 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052157 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052158 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052159 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052162 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052163 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052164 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052165 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052166 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052171 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052177 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052178 |  | ✅ |
 | DMAV_V1_0_Validierung | v_Einzelobjekt | GWRC02c |  |  |
 | DMAV_V1_0_Validierung | v_Messpunkt | CH054351 |  |  |
 | DMAV_V1_0_Validierung | v_Flurname | CH070951 | ✅ |  |
-| DMAV_V1_0_Validierung | v_Grundstueck | CH085554 |  |  |
-| DMAV_V1_0_Validierung | v_Grundstueck | CH086852 |  |  |
-| DMAV_V1_0_Validierung | v_Grundstueck | CH085952 | ✅ |  |
-| DMAV_V1_0_Validierung | v_Grundstueck | CH085551 | ✅ |  |
-| DMAV_V1_0_Validierung | v_Liegenschaft | CH086951 |  |  |
-| DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087252 | ✅ |  |
+| DMAV_V1_0_Validierung | v_Grundstueck | CH085554 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Grundstueck | CH086852 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Grundstueck | CH085952 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Grundstueck | CH085551 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Liegenschaft | CH086951 | ✅ |  |
+| DMAV_V1_0_Validierung | v_Liegenschaft | CH086851 |  | ✅ |
+| DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087251 |  | ✅ |
+| DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087252 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087351 |  |  |
-| DMAV_V1_0_Validierung | v_Bergwerk | CH087652 |  |  |
-| DMAV_V1_0_Validierung | v_Leitungsobjekt | CH092551 |  |  |
+| DMAV_V1_0_Validierung | v_Bergwerk | CH087651 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Bergwerk | CH087652 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Leitungsobjekt | CH092551 |  | ✅ |
 | DMAV_V1_0_Validierung | v_Gemeinde | CH112352 | ✅ |  |
 | DMAV_V1_0_Validierung | v_Gemeindegrenze | CH113051 |  |  |
-| DMAV_V1_0_Validierung | v_Bezirksgrenzabschnitt | CH120153 | ✅ |  |
-| DMAV_V1_0_Validierung | v_Kantonsgrenzabschnitt | CH130153 |  |  |
+| DMAV_V1_0_Validierung | v_Bezirksgrenzabschnitt | CH120153 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Kantonsgrenzabschnitt | CH130153 |  | ✅ |
 | DMAV_V1_0_Validierung | v_Toleranzstufe | CH160351 |  |  |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH193851 |  |  |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194051 |  |  |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH193851 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194051 |  | ✅ |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194254 | ✅ |  |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194451 |  |  |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194651 |  |  |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194751 |  |  |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRA09a |  |  |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194451 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194651 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194751 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRA09a |  | ✅ |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRA17 |  |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB01 |  |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB02 |  |  |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB03 |  |  |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB03 |  | ✅ |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB04 |  |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB05 |  |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRC02 |  |  |
@@ -176,4 +179,4 @@
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRC09 |  |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRC10 |  |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRC13 |  |  |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRA14 |  |  |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRA14 |  | ✅ |
