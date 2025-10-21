@@ -62,11 +62,11 @@ Constraints ready: 69%
 | DMAV_Grundstuecke_V1_0 | Grundstueck | CH042402 |  | ✅ |
 | DMAV_Nomenklatur_V1_0 | NKNachfuehrung | CH070101 | ✅ | ✅ |
 | DMAV_Nomenklatur_V1_0 | Flurname_Gueltig | CH070501 | ✅ | ✅ |
-| DMAV_Rohrleitungen_V1_0 | RLNachfuehrung | CH100101 |  | ✅ |
-| DMAV_Rohrleitungen_V1_0 | Flaechenelement  | CH100201 |  | ✅ |
-| DMAV_Rohrleitungen_V1_0 | Leitungsobjekt  | CH100501 |  | ✅ |
-| DMAV_Rohrleitungen_V1_0 | Messpunkt  | CH101501 |  | ✅ |
-| DMAV_Rohrleitungen_V1_0 | Messpunkt  | CH101502 |  |✅  |
+| DMAV_Rohrleitungen_V1_0 | RLNachfuehrung | CH100101 | ✅ | ✅ |
+| DMAV_Rohrleitungen_V1_0 | Flaechenelement  | CH100201 | ✅ | ✅ |
+| DMAV_Rohrleitungen_V1_0 | Leitungsobjekt  | CH100501 | ✅ | ✅ |
+| DMAV_Rohrleitungen_V1_0 | Messpunkt  | CH101501 | ✅ | ✅ |
+| DMAV_Rohrleitungen_V1_0 | Messpunkt  | CH101502 | ✅ |✅  |
 | DMAV_Toleranzstufen_V1_0 | TSNachfuehrung  | CH110101 | ✅ | ✅ |
 | DMAV_Toleranzstufen_V1_0 | Toleranzstufe_Gueltig  | CH110501 | ✅ | ✅ |
 | DMAV_HoheitsgrenzenAV_V1_0 | HHGNachfuehrung  | CH030101 |  | ✅ |
