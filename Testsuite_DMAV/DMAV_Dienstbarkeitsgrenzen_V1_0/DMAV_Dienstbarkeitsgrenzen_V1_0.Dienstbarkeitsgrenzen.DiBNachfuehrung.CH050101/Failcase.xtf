@@ -42,8 +42,8 @@
     </ili:headersection>
     <ili:datasection>
         <!-- Der UNIQUE CONSTRAINT CH050101 wird verletzt, indem bereits ein identischer Identifikator in Kombination mit gleichem NBIdent zum Objekt cba58e1b-bdaa-4ba2-969d-d5bcb7e0727b besteht. -->
-        <DMAV_Dienstbarkeitsgrenzen_V1_0:Dienstbarkeitsgrenzen ili:bid="3721dc4d-3721-4411-8025-61231ab1bcd2" ili:kind="INSERT">
-            <DMAV_Dienstbarkeitsgrenzen_V1_0:DiBNachfuehrung ili:tid="a0b7b751-7672-431a-9e6f-0423066e4e90">
+        <DMAV_Dienstbarkeitsgrenzen_V1_0:Dienstbarkeitsgrenzen ili:bid="3721dc4d-3721-4411-8025-61231ab1bcd2" ili:kind="UPDATE">
+            <DMAV_Dienstbarkeitsgrenzen_V1_0:DiBNachfuehrung ili:tid="a0b7b751-7672-431a-9e6f-0423066e4e90" ili:operation="UPDATE">
                 <DMAV_Dienstbarkeitsgrenzen_V1_0:NBIdent>BE0200000428</DMAV_Dienstbarkeitsgrenzen_V1_0:NBIdent>
                 <DMAV_Dienstbarkeitsgrenzen_V1_0:Identifikator>202310033</DMAV_Dienstbarkeitsgrenzen_V1_0:Identifikator>
                 <DMAV_Dienstbarkeitsgrenzen_V1_0:Beschreibung>failcase</DMAV_Dienstbarkeitsgrenzen_V1_0:Beschreibung>
