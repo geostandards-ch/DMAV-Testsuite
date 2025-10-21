@@ -1789,12 +1789,12 @@
                     <geom:multipolyline>
                         <geom:polyline>
                             <geom:coord>
-                                <geom:c1>2586835.000</geom:c1>
-                                <geom:c2>1226805.000</geom:c2>
+                                <geom:c1>2586835</geom:c1>
+                                <geom:c2>1226805</geom:c2>
                             </geom:coord>
                             <geom:coord>
-                                <geom:c1>2586810.000</geom:c1>
-                                <geom:c2>1226890.000</geom:c2>
+                                <geom:c1>2586810</geom:c1>
+                                <geom:c2>1226890</geom:c2>
                             </geom:coord>
                         </geom:polyline>
                     </geom:polyline>
