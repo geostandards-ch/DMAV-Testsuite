@@ -43,56 +43,20 @@
     <ili:datasection>
         <!-- Der MANDATORY CONSTRAINT CH100501 wird verletzt, indem das Objekt keinem Geometrieelement zugeordnet ist. -->
         <DMAV_Rohrleitungen_V1_0:Rohrleitungen ili:bid="59a240f8-8e77-4206-9c2c-e1ad3212a482" ili:kind="UPDATE">
-            <DMAV_Rohrleitungen_V1_0:Leitungsobjekt ili:tid="75caf4f3-1d15-46f0-bed6-775dae27ff02" ili:operation="DELETE">
-                <DMAV_Rohrleitungen_V1_0:Betreiber>SWISSGAZ</DMAV_Rohrleitungen_V1_0:Betreiber>
+            <DMAV_Rohrleitungen_V1_0:Leitungsobjekt ili:tid="50946bf2-0e62-45d0-8931-602fa9d1a0f9" ili:operation="UPDATE">
+                <DMAV_Rohrleitungen_V1_0:Betreiber>GVM</DMAV_Rohrleitungen_V1_0:Betreiber>
                 <DMAV_Rohrleitungen_V1_0:Qualitaetsstandard>AV93</DMAV_Rohrleitungen_V1_0:Qualitaetsstandard>
-                <DMAV_Rohrleitungen_V1_0:Medium>Gas</DMAV_Rohrleitungen_V1_0:Medium>
+                <DMAV_Rohrleitungen_V1_0:Medium>Oel</DMAV_Rohrleitungen_V1_0:Medium>
                 <DMAV_Rohrleitungen_V1_0:Objektstatus>real</DMAV_Rohrleitungen_V1_0:Objektstatus>
-                <DMAV_Rohrleitungen_V1_0:Linienelement>
-                    <DMAV_Rohrleitungen_V1_0:Linienelement>
-                        <DMAV_Rohrleitungen_V1_0:Geometrie>
-                            <geom:polyline>
-                                <geom:coord>
-                                    <geom:c1>2587866.757</geom:c1>
-                                    <geom:c2>1225980.235</geom:c2>
-                                </geom:coord>
-                                <geom:coord>
-                                    <geom:c1>2587922.594</geom:c1>
-                                    <geom:c2>1226031.994</geom:c2>
-                                </geom:coord>
-                                <geom:coord>
-                                    <geom:c1>2587981.53</geom:c1>
-                                    <geom:c2>1226063.718</geom:c2>
-                                </geom:coord>
-                                <geom:coord>
-                                    <geom:c1>2588007.538</geom:c1>
-                                    <geom:c2>1226085.902</geom:c2>
-                                </geom:coord>
-                            </geom:polyline>
-                        </DMAV_Rohrleitungen_V1_0:Geometrie>
-                        <DMAV_Rohrleitungen_V1_0:IstSichtbar>false</DMAV_Rohrleitungen_V1_0:IstSichtbar>
-                    </DMAV_Rohrleitungen_V1_0:Linienelement>
-                </DMAV_Rohrleitungen_V1_0:Linienelement>
-                <DMAV_Rohrleitungen_V1_0:Punktelement>
-                    <DMAV_Rohrleitungen_V1_0:Punktelement>
-                        <DMAV_Rohrleitungen_V1_0:Geometrie>
-                            <geom:coord>
-                                <geom:c1>2587883.595</geom:c1>
-                                <geom:c2>1225995.844</geom:c2>
-                            </geom:coord>
-                        </DMAV_Rohrleitungen_V1_0:Geometrie>
-                        <DMAV_Rohrleitungen_V1_0:SymbolOri>100.0</DMAV_Rohrleitungen_V1_0:SymbolOri>
-                    </DMAV_Rohrleitungen_V1_0:Punktelement>
-                </DMAV_Rohrleitungen_V1_0:Punktelement>
                 <DMAV_Rohrleitungen_V1_0:Textposition>
                     <DMAVTYM_Grafik_V1_0:Textposition>
                         <DMAVTYM_Grafik_V1_0:Position>
                             <geom:coord>
-                                <geom:c1>2587904.955</geom:c1>
-                                <geom:c2>1226018.596</geom:c2>
+                                <geom:c1>2587848.449</geom:c1>
+                                <geom:c2>1225970.316</geom:c2>
                             </geom:coord>
                         </DMAVTYM_Grafik_V1_0:Position>
-                        <DMAVTYM_Grafik_V1_0:Orientierung>53.1</DMAVTYM_Grafik_V1_0:Orientierung>
+                        <DMAVTYM_Grafik_V1_0:Orientierung>100.0</DMAVTYM_Grafik_V1_0:Orientierung>
                         <DMAVTYM_Grafik_V1_0:HReferenzpunkt>Center</DMAVTYM_Grafik_V1_0:HReferenzpunkt>
                         <DMAVTYM_Grafik_V1_0:VReferenzpunkt>Half</DMAVTYM_Grafik_V1_0:VReferenzpunkt>
                     </DMAVTYM_Grafik_V1_0:Textposition>
