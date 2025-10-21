@@ -69,13 +69,13 @@ Constraints ready: 69%
 | DMAV_Rohrleitungen_V1_0 | Messpunkt  | CH101502 | ✅ |✅  |
 | DMAV_Toleranzstufen_V1_0 | TSNachfuehrung  | CH110101 | ✅ | ✅ |
 | DMAV_Toleranzstufen_V1_0 | Toleranzstufe_Gueltig  | CH110501 | ✅ | ✅ |
-| DMAV_HoheitsgrenzenAV_V1_0 | HHGNachfuehrung  | CH030101 |  | ✅ |
-| DMAV_HoheitsgrenzenAV_V1_0 | Gemeinde_Gueltig  | CH030601 |  | ✅ |
-| DMAV_HoheitsgrenzenAV_V1_0 | Gemeindegrenze  | CH030701 |  | ✅ |
-| DMAV_HoheitsgrenzenAV_V1_0 | Gemeindegrenze  | CH030702 |  | ✅ |
-| DMAV_HoheitsgrenzenAV_V1_0 | Gemeindegrenze  | CH030703 |  | ✅ |
-| DMAV_HoheitsgrenzenAV_V1_0 | Gemeindegrenze_Gueltig  | CH031101 |  | ✅ |
-| DMAV_HoheitsgrenzenAV_V1_0 | GemeindeGemeindegrenze  | CH031201 |  | ✅ |
+| DMAV_HoheitsgrenzenAV_V1_0 | HHGNachfuehrung  | CH030101 | ✅ | ✅ |
+| DMAV_HoheitsgrenzenAV_V1_0 | Gemeinde_Gueltig  | CH030601 | ✅ | ✅ |
+| DMAV_HoheitsgrenzenAV_V1_0 | Gemeindegrenze  | CH030701 | ✅ | ✅ |
+| DMAV_HoheitsgrenzenAV_V1_0 | Gemeindegrenze  | CH030702 | ✅ | ✅ |
+| DMAV_HoheitsgrenzenAV_V1_0 | Gemeindegrenze  | CH030703 | ✅ | ✅ |
+| DMAV_HoheitsgrenzenAV_V1_0 | Gemeindegrenze_Gueltig  | CH031101 | ✅ | ✅ |
+| DMAV_HoheitsgrenzenAV_V1_0 | GemeindeGemeindegrenze  | CH031201 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_LFP3 | CH031151 |  | ✅ |
 | DMAV_V1_0_Validierung | v_LFP3 | CH031252 |  |  |
 | DMAV_V1_0_Validierung | v_LFP3 | CH031253 | ✅ |  |
