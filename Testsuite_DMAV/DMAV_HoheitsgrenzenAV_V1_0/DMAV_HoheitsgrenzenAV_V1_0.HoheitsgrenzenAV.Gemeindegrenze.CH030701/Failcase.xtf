@@ -1797,8 +1797,7 @@
                                 <geom:c2>1226890</geom:c2>
                             </geom:coord>
                         </geom:polyline>
-                    </geom:polyline>
-                </geom:multipolyline>
+                    </geom:multipolyline>
             </DMAV_HoheitsgrenzenAV_V1_0:Streitig>
             <DMAV_HoheitsgrenzenAV_V1_0:Entstehung ili:ref="8756dab9-f626-4454-9e2c-513f084329b6"></DMAV_HoheitsgrenzenAV_V1_0:Entstehung>
             <DMAV_HoheitsgrenzenAV_V1_0:Gemeinde ili:ref="e0480e97-b39a-49d6-be73-d440aa31eae7"></DMAV_HoheitsgrenzenAV_V1_0:Gemeinde>
