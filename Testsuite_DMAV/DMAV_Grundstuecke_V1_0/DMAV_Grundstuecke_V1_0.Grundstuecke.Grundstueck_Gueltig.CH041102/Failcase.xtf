@@ -67,5 +67,6 @@
                 <DMAV_Grundstuecke_V1_0:Fiktiv>false</DMAV_Grundstuecke_V1_0:Fiktiv>
                 <DMAV_Grundstuecke_V1_0:Entstehung ili:ref="30f04ceb-44fd-49cb-8326-f9c1ceed8edd"></DMAV_Grundstuecke_V1_0:Entstehung>
             </DMAV_Grundstuecke_V1_0:Grundstueck>
-        </ili:datasection>
-    </ili:transfer>
+        </DMAV_Grundstuecke_V1_0:Grundstuecke>
+    </ili:datasection>
+</ili:transfer>

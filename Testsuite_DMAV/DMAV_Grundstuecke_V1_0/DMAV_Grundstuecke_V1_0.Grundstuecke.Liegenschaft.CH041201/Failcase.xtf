@@ -1147,6 +1147,6 @@
                 <DMAV_Grundstuecke_V1_0:Qualitaetsstandard>AV93</DMAV_Grundstuecke_V1_0:Qualitaetsstandard>
                 <DMAV_Grundstuecke_V1_0:Grundstueck ili:ref="b44d9ae2-ff0e-4c39-baed-e46993f1b477"></DMAV_Grundstuecke_V1_0:Grundstueck>
             </DMAV_Grundstuecke_V1_0:Liegenschaft>
-        </DMAV_Grundstuecke_V1_0:Grundstueck>
+        </DMAV_Grundstuecke_V1_0:Grundstuecke>
     </ili:datasection>
 </ili:transfer>
