@@ -24,9 +24,9 @@ Constraints ready: 69%
 | DMAV_FixpunkteAVKategorie3_V1_0 | LFP3 | CH020201 | ✅ | ✅ |
 | DMAV_FixpunkteAVKategorie3_V1_0 | LFP3 | CH020202 | ✅ | ✅ |
 | DMAV_FixpunkteAVKategorie3_V1_0 | LFP3 | CH020203 | ✅ | ✅ |
-| DMAV_Dienstbarekeitsgrenzen_V1_0 | DiBNachfuehrung | CH050101 |  | ✅ |
-| DMAV_Dienstbarekeitsgrenzen_V1_0 | Dienstbarkeitsgrenze | CH050301 |  | ✅ |
-| DMAV_Dienstbarekeitsgrenzen_V1_0 | Dienstbarkeitsgrenze_Gueltig | CH050701 |  |✅  |
+| DMAV_Dienstbarekeitsgrenzen_V1_0 | DiBNachfuehrung | CH050101 | ✅ | ✅ |
+| DMAV_Dienstbarekeitsgrenzen_V1_0 | Dienstbarkeitsgrenze | CH050301 | ✅ | ✅ |
+| DMAV_Dienstbarekeitsgrenzen_V1_0 | Dienstbarkeitsgrenze_Gueltig | CH050701 | ✅ |✅  |
 | DMAV_Gebaeudeadressen_V1_0 | GANachfuehrung | CH120101 | ✅ | ✅ |
 | DMAV_Gebaeudeadressen_V1_0 | Lokalisation | CH120501 | ✅ | ✅ |
 | DMAV_Gebaeudeadressen_V1_0 | Lokalisation | CH120502 | ✅ | ✅ |
