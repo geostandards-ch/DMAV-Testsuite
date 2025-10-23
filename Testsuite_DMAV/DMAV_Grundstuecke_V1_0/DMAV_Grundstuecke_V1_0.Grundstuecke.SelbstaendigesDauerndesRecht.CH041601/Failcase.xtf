@@ -43,6 +43,30 @@
     <ili:datasection>
         <!-- Der MANDATORY CONSTRAINT CH041601 wird verletzt, indem die streitige Multilinie ausserhalb des Perimeters liegt. -->
         <DMAV_Grundstuecke_V1_0:Grundstuecke ili:bid="2dd5ce7d-c5fe-48ca-8748-41c84ae51b4b" ili:kind="UPDATE">
+            <DMAV_Grundstuecke_V1_0:Grundstueck ili:tid="4854f5c8-cdce-455a-8916-a7eb2fbfe162" ili:operation="UPDATE">
+                <DMAV_Grundstuecke_V1_0:NBIdent>BE0200000108</DMAV_Grundstuecke_V1_0:NBIdent>
+                <DMAV_Grundstuecke_V1_0:Nummer>890</DMAV_Grundstuecke_V1_0:Nummer>
+                <DMAV_Grundstuecke_V1_0:EGRID>CH673542174640</DMAV_Grundstuecke_V1_0:EGRID>
+                <DMAV_Grundstuecke_V1_0:IstStreitig>true</DMAV_Grundstuecke_V1_0:IstStreitig>
+                <DMAV_Grundstuecke_V1_0:IstVollstaendig>true</DMAV_Grundstuecke_V1_0:IstVollstaendig>
+                <DMAV_Grundstuecke_V1_0:Grundstuecksart>SelbstaendigesDauerndesRecht</DMAV_Grundstuecke_V1_0:Grundstuecksart>
+                <DMAV_Grundstuecke_V1_0:Textposition>
+                    <DMAVTYM_Grafik_V1_0:Textposition>
+                        <DMAVTYM_Grafik_V1_0:Position>
+                            <geom:coord>
+                                <geom:c1>2587185.711</geom:c1>
+                                <geom:c2>1225984.157</geom:c2>
+                            </geom:coord>
+                        </DMAVTYM_Grafik_V1_0:Position>
+                        <DMAVTYM_Grafik_V1_0:Orientierung>100.0</DMAVTYM_Grafik_V1_0:Orientierung>
+                        <DMAVTYM_Grafik_V1_0:Textgroesse>Mittel</DMAVTYM_Grafik_V1_0:Textgroesse>
+                        <DMAVTYM_Grafik_V1_0:HReferenzpunkt>Center</DMAVTYM_Grafik_V1_0:HReferenzpunkt>
+                        <DMAVTYM_Grafik_V1_0:VReferenzpunkt>Half</DMAVTYM_Grafik_V1_0:VReferenzpunkt>
+                    </DMAVTYM_Grafik_V1_0:Textposition>
+                </DMAV_Grundstuecke_V1_0:Textposition>
+                <DMAV_Grundstuecke_V1_0:Fiktiv>false</DMAV_Grundstuecke_V1_0:Fiktiv>
+                <DMAV_Grundstuecke_V1_0:Entstehung ili:ref="30f04ceb-44fd-49cb-8326-f9c1ceed8edd"></DMAV_Grundstuecke_V1_0:Entstehung>
+            </DMAV_Grundstuecke_V1_0:Grundstueck>
             <DMAV_Grundstuecke_V1_0:SelbstaendigesDauerndesRecht ili:tid="5418e647-865f-45cf-b173-d3b76e0ed4ce" ili:operation="UPDATE">
                 <DMAV_Grundstuecke_V1_0:Geometrie>
                     <geom:surface>
