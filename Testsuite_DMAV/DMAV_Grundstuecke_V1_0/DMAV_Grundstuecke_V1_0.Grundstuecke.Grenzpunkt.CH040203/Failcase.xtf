@@ -57,6 +57,7 @@
                 <DMAV_Grundstuecke_V1_0:Punktzeichen>Kreuz</DMAV_Grundstuecke_V1_0:Punktzeichen>
                 <DMAV_Grundstuecke_V1_0:IstHoheitsgrenzpunkt>true</DMAV_Grundstuecke_V1_0:IstHoheitsgrenzpunkt>
                 <DMAV_Grundstuecke_V1_0:IstHoheitsgrenzsteinAlt>false</DMAV_Grundstuecke_V1_0:IstHoheitsgrenzsteinAlt>
+                <DMAV_Grundstuecke_V1_0:IstExaktDefiniert>false</DMAV_Grundstuecke_V1_0:IstExaktDefiniert>
                 <DMAV_Grundstuecke_V1_0:SymbolOri>0.0</DMAV_Grundstuecke_V1_0:SymbolOri>
                 <DMAV_Grundstuecke_V1_0:Entstehung ili:ref="30f04ceb-44fd-49cb-8326-f9c1ceed8edd"></DMAV_Grundstuecke_V1_0:Entstehung>
             </DMAV_Grundstuecke_V1_0:Grenzpunkt>
