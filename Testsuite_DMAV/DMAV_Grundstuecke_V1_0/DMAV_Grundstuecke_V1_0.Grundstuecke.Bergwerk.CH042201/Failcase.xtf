@@ -87,12 +87,12 @@
                     <geom:multipolyline>
                         <geom:polyline>
                             <geom:coord>
-                                <geom:c1>2587990</geom:c1>
-                                <geom:c2>1225755</geom:c2>
+                                <geom:c1>2587896.835</geom:c1>
+                                <geom:c2>1225708.052</geom:c2>
                             </geom:coord>
                             <geom:coord>
-                                <geom:c1>2587990</geom:c1>
-                                <geom:c2>1225765</geom:c2>
+                                <geom:c1>2587997.788</geom:c1>
+                                <geom:c2>1225669.827</geom:c2>
                             </geom:coord>
                         </geom:polyline>
                     </geom:multipolyline>
