@@ -53,7 +53,6 @@
                 </DMAV_Grundstuecke_V1_0:Geometrie>
                 <DMAV_Grundstuecke_V1_0:Lagegenauigkeit>0.04</DMAV_Grundstuecke_V1_0:Lagegenauigkeit>
                 <DMAV_Grundstuecke_V1_0:IstLagezuverlaessig>true</DMAV_Grundstuecke_V1_0:IstLagezuverlaessig>
-                <DMAV_Grundstuecke_V1_0:Hoehengenauigkeit>0.04</DMAV_Grundstuecke_V1_0:Hoehengenauigkeit>
                 <DMAV_Grundstuecke_V1_0:Punktzeichen>Kreuz</DMAV_Grundstuecke_V1_0:Punktzeichen>
                 <DMAV_Grundstuecke_V1_0:IstHoheitsgrenzpunkt>true</DMAV_Grundstuecke_V1_0:IstHoheitsgrenzpunkt>
                 <DMAV_Grundstuecke_V1_0:IstHoheitsgrenzsteinAlt>false</DMAV_Grundstuecke_V1_0:IstHoheitsgrenzsteinAlt>
