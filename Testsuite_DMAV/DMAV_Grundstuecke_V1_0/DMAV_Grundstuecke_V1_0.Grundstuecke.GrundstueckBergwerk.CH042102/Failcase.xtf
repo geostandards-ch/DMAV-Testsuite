@@ -41,32 +41,50 @@
         <ili:sender>ili2fme-7.2.1-aa3c48c318db91416e944ac8d2fb0142426ab234</ili:sender>
     </ili:headersection>
     <ili:datasection>
-        <!-- Der MANDATORY CONSTRAINT CH041102 wird verletzt, indem aus einem gefilterten Datensatz bereits ein identischer EGRID zum Objekt 40f75da3-1f76-4f8c-80ac-07bd464452c2 besteht. -->
+        <!-- Der MANDATORY CONSTRAINT CH042102 wird verletzt, indem zum referenzierten Objekt des Bergwerks eine falsche Auswahl der Grundstuecksart besteht. -->
         <DMAV_Grundstuecke_V1_0:Grundstuecke ili:bid="2dd5ce7d-c5fe-48ca-8748-41c84ae51b4b" ili:kind="UPDATE">
-            <DMAV_Grundstuecke_V1_0:Grundstueck ili:tid="e9cf8d88-3898-4e2a-869c-32d45e3f21a2" ili:operation="UPDATE">
-                <DMAV_Grundstuecke_V1_0:NBIdent>BE0200000108</DMAV_Grundstuecke_V1_0:NBIdent>
-                <DMAV_Grundstuecke_V1_0:Nummer>1132</DMAV_Grundstuecke_V1_0:Nummer>
-                <DMAV_Grundstuecke_V1_0:EGRID>CH343546421811</DMAV_Grundstuecke_V1_0:EGRID>
+            <DMAV_Grundstuecke_V1_0:Grundstueck ili:tid="fc4a7d33-ea71-4eec-8821-f7445f0082a9" ili:operation="INSERT">
+                <DMAV_Grundstuecke_V1_0:NBIdent>BE0200000115</DMAV_Grundstuecke_V1_0:NBIdent>
+                <DMAV_Grundstuecke_V1_0:Nummer>1001</DMAV_Grundstuecke_V1_0:Nummer>
+                <DMAV_Grundstuecke_V1_0:EGRID>CH100000005000</DMAV_Grundstuecke_V1_0:EGRID>
                 <DMAV_Grundstuecke_V1_0:IstStreitig>false</DMAV_Grundstuecke_V1_0:IstStreitig>
                 <DMAV_Grundstuecke_V1_0:IstVollstaendig>true</DMAV_Grundstuecke_V1_0:IstVollstaendig>
-                <DMAV_Grundstuecke_V1_0:Grundstuecksart>Liegenschaft</DMAV_Grundstuecke_V1_0:Grundstuecksart>
-                <DMAV_Grundstuecke_V1_0:Textposition>
-                    <DMAVTYM_Grafik_V1_0:Textposition>
-                        <DMAVTYM_Grafik_V1_0:Position>
-                            <geom:coord>
-                                <geom:c1>2588916.149</geom:c1>
-                                <geom:c2>1226773.179</geom:c2>
-                            </geom:coord>
-                        </DMAVTYM_Grafik_V1_0:Position>
-                        <DMAVTYM_Grafik_V1_0:Orientierung>100.0</DMAVTYM_Grafik_V1_0:Orientierung>
-                        <DMAVTYM_Grafik_V1_0:Textgroesse>Mittel</DMAVTYM_Grafik_V1_0:Textgroesse>
-                        <DMAVTYM_Grafik_V1_0:HReferenzpunkt>Center</DMAVTYM_Grafik_V1_0:HReferenzpunkt>
-                        <DMAVTYM_Grafik_V1_0:VReferenzpunkt>Half</DMAVTYM_Grafik_V1_0:VReferenzpunkt>
-                    </DMAVTYM_Grafik_V1_0:Textposition>
-                </DMAV_Grundstuecke_V1_0:Textposition>
-                <DMAV_Grundstuecke_V1_0:Fiktiv>false</DMAV_Grundstuecke_V1_0:Fiktiv>
+                <DMAV_Grundstuecke_V1_0:Grundstuecksart>Bergwerk</DMAV_Grundstuecke_V1_0:Grundstuecksart>
+                <DMAV_Grundstuecke_V1_0:Fiktiv>true</DMAV_Grundstuecke_V1_0:Fiktiv>
                 <DMAV_Grundstuecke_V1_0:Entstehung ili:ref="30f04ceb-44fd-49cb-8326-f9c1ceed8edd"></DMAV_Grundstuecke_V1_0:Entstehung>
             </DMAV_Grundstuecke_V1_0:Grundstueck>
+            <DMAV_Grundstuecke_V1_0:Bergwerk ili:tid="bec5026c-7e6d-47b5-8661-415f521a5b1a" ili:operation="INSERT">
+                <DMAV_Grundstuecke_V1_0:Geometrie>
+                    <geom:surface>
+                        <geom:exterior>
+                            <geom:polyline>
+                                <geom:coord>
+                                    <geom:c1>2587929.179</geom:c1>
+                                    <geom:c2>1225762.939</geom:c2>
+                                </geom:coord>
+                                <geom:coord>
+                                    <geom:c1>2587896.835</geom:c1>
+                                    <geom:c2>1225708.052</geom:c2>
+                                </geom:coord>
+                                <geom:coord>
+                                    <geom:c1>2587997.788</geom:c1>
+                                    <geom:c2>1225669.827</geom:c2>
+                                </geom:coord>
+                                <geom:coord>
+                                    <geom:c1>2588022.291</geom:c1>
+                                    <geom:c2>1225730.594</geom:c2>
+                                </geom:coord>
+                                <geom:coord>
+                                    <geom:c1>2587929.179</geom:c1>
+                                    <geom:c2>1225762.939</geom:c2>
+                                </geom:coord>
+                            </geom:polyline>
+                        </geom:exterior>
+                    </geom:surface>
+                </DMAV_Grundstuecke_V1_0:Geometrie>
+                <DMAV_Grundstuecke_V1_0:Flaechenmass>6614</DMAV_Grundstuecke_V1_0:Flaechenmass>
+                <DMAV_Grundstuecke_V1_0:Grundstueck ili:ref="fc4a7d33-ea71-4eec-8821-f7445f0082a9"></DMAV_Grundstuecke_V1_0:Grundstueck>
+            </DMAV_Grundstuecke_V1_0:Bergwerk>
         </DMAV_Grundstuecke_V1_0:Grundstuecke>
     </ili:datasection>
 </ili:transfer>
