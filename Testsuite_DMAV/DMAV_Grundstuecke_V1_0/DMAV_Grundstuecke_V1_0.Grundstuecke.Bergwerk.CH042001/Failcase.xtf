@@ -47,7 +47,7 @@
                 <DMAV_Grundstuecke_V1_0:NBIdent>BE0200000115</DMAV_Grundstuecke_V1_0:NBIdent>
                 <DMAV_Grundstuecke_V1_0:Nummer>1001</DMAV_Grundstuecke_V1_0:Nummer>
                 <DMAV_Grundstuecke_V1_0:EGRID>CH100000005000</DMAV_Grundstuecke_V1_0:EGRID>
-                <DMAV_Grundstuecke_V1_0:IstStreitig>false</DMAV_Grundstuecke_V1_0:IstStreitig>
+                <DMAV_Grundstuecke_V1_0:IstStreitig>true</DMAV_Grundstuecke_V1_0:IstStreitig>
                 <DMAV_Grundstuecke_V1_0:IstVollstaendig>true</DMAV_Grundstuecke_V1_0:IstVollstaendig>
                 <DMAV_Grundstuecke_V1_0:Grundstuecksart>Bergwerk</DMAV_Grundstuecke_V1_0:Grundstuecksart>
                 <DMAV_Grundstuecke_V1_0:Fiktiv>false</DMAV_Grundstuecke_V1_0:Fiktiv>
