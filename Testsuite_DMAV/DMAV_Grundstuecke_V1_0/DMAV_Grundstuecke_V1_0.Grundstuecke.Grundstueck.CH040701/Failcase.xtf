@@ -65,7 +65,6 @@
                     </DMAVTYM_Grafik_V1_0:Textposition>
                 </DMAV_Grundstuecke_V1_0:Textposition>
                 <DMAV_Grundstuecke_V1_0:Fiktiv>false</DMAV_Grundstuecke_V1_0:Fiktiv>
-                <DMAV_Grundstuecke_V1_0:Gesamtflaechenmass>1000</DMAV_Grundstuecke_V1_0:Gesamtflaechenmass>
                 <DMAV_Grundstuecke_V1_0:Entstehung ili:ref="30f04ceb-44fd-49cb-8326-f9c1ceed8edd"></DMAV_Grundstuecke_V1_0:Entstehung>
             </DMAV_Grundstuecke_V1_0:Grundstueck>
         </DMAV_Grundstuecke_V1_0:Grundstuecke>
