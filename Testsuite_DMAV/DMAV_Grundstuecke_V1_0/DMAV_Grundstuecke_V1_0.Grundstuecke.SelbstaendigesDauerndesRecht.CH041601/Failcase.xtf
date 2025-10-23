@@ -85,11 +85,10 @@
                                 <geom:c2>1226010</geom:c2>
                             </geom:coord>
                         </geom:polyline>
-                    </geom:polyline>
-                </geom:multipolyline>
-            </DMAV_Grundstuecke_V1_0:Streitig>
-            <DMAV_Grundstuecke_V1_0:Grundstueck ili:ref="4854f5c8-cdce-455a-8916-a7eb2fbfe162"></DMAV_Grundstuecke_V1_0:Grundstueck>
-        </DMAV_Grundstuecke_V1_0:SelbstaendigesDauerndesRecht>
-    </DMAV_Grundstuecke_V1_0:Grundstuecke>
-</ili:datasection>
+                    </geom:multipolyline>
+                </DMAV_Grundstuecke_V1_0:Streitig>
+                <DMAV_Grundstuecke_V1_0:Grundstueck ili:ref="4854f5c8-cdce-455a-8916-a7eb2fbfe162"></DMAV_Grundstuecke_V1_0:Grundstueck>
+            </DMAV_Grundstuecke_V1_0:SelbstaendigesDauerndesRecht>
+        </DMAV_Grundstuecke_V1_0:Grundstuecke>
+    </ili:datasection>
 </ili:transfer>
