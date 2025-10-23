@@ -41,40 +41,64 @@
         <ili:sender>ili2fme-7.2.1-aa3c48c318db91416e944ac8d2fb0142426ab234</ili:sender>
     </ili:headersection>
     <ili:datasection>
-        <!-- Der MANDATORY CONSTRAINT CH042402 wird verletzt, in dem das Selbständige Dauernde Recht 73b015bb-1be6-4230-a00d-41b8f303bd80 gelöscht wird, das von Grundstück 8904bd52-8da6-4eda-9c5c-29539529c960 referenziert wird.-->
+        <!-- Der MANDATORY CONSTRAINT CH042001 wird verletzt, indem die streitige Multilinie ausserhalb des Perimeters liegt. -->
         <DMAV_Grundstuecke_V1_0:Grundstuecke ili:bid="2dd5ce7d-c5fe-48ca-8748-41c84ae51b4b" ili:kind="UPDATE">
-            <DMAV_Grundstuecke_V1_0:SelbstaendigesDauerndesRecht ili:tid="33997fcf-d9ad-4f27-81c6-8e00cf1fb5c8" ili:operation="DELETE">
+            <DMAV_Grundstuecke_V1_0:Grundstueck ili:tid="fc4a7d33-ea71-4eec-8821-f7445f0082a9" ili:operation="INSERT">
+                <DMAV_Grundstuecke_V1_0:NBIdent>BE0200000115</DMAV_Grundstuecke_V1_0:NBIdent>
+                <DMAV_Grundstuecke_V1_0:Nummer>1001</DMAV_Grundstuecke_V1_0:Nummer>
+                <DMAV_Grundstuecke_V1_0:EGRID>CH100000005000</DMAV_Grundstuecke_V1_0:EGRID>
+                <DMAV_Grundstuecke_V1_0:IstStreitig>true</DMAV_Grundstuecke_V1_0:IstStreitig>
+                <DMAV_Grundstuecke_V1_0:IstVollstaendig>true</DMAV_Grundstuecke_V1_0:IstVollstaendig>
+                <DMAV_Grundstuecke_V1_0:Grundstuecksart>Bergwerk</DMAV_Grundstuecke_V1_0:Grundstuecksart>
+                <DMAV_Grundstuecke_V1_0:Fiktiv>false</DMAV_Grundstuecke_V1_0:Fiktiv>
+                <DMAV_Grundstuecke_V1_0:Entstehung ili:ref="30f04ceb-44fd-49cb-8326-f9c1ceed8edd"></DMAV_Grundstuecke_V1_0:Entstehung>
+            </DMAV_Grundstuecke_V1_0:Grundstueck>
+            <DMAV_Grundstuecke_V1_0:Bergwerk ili:tid="bec5026c-7e6d-47b5-8661-415f521a5b1a" ili:operation="INSERT">
                 <DMAV_Grundstuecke_V1_0:Geometrie>
                     <geom:surface>
                         <geom:exterior>
                             <geom:polyline>
                                 <geom:coord>
-                                    <geom:c1>2589028.3</geom:c1>
-                                    <geom:c2>1226404.719</geom:c2>
+                                    <geom:c1>2587929.179</geom:c1>
+                                    <geom:c2>1225762.939</geom:c2>
                                 </geom:coord>
                                 <geom:coord>
-                                    <geom:c1>2589045.627</geom:c1>
-                                    <geom:c2>1226420.519</geom:c2>
+                                    <geom:c1>2587896.835</geom:c1>
+                                    <geom:c2>1225708.052</geom:c2>
                                 </geom:coord>
                                 <geom:coord>
-                                    <geom:c1>2589061.006</geom:c1>
-                                    <geom:c2>1226408.639</geom:c2>
+                                    <geom:c1>2587997.788</geom:c1>
+                                    <geom:c2>1225669.827</geom:c2>
                                 </geom:coord>
                                 <geom:coord>
-                                    <geom:c1>2589046.299</geom:c1>
-                                    <geom:c2>1226397.828</geom:c2>
+                                    <geom:c1>2588022.291</geom:c1>
+                                    <geom:c2>1225730.594</geom:c2>
                                 </geom:coord>
                                 <geom:coord>
-                                    <geom:c1>2589028.3</geom:c1>
-                                    <geom:c2>1226404.719</geom:c2>
+                                    <geom:c1>2587929.179</geom:c1>
+                                    <geom:c2>1225762.939</geom:c2>
                                 </geom:coord>
                             </geom:polyline>
                         </geom:exterior>
                     </geom:surface>
                 </DMAV_Grundstuecke_V1_0:Geometrie>
-                <DMAV_Grundstuecke_V1_0:Flaechenmass>372</DMAV_Grundstuecke_V1_0:Flaechenmass>
-                <DMAV_Grundstuecke_V1_0:Grundstueck ili:ref="7a2ee1e4-2260-4c19-a1f4-68d59ade622d"></DMAV_Grundstuecke_V1_0:Grundstueck>
-            </DMAV_Grundstuecke_V1_0:SelbstaendigesDauerndesRecht>
+                <DMAV_Grundstuecke_V1_0:Flaechenmass>6614</DMAV_Grundstuecke_V1_0:Flaechenmass>
+                <DMAV_Grundstuecke_V1_0:Streitig>
+                    <geom:multipolyline>
+                        <geom:polyline>
+                            <geom:coord>
+                                <geom:c1>2587990</geom:c1>
+                                <geom:c2>1225755</geom:c2>
+                            </geom:coord>
+                            <geom:coord>
+                                <geom:c1>2587990</geom:c1>
+                                <geom:c2>1225765</geom:c2>
+                            </geom:coord>
+                        </geom:polyline>
+                    </geom:multipolyline>
+                </DMAV_Grundstuecke_V1_0:Streitig>
+                <DMAV_Grundstuecke_V1_0:Grundstueck ili:ref="fc4a7d33-ea71-4eec-8821-f7445f0082a9"></DMAV_Grundstuecke_V1_0:Grundstueck>
+            </DMAV_Grundstuecke_V1_0:Bergwerk>
         </DMAV_Grundstuecke_V1_0:Grundstuecke>
     </ili:datasection>
 </ili:transfer>
