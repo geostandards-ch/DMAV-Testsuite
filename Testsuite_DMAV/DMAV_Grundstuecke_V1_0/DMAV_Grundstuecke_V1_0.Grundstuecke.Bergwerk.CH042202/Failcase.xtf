@@ -84,20 +84,6 @@
                     </geom:surface>
                 </DMAV_Grundstuecke_V1_0:Geometrie>
                 <DMAV_Grundstuecke_V1_0:Flaechenmass>6614</DMAV_Grundstuecke_V1_0:Flaechenmass>
-                <DMAV_Grundstuecke_V1_0:Streitig>
-                    <geom:multipolyline>
-                        <geom:polyline>
-                            <geom:coord>
-                                <geom:c1>2587990</geom:c1>
-                                <geom:c2>1225755</geom:c2>
-                            </geom:coord>
-                            <geom:coord>
-                                <geom:c1>2587990</geom:c1>
-                                <geom:c2>1225765</geom:c2>
-                            </geom:coord>
-                        </geom:polyline>
-                    </geom:multipolyline>
-                </DMAV_Grundstuecke_V1_0:Streitig>
                 <DMAV_Grundstuecke_V1_0:Grundstueck ili:ref="fc4a7d33-ea71-4eec-8821-f7445f0082a9"></DMAV_Grundstuecke_V1_0:Grundstueck>
             </DMAV_Grundstuecke_V1_0:Bergwerk>
         </DMAV_Grundstuecke_V1_0:Grundstuecke>
