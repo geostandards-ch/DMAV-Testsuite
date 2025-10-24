@@ -41,7 +41,7 @@
         <ili:sender>ili2fme-7.2.1-aa3c48c318db91416e944ac8d2fb0142426ab234</ili:sender>
     </ili:headersection>
     <ili:datasection>
-        <!-- Der MANDATORY CONSTRAINT CH041302 wird verletzt, indem der Wert aus Grundstuecksart nicht zulässig ist. -->
+        <!-- Der MANDATORY CONSTRAINT CH041302 wird verletzt, indem der Wert von Attribut Fiktiv des referenzierten Liegenschaftobjektes 08ed6d25-de36-4f17-836c-ed355b66ff0f nicht mit dem wahren Wert des Attributs Fiktiv des Grundstueck übereinstimmt. -->
         <DMAV_Grundstuecke_V1_0:Grundstuecke ili:bid="2dd5ce7d-c5fe-48ca-8748-41c84ae51b4b" ili:kind="UPDATE">
             <DMAV_Grundstuecke_V1_0:Grundstueck ili:tid="134b8389-6e06-4734-9ba1-994389ba4666" ili:operation="UPDATE">
                 <DMAV_Grundstuecke_V1_0:NBIdent>BE0200000115</DMAV_Grundstuecke_V1_0:NBIdent>
