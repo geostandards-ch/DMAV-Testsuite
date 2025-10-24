@@ -34,32 +34,32 @@ Constraints ready: 69%
 | DMAV_Gebaeudeadressen_V1_0 | Gebaeudeeingang | CH121201 | ✅ | ✅ |
 | DMAV_Gebaeudeadressen_V1_0 | Gebaeudeeingang | CH121202 | ✅ | ✅ |
 | DMAV_Gebaeudeadressen_V1_0 | Gebaeudeeingang | CH121701 | ✅ | ✅ |
-| DMAV_Grundstuecke_V1_0 | GSNachfuehrung  | CH040101 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | Grenzpunkt | CH040201 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | Grenzpunkt | CH040202 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | Grenzpunkt | CH040203 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | Grenzpunkt_Gueltig | CH040601 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | Grundstueck | CH040701 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | Grundstueck_Gueltig | CH041101 |  | ✅ |
+| DMAV_Grundstuecke_V1_0 | GSNachfuehrung  | CH040101 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | Grenzpunkt | CH040201 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | Grenzpunkt | CH040202 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | Grenzpunkt | CH040203 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | Grenzpunkt_Gueltig | CH040601 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | Grundstueck | CH040701 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | Grundstueck_Gueltig | CH041101 | ✅ | ✅ |
 | DMAV_Grundstuecke_V1_0 | Grundstueck_Gueltig | CH041102 | ✅ | ✅ |
 | DMAV_Grundstuecke_V1_0 | Liegenschaft | CH041201 | ✅ | ✅ |
-| DMAV_Grundstuecke_V1_0 | GrundstueckLiegenschaft | CH041301 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | GrundstueckLiegenschaft | CH041302 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | Liegenschaft | CH041401 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | Liegenschaft | CH041402 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | Liegenschaft_Gueltig | CH041501 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | SelbstaendigesDauerndesRecht | CH041601 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | GrundstueckSelbstaendigesDauerndesRecht | CH041701 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | GrundstueckSelbstaendigesDauerndesRecht | CH041702 |  | ✅  |
-| DMAV_Grundstuecke_V1_0 | SelbstaendigesDauerndesRecht | CH041801 |  |✅  |
-| DMAV_Grundstuecke_V1_0 | SelbstaendigesDauerndesRecht | CH041802 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | Bergwerk | CH042001 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | GrundstueckBergwerk | CH042101 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | GrundstueckBergwerk | CH042102 |  | ✅ |
-| DMAV_Grundstuecke_V1_0 | Bergwerk | CH042201 |  |✅  |
-| DMAV_Grundstuecke_V1_0 | Bergwerk | CH042202 |  |✅  |
+| DMAV_Grundstuecke_V1_0 | GrundstueckLiegenschaft | CH041301 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | GrundstueckLiegenschaft | CH041302 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | Liegenschaft | CH041401 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | Liegenschaft | CH041402 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | Liegenschaft_Gueltig | CH041501 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | SelbstaendigesDauerndesRecht | CH041601 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | GrundstueckSelbstaendigesDauerndesRecht | CH041701 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | GrundstueckSelbstaendigesDauerndesRecht | CH041702 | ✅ | ✅  |
+| DMAV_Grundstuecke_V1_0 | SelbstaendigesDauerndesRecht | CH041801 | ✅ |✅  |
+| DMAV_Grundstuecke_V1_0 | SelbstaendigesDauerndesRecht | CH041802 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | Bergwerk | CH042001 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | GrundstueckBergwerk | CH042101 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | GrundstueckBergwerk | CH042102 | ✅ | ✅ |
+| DMAV_Grundstuecke_V1_0 | Bergwerk | CH042201 | ✅ |✅  |
+| DMAV_Grundstuecke_V1_0 | Bergwerk | CH042202 | ✅ |✅  |
 | DMAV_Grundstuecke_V1_0 | Grundstueck | CH042401 | ✅ | ✅ |
-| DMAV_Grundstuecke_V1_0 | Grundstueck | CH042402 |  | ✅ |
+| DMAV_Grundstuecke_V1_0 | Grundstueck | CH042402 | ✅ | ✅ |
 | DMAV_Nomenklatur_V1_0 | NKNachfuehrung | CH070101 | ✅ | ✅ |
 | DMAV_Nomenklatur_V1_0 | Flurname_Gueltig | CH070501 | ✅ | ✅ |
 | DMAV_Rohrleitungen_V1_0 | RLNachfuehrung | CH100101 | ✅ | ✅ |
