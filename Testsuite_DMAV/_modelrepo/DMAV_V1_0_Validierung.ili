@@ -7,7 +7,8 @@ VERSION "2025-03-30" =
 IMPORTS UNQUALIFIED INTERLIS;
 IMPORTS UNQUALIFIED Text_V2;
 IMPORTS UNQUALIFIED Math_V2_1;
-IMPORTS UNQUALIFIED ObjectPool;
+IMPORTS ObjectPool_V1_0;
+IMPORTS Elements_V1_0;
 IMPORTS DMAVTYM_Topologie_V1_1;
 IMPORTS DMAV_FixpunkteAVKategorie3_V1_0;
 IMPORTS DMAV_Bodenbedeckung_V1_0;
@@ -54,9 +55,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.FixpunkteKategorie3_Validierung.v_LFP3.CH031253)
-            /* Pseudocode:
-            MANDATORY CONSTRAINT CH031253: IsInside(Union(objectPool.Filter("DMAV_Toleranzstufen_V1_0.Toleranzstufe", "Toleranzstufen->Toleranzstufe==#TS2"),"Geometrie"),"Geometrie", THIS, "Geometrie") => (Lagegenauigkeit < 0.15);
-            */
+            MANDATORY CONSTRAINT CH031253: DMAVTYM_Topologie_V1_1.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS2"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.15);
 
             !!@ ilivalid.msg="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS3)";
             !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS3)";
@@ -729,10 +728,8 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Nomenklatur_Validierung.v_Flurname.CH070951)
-            /* Pseudocode:
-            SET CONSTRAINT CH070951 WHERE DEFINED(Entstehung) AND NOT(DEFINED(Untergang)):
-                IsGeometryCongruent(Union(ALL, "Geometrie"), "Geometrie", Union(FindObjects(DMAV_Grundstuecke_V1_0.Liegenschaften, "WHERE DEFINED(Grundstueck->Entstehung) AND DEFINED(Grundstueck->Entstehung->Grundbucheintrag) AND (NOT(DEFINED(Grundstueck->Untergang)) OR NOT(DEFINED(Grundstueck->Untergang->Grundbucheintrag)))"), "Geometrie"), "Geometrie", 0.002)
-            */
+            SET CONSTRAINT CH070951: WHERE DEFINED(Entstehung) AND NOT(DEFINED(Untergang)):
+                DMAVTYM_Topologie_V1_1.isGeometrySpatiallyEqual(ALL, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Liegenschaft), "DEFINED(Grundstueck->Entstehung) AND NOT(DEFINED(Grundstueck->Untergang))"), >>DMAV_Grundstuecke_V1_0.Grundstuecke.Liegenschaft->Geometrie, 0.002);
 
         END v_Flurname;
 
@@ -769,8 +766,8 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_fr="La somme des parties de surface inscrite sous Superficie n'est pas égale à la donnée correspondante sous SuperficieTotale";
             !!@ ilivalid.msg_it="La somma delle superfici delle parti di Bene_immobile/DSSP/Miniera non corrisponde alla superficie totale del fondo";
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Grundstuecke_Validierung.v_Grundstueck.CH085952)
-            MANDATORY CONSTRAINT CH085952: 
-                Gesamtflaechenmass == Math_V2_1.add(Math_V2_1.add(Math_V2_1.sum("THIS->Liegenschaft->Flaechenmass"),Math_V2_1.sum("THIS->SelbstaendigesDauerndesRecht->Flaechenmass")),Math_V2_1.sum("THIS->Bergwerk->Flaechenmass")
+            MANDATORY CONSTRAINT CH085952: (
+                Gesamtflaechenmass == (Elements_V1_0.coalesceN(Math_V2_1.sum("Liegenschaft->Flaechenmass"), 0) + Elements_V1_0.coalesceN(Math_V2_1.sum("SelbstaendigesDauerndesRecht->Flaechenmass"), 0) + Elements_V1_0.coalesceN(Math_V2_1.sum("Bergwerk->Flaechenmass"), 0))
             );
 
             !!@ ilivalid.msg="EGRID Prüfziffer stimmt nicht";
@@ -938,7 +935,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !! Umsetzung Phase 1;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.HoheitsgrenzenAV_Validierung.v_Bezirksgrenzabschnitt.CH120153)
             MANDATORY CONSTRAINT CH120153: (
-                DMAVTYM_Topologie_V1_1.coversWithTolerance(ObjectPool.allObjects(>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Gemeindegrenze), >>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Gemeindegrenze->Geometrie, THIS, >>Geometrie, 0.002)
+                DMAVTYM_Topologie_V1_1.coversWithTolerance(ObjectPool_V1_0.allObjects(>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Gemeindegrenze), >>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Gemeindegrenze->Geometrie, THIS, >>Geometrie, 0.002)
             );
 
         END v_Bezirksgrenzabschnitt;
@@ -954,7 +951,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="L'andamento del confine cantonale deve corrispondere con quelli comunali";
             !! Umsetzung Phase 1;
             MANDATORY CONSTRAINT CH130153: (
-                DMAVTYM_Topologie_V1_1.coversWithTolerance(ObjectPool.allObjects(>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Bezirksgrenzabschnitt), >>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Bezirksgrenzabschnitt->Geometrie, THIS, >>Geometrie, 0.002)
+                DMAVTYM_Topologie_V1_1.coversWithTolerance(ObjectPool_V1_0.allObjects(>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Bezirksgrenzabschnitt), >>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Bezirksgrenzabschnitt->Geometrie, THIS, >>Geometrie, 0.002)
             );
 
         END v_Kantonsgrenzabschnitt;
@@ -1016,11 +1013,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194254)
-            /* Pseudocode:
             MANDATORY CONSTRAINT CH194254: (
-                DEFINED(ImModul) => IsInside(THIS,"Geometrie", objectPool.Filter("DMAV_Bodenbedeckung_V1_0.Bodenbedeckung.Bodenbedeckung", "Bodenbedeckungsart == #Gebaeude"), "Geometrie");
+                (ImModul == #Bodenbedeckung) => DMAVTYM_Topologie_V1_1.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Bodenbedeckung_V1_0.Bodenbedeckung.Bodenbedeckung), "Bodenbedeckungsart == #Gebaeude"), >>DMAV_Bodenbedeckung_V1_0.Bodenbedeckung.Bodenbedeckung->Geometrie)
             );
-            */
 
             !!@ ilivalid.check = warning
             !!@ ilivalid.msg="In Hausnummer (Polizeinummer oder Gebaeudeversicherungsnummer) darf vor, zwischen oder nach Hausnummer und Buchstabenzusatz kein Leerschlag oder kein Trennzeichen sein";
