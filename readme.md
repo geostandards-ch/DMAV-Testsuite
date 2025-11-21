@@ -4,17 +4,17 @@
 
 DMAV_Grundstuecke_V1_0:
 ```
-java -jar .\_Runner\interlis-testbed-runner-1.0.0\lib\interlis-testbed-runner-1.0.1.jar -v .\_Runner\ilivalidator-1.14.3\ilivalidator-1.14.3.jar -config  .\Testsuite_DMAV\DMAV_V1_0_Validierung-meta.ini .\Testsuite_DMAV/DMAV_Grundstuecke_V1_0
+java -jar .\_Runner\interlis-testbed-runner-1.0.1\lib\interlis-testbed-runner-1.0.1-SNAPSHOT.jar -v .\_Runner\ilivalidator-1.14.6\ilivalidator-1.14.6-SNAPSHOT.jar -config  .\Testsuite_DMAV\DMAV_V1_0_Validierung-meta.ini .\Testsuite_DMAV/DMAV_Grundstuecke_V1_0
 ```
 
 DMAV_Bodenbedeckung_V1_0:
 ```
-java -jar .\_Runner\interlis-testbed-runner-1.0.0\lib\interlis-testbed-runner-1.0.1.jar -v .\_Runner\ilivalidator-1.14.3\ilivalidator-1.14.3.jar -config  .\Testsuite_DMAV\DMAV_V1_0_Validierung-meta.ini .\Testsuite_DMAV/DMAV_Bodenbedeckung_V1_0
+java -jar .\_Runner\interlis-testbed-runner-1.0.1\lib\interlis-testbed-runner-1.0.1-SNAPSHOT.jar -v .\_Runner\ilivalidator-1.14.6\ilivalidator-1.14.6-SNAPSHOT.jar -config  .\Testsuite_DMAV\DMAV_V1_0_Validierung-meta.ini .\Testsuite_DMAV/DMAV_Bodenbedeckung_V1_0
 ```
 
 DMAV_Einzelobjekte_V1_0:
 ```
-java -jar .\_Runner\interlis-testbed-runner-1.0.0\lib\interlis-testbed-runner-1.0.1.jar -v .\_Runner\ilivalidator-1.14.3\ilivalidator-1.14.3.jar -config  .\Testsuite_DMAV\DMAV_V1_0_Validierung-meta.ini .\Testsuite_DMAV/DMAV_Einzelobjekte_V1_0
+java -jar .\_Runner\interlis-testbed-runner-1.0.1\lib\interlis-testbed-runner-1.0.1-SNAPSHOT.jar -v .\_Runner\ilivalidator-1.14.6\ilivalidator-1.14.6-SNAPSHOT.jar -config  .\Testsuite_DMAV\DMAV_V1_0_Validierung-meta.ini .\Testsuite_DMAV/DMAV_Einzelobjekte_V1_0
 ```
 
 ## Beschreibung der initialen Failcases
