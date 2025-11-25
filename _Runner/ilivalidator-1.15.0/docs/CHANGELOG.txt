@@ -1,3 +1,40 @@
+ilivalidator 1.15.0 (2025-09-xx)
+--------------------------------
+- new options --scope and --refmapping to evaluate reference data
+- iox-ili-1.24.2
+
+ilivalidator 1.14.9 (2025-08-05)
+--------------------------------
+- fix java.io.FileNotFoundException with version 1.14.8 (#450)
+
+ilivalidator 1.14.8 (2025-08-04)
+--------------------------------
+- Validator: new options mandatoryBaskets, optionalBaskets, bannedBaskets (#433)
+- Validator: report error when validating INTERLIS 2.4 translated XTF
+- Validator: show basket end state and/or source file version/md5
+- Validator: ILI2.3 fix validation of a repeated attribute (#446)
+- Validator: support data files with http/https URL
+- Validator: skip validation of reference data (#437)
+- iox-ili-1.24.1
+- ili2c-5.6.6
+
+
+ilivalidator 1.14.7 (2025-05-07)
+--------------------------------
+- Validator: ILI2.4 fix the outer and inner edges must not be coded as a single line (#442)
+- Validator: Falsch codierte Donut-Polygone werden nicht erkannt (#429)
+- new option --simpleBoundary to allow only simple lines as polygon boundary lines (#331)
+- iox-ili-1.24.0
+- ili2c-5.6.4
+
+ilivalidator 1.14.6 (2025-04-08)
+--------------------------------
+- fix missing index in error log for list/bag of simple types (#440)
+- fix object path evaluation with mixed case INTERLIS.UUIDOID (#416)
+- fix IllegalArgumentException with plausibility constraint (#441)
+- fix wrong object reported in set constraint error (#438)
+- iox-ili-1.23.5
+
 ilivalidator 1.14.5 (2025-01-14)
 --------------------------------
 - Xtf23Reader: fix xml whitespace/comment reading in alias table (#431)
