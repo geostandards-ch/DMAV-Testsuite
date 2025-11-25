@@ -18,6 +18,7 @@ IMPORTS DMAV_Rohrleitungen_V1_0;
 IMPORTS DMAV_HoheitsgrenzenAV_V1_0;
 IMPORTS DMAV_Toleranzstufen_V1_0;
 IMPORTS DMAV_Gebaeudeadressen_V1_0;
+IMPORTS Gemeinden95;
 
     VIEW TOPIC FixpunkteKategorie3_Validierung = 
     DEPENDS ON DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3;
@@ -41,11 +42,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 15 cm  (GT1)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH031252: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS1") => (Lagegenauigkeit < 0.15)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS1"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.15)
             );
-            */
 
             !!@ ilivalid.msg="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS2)";
             !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS2)";
@@ -53,10 +52,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 15 cm  (GT2)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.FixpunkteKategorie3_Validierung.v_LFP3.CH031253)
-            /* Pseudocode:
-            MANDATORY CONSTRAINT CH031253: IsInside(Union(ObjectPool_V1_0.Filter("DMAV_Toleranzstufen_V1_0.Toleranzstufe", "Toleranzstufen->Toleranzstufe==#TS2"),"Geometrie"),"Geometrie", THIS, "Geometrie") => (Lagegenauigkeit < 0.15);
-            */
+            MANDATORY CONSTRAINT CH031253: (
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS2"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.15)
+            );
 
             !!@ ilivalid.msg="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS3)";
             !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS3)";
@@ -64,12 +62,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 15 cm  (GT3)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH031254: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS3") => (Lagegenauigkeit < 0.15)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS3"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.15)
             );
-            */
-
 
             !!@ ilivalid.msg="Lagegenauigkeit von LFP3 muss <= 30 cm sein (TS4)";
             !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 30 cm sein (TS4)";
@@ -77,11 +72,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 30 cm  (GT4)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH031255: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS4") => (Lagegenauigkeit < 0.3)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS4"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.30)
             );
-            */
 
             !!@ ilivalid.msg="Lagegenauigkeit von LFP3 muss <= 30 cm sein (TS5)";
             !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 30 cm sein (TS5)";
@@ -89,11 +82,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 30 cm  (GT5)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH031256: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS5") => (Lagegenauigkeit < 0.3)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS5"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.30)
             );
-            */
 
             !!@ ilivalid.msg="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS1)";
             !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS1)";
@@ -101,11 +92,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 24 cm  (GT1)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH031454: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS1") => (Hoehengenauigkeit < 0.24)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS1"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.24)
             );
-            */
 
             !!@ ilivalid.msg="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS2)";
             !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS2)";
@@ -113,11 +102,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 24 cm  (GT2)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH031455: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS2") => (Hoehengenauigkeit < 0.24)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS2"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.24)
             );
-            */
 
             !!@ ilivalid.msg="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS3)";
             !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS3)";
@@ -125,11 +112,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 24 cm  (GT3)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH031456: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS3") => (Hoehengenauigkeit < 0.24)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS3"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.24)
             );
-            */
 
             !!@ ilivalid.msg="Hoehengenauigkeit von LFP3 muss <= 45 cm sein (TS4)";
             !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 45 cm sein (TS4)";
@@ -137,11 +122,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 45 cm  (GT4)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH031457: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS4") => (Hoehengenauigkeit < 0.45)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS4"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.45)
             );
-            */
 
             !!@ ilivalid.msg="Hoehengenauigkeit von LFP3 muss <= 45 cm sein (TS5)";
             !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 45 cm sein (TS5)";
@@ -149,11 +132,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 45 cm  (GT5)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH031458: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS5") => (Hoehengenauigkeit < 0.45)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS5"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.45)
             );
-            */
 
         END v_LFP3;
 
@@ -176,11 +157,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 30 cm  (GT1)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH033652: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS1") => (Lagegenauigkeit < 0.3)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS1"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.30)
             );
-            */
 
             !!@ ilivalid.msg="Lagegenauigkeit von HFP3 muss <= 30 cm sein (TS2)";
             !!@ ilivalid.msg_de="Lagegenauigkeit von HFP3 muss <= 30 cm sein (TS2)";
@@ -188,11 +167,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 30 cm  (GT2)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH033653: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS2") => (Lagegenauigkeit < 0.3)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS2"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.30)
             );
-            */
 
             !!@ ilivalid.msg="Lagegenauigkeit von HFP3 muss <= 60 cm sein (TS3)";
             !!@ ilivalid.msg_de="Lagegenauigkeit von HFP3 muss <= 60 cm sein (TS3)";
@@ -200,11 +177,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 60 cm  (GT3)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH033654: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS3") => (Lagegenauigkeit < 0.6)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS3"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.60)
             );
-            */
 
             !!@ ilivalid.msg="Lagegenauigkeit von HFP3 muss <= 150 cm sein (TS4)";
             !!@ ilivalid.msg_de="Lagegenauigkeit von HFP3 muss <= 150 cm sein (TS4)";
@@ -212,11 +187,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 150 cm  (GT4)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH033655: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS4") => (Lagegenauigkeit < 1.5)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS4"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 1.50)
             );
-            */
 
             !!@ ilivalid.msg="Lagegenauigkeit von HFP3 muss <= 300 cm sein (TS5)";
             !!@ ilivalid.msg_de="Lagegenauigkeit von HFP3 muss <= 300 cm sein (TS5)";
@@ -224,11 +197,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 300 cm  (GT5)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH033656: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS5") => (Lagegenauigkeit < 3.0)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS5"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 3.00)
             );
-            */
 
             !!@ ilivalid.msg="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS1)";
             !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS1)";
@@ -236,11 +207,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT1)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH033852: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS1") => (Hoehengenauigkeit < 0.021)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS1"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.021)
             );
-            */
 
             !!@ ilivalid.msg="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS2)";
             !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS2)";
@@ -248,11 +217,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT2)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH033853: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS2") => (Hoehengenauigkeit < 0.021)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS2"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.021)
             );
-            */
 
             !!@ ilivalid.msg="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS3)";
             !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS2)";
@@ -260,11 +227,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT3)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH033854: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS3") => (Hoehengenauigkeit < 0.021)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS3"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.021)
             );
-            */
 
             !!@ ilivalid.msg="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS4)";
             !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS4)";
@@ -272,11 +237,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT4)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH033855: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS4") => (Hoehengenauigkeit < 0.021)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS4"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.021)
             );
-            */
 
             !!@ ilivalid.msg="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS5)";
             !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS5)";
@@ -284,11 +247,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT5)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH033856: (
-                (DMAV_Toleranzstufe(Geometrie) == "TS5") => (Hoehengenauigkeit < 0.021)
+                DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS5"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.021)
             );
-            */
 
         END v_HFP3;
 
@@ -308,10 +269,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="Il perimetro deve coincidere con il perimetro di riferimento del bene immobile (Tolleranza 2 mm)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
-            SET CONSTRAINT CH043451 WHERE Objektstatus==#real:
-                DMAV_vergleichePerimeter(DMAV_Perimeter(ALL,"Geometrie"),"Liegenschaft",0.002);
-            */
+/*             SET CONSTRAINT CH043451: WHERE Objektstatus==#real: (
+                   DMAVTYM_Topologie_V1_0.isGeometrySpatiallyEqual(ALL, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Liegenschaft), "DEFINED(Grundstueck->Entstehung) AND NOT(DEFINED(Grundstueck->Untergang))"), >>DMAV_Grundstuecke_V1_0.Grundstuecke.Liegenschaft->Geometrie, 0.002)
+            );  */
 
             !!@ ilivalid.msg="Gebäude hat keinen EGID";
             !!@ ilivalid.msg_de="Gebäude hat keinen EGID";
@@ -319,17 +279,16 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="L'edificio non ha un EGID";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            MANDATORY CONSTRAINT CH043453 : (Objektstatus == #real) AND (Bodenbedeckungsart == #Gebaeude) => DEFINED(EGID);
+           /*  MANDATORY CONSTRAINT CH043453 : (
+                (Objektstatus == #real) AND (Bodenbedeckungsart == #Gebaeude) => DEFINED(EGID)
+            ); */
 
             !!@ ilivalid.msg="Der gleiche EGID (Topic BB) wird für verschiedene Gebäude verwendet";
             !!@ ilivalid.msg_de="Der gleiche EGID (Topic BB) wird für verschiedene Gebäude verwendet";
             !!@ ilivalid.msg_fr="Le même EGID (topic CS) est renseigné pour plusieurs bâtiments différents";
             !!@ ilivalid.msg_it="Lo stesso EGID (topic CS) è assegnato a più edifici differenti";
             !! Umsetzung Phase 1; -> Kommentar Romedi: Gilt nur innerhalb eines Operats. Vergleich eindeutige EGID in Gebäudenummer und Gebäudeeingang
-            
-            /*SET CONSTRAINT GWRA09: WHERE Bodenbedeckungsart==#Gebaeude:
-                DMAV_Unique(ALL,"EGID");*/
-            UNIQUE GWRA09 : WHERE Bodenbedeckungsart==#Gebaeude: EGID;
+            /* UNIQUE GWRA09 : WHERE Bodenbedeckungsart==#Gebaeude: EGID; */
 
             !!@ ilivalid.msg="EGID existiert nicht im GWR";
             !!@ ilivalid.msg_de="EGID existiert nicht im GWR";
@@ -351,15 +310,14 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg="Messpunkt darf kein Grenzpunkt, LFP1, LFP2 oder LFP3 sein";
             !!@ ilivalid.msg_de="Messpunkt darf kein Grenzpunkt, LFP1, LFP2 oder LFP3 sein";
             !!@ ilivalid.msg_fr="Le PointMesure ne doit pas être un point_limite, PFP1, PFP2 ou PFP3";
-            !!@ ilivalid.msg_it="Il punto di misura non deve essere un punto limite, PFP1, PFP2 o PFP3.";
-            !! Kategorie: modellübergreifend
+            !!@ ilivalid.msg_it="Il punto di misura non deve essere un punto limite, PFP1, PFP2 o PFP3";
+            !! Kategorie: modellübergreifend & @geow Dienstbezug
             !! Umsetzung Phase 2;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Bodenbedeckung_Validierung.v_Bodenbedeckung.CH043452)
-            /* Pseudocode:
-            MANDATORY CONSTRAINT CH043452: (
-                NOT(IsPointInPoints(THIS, "Geometrie","DMAV_FixpunkteAVKategorie3_V1_0.LFP3", "Geometrie")) AND NOT(IsPointInPoints(THIS, "Geometrie","DMAV_FixpunkteAVKategorie2_V1_0.LFP2", "Geometrie")) AND NOT(IsPointInPoints(THIS, "Geometrie","DMAV_Grundstuecke_V1_0.Grenzpunkt", "Geometrie"))
-            );
-            */
+/*             MANDATORY CONSTRAINT CH043452 : (
+                NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, "Geometrie","DMAV_FixpunkteAVKategorie3_V1_0.LFP3", "Geometrie")) AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, "Geometrie","DMAV_Grundstuecke_V1_0.Grenzpunkt", "Geometrie"))
+                !! NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, "Geometrie","DMAV_FixpunkteAVKategorie3_V1_0.LFP3", "Geometrie")) AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, "Geometrie","DMAV_FixpunkteAVKategorie2_V1_0.LFP2", "Geometrie")) AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, "Geometrie","DMAV_Grundstuecke_V1_0.Grenzpunkt", "Geometrie"))
+            ); */
         
         END v_Messpunkt;
 
@@ -729,10 +687,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Nomenklatur_Validierung.v_Flurname.CH070951)
-            /* Pseudocode:
-            SET CONSTRAINT CH070951 WHERE DEFINED(Entstehung) AND NOT(DEFINED(Untergang)):
-                IsGeometryCongruent(Union(ALL, "Geometrie"), "Geometrie", Union(FindObjects(DMAV_Grundstuecke_V1_0.Liegenschaften, "WHERE DEFINED(Grundstueck->Entstehung) AND DEFINED(Grundstueck->Entstehung->Grundbucheintrag) AND (NOT(DEFINED(Grundstueck->Untergang)) OR NOT(DEFINED(Grundstueck->Untergang->Grundbucheintrag)))"), "Geometrie"), "Geometrie", 0.002)
-            */
+            SET CONSTRAINT CH070951: WHERE DEFINED(Entstehung) AND NOT(DEFINED(Untergang)): (
+                    DMAVTYM_Topologie_V1_0.isGeometrySpatiallyEqual(ALL, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Liegenschaft), "DEFINED(Grundstueck->Entstehung) AND NOT(DEFINED(Grundstueck->Untergang))"), >>DMAV_Grundstuecke_V1_0.Grundstuecke.Liegenschaft->Geometrie, 0.002)
+            );
 
         END v_Flurname;
 
@@ -870,7 +827,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
     VIEW TOPIC Rohrleitungen_Validierung = 
     DEPENDS ON DMAV_Rohrleitungen_V1_0.Rohrleitungen;
   
-        VIEW v_Leitungsobjekt
+/*         VIEW v_Leitungsobjekt
             PROJECTION OF DMAV_Rohrleitungen_V1_0.Rohrleitungen.Leitungsobjekt;
         =
             ALL OF Leitungsobjekt;
@@ -883,7 +840,22 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
                 Punktelement->Hoehengeometrie <> 0.0
             );
 
-        END v_Leitungsobjekt;
+        END v_Leitungsobjekt; */
+
+       VIEW v_Messpunkt
+            PROJECTION OF DMAV_Rohrleitungen_V1_0.Rohrleitungen.Messpunkt;
+        =
+            ALL OF Messpunkt;
+
+            !!@ ilivalid.msg="Hoehe darf nicht 0.0 sein";
+            !!@ ilivalid.msg_de="Hoehe darf nicht 0.0 sein";
+            !!@ ilivalid.msg_fr="L'altitude ne peut pas être égale à 0";
+            !!@ ilivalid.msg_it="La quota non puo' essere 0";
+            MANDATORY CONSTRAINT CH092551: (
+                Messpunkt->Hoehengeometrie <> 0.0
+            );
+
+        END v_Messpunkt; 
 
     END Rohrleitungen_Validierung;
 
@@ -902,9 +874,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.HoheitsgrenzenAV_Validierung.v_Gemeinde.CH112352)
-            /* Pseudocode:
-            MANDATORY CONSTRAINT CH112352: INTERLIS.objectCount(ObjectPool_V1_0.Filter("SWISSBOUNDARIES.Hoheitsgrenzen.Gemeinden","BFSNR={BFSNummer} AND NAME={Name}"))>0;
-            */
+            MANDATORY CONSTRAINT CH112352: (
+                INTERLIS.objectCount(ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>Gemeinden95.Gemeinden.Gemeinde),"BFSNR=449"))>0
+            );
 
         END v_Gemeinde;
 
@@ -919,10 +891,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="Il perimetro deve coincidere con il perimetro di riferimento del bene immobile (Tolleranza 2 mm)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
-            SET CONSTRAINT CH113051 WHERE DEFINED(Entstehung) AND NOT(DEFINED(Untergang)):
-                DMAV_vergleichePerimeter(DMAV_Perimeter(ALL,"Geometrie"),"Liegenschaft",0.002);
-            */
+            SET CONSTRAINT CH113051: WHERE DEFINED(Entstehung) AND NOT(DEFINED(Untergang)): (
+                    DMAVTYM_Topologie_V1_0.isGeometrySpatiallyEqual(ALL, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Liegenschaft), "DEFINED(Grundstueck->Entstehung) AND NOT(DEFINED(Grundstueck->Untergang))"), >>DMAV_Grundstuecke_V1_0.Grundstuecke.Liegenschaft->Geometrie, 0.002)
+            );
         
         END v_Gemeindegrenze;
 
@@ -975,10 +946,9 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_it="Il perimetro deve coincidere con il perimetro di riferimento del bene immobile (Tolleranza 2 mm)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
-            SET CONSTRAINT CH160351 WHERE DEFINED(Entstehung) AND NOT(DEFINED(Untergang)):
-                DMAV_vergleichePerimeter(DMAV_Perimeter(ALL,"Geometrie"),"Liegenschaft",0.002);
-            */
+            SET CONSTRAINT CH160351: WHERE DEFINED(Entstehung) AND NOT(DEFINED(Untergang)): (
+                    DMAVTYM_Topologie_V1_0.isGeometrySpatiallyEqual(ALL, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Liegenschaft), "DEFINED(Grundstueck->Entstehung) AND NOT(DEFINED(Grundstueck->Untergang))"), >>DMAV_Grundstuecke_V1_0.Grundstuecke.Liegenschaft->Geometrie, 0.002)
+            );
         
         END v_Toleranzstufe;
 
