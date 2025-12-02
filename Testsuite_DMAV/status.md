@@ -76,28 +76,28 @@ Constraints ready: 69%
 | DMAV_HoheitsgrenzenAV_V1_0 | Gemeindegrenze  | CH030703 | ✅ | ✅ |
 | DMAV_HoheitsgrenzenAV_V1_0 | Gemeindegrenze_Gueltig  | CH031101 | ✅ | ✅ |
 | DMAV_HoheitsgrenzenAV_V1_0 | GemeindeGemeindegrenze  | CH031201 | ✅ | ✅ |
-| DMAV_V1_0_Validierung | v_LFP3 | CH031151 |  | ✅ |
-| DMAV_V1_0_Validierung | v_LFP3 | CH031252 |  |  |
+| DMAV_V1_0_Validierung | v_LFP3 | CH031151 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_LFP3 | CH031252 | ✅ |  |
 | DMAV_V1_0_Validierung | v_LFP3 | CH031253 | ✅ |  |
-| DMAV_V1_0_Validierung | v_LFP3 | CH031254 |  |  |
-| DMAV_V1_0_Validierung | v_LFP3 | CH031255 |  |  |
-| DMAV_V1_0_Validierung | v_LFP3 | CH031256 |  |  |
-| DMAV_V1_0_Validierung | v_LFP3 | CH031454 |  |  |
-| DMAV_V1_0_Validierung | v_LFP3 | CH031455 |  |  |
-| DMAV_V1_0_Validierung | v_LFP3 | CH031456 |  |  |
-| DMAV_V1_0_Validierung | v_LFP3 | CH031457 |  |  |
-| DMAV_V1_0_Validierung | v_LFP3 | CH031458 |  |  |
-| DMAV_V1_0_Validierung | v_HFP3 | CH033551 |  | ✅ |
-| DMAV_V1_0_Validierung | v_HFP3 | CH033652 |  |  |
-| DMAV_V1_0_Validierung | v_HFP3 | CH033653 |  |  |
-| DMAV_V1_0_Validierung | v_HFP3 | CH033654 |  |  |
-| DMAV_V1_0_Validierung | v_HFP3 | CH033655 |  |  |
-| DMAV_V1_0_Validierung | v_HFP3 | CH033656 |  |  |
-| DMAV_V1_0_Validierung | v_HFP3 | CH033852 |  |  |
-| DMAV_V1_0_Validierung | v_HFP3 | CH033853 |  |  |
-| DMAV_V1_0_Validierung | v_HFP3 | CH033854 |  |  |
-| DMAV_V1_0_Validierung | v_HFP3 | CH033855 |  |  |
-| DMAV_V1_0_Validierung | v_HFP3 | CH033856 |  |  |
+| DMAV_V1_0_Validierung | v_LFP3 | CH031254 | ✅ |  |
+| DMAV_V1_0_Validierung | v_LFP3 | CH031255 | ✅ |  |
+| DMAV_V1_0_Validierung | v_LFP3 | CH031256 | ✅ |  |
+| DMAV_V1_0_Validierung | v_LFP3 | CH031454 | ✅ |  |
+| DMAV_V1_0_Validierung | v_LFP3 | CH031455 | ✅ |  |
+| DMAV_V1_0_Validierung | v_LFP3 | CH031456 | ✅ |  |
+| DMAV_V1_0_Validierung | v_LFP3 | CH031457 | ✅ |  |
+| DMAV_V1_0_Validierung | v_LFP3 | CH031458 | ✅ |  |
+| DMAV_V1_0_Validierung | v_HFP3 | CH033551 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_HFP3 | CH033652 | ✅ |  |
+| DMAV_V1_0_Validierung | v_HFP3 | CH033653 | ✅ |  |
+| DMAV_V1_0_Validierung | v_HFP3 | CH033654 | ✅ |  |
+| DMAV_V1_0_Validierung | v_HFP3 | CH033655 | ✅ |  |
+| DMAV_V1_0_Validierung | v_HFP3 | CH033656 | ✅ |  |
+| DMAV_V1_0_Validierung | v_HFP3 | CH033852 | ✅ |  |
+| DMAV_V1_0_Validierung | v_HFP3 | CH033853 | ✅ |  |
+| DMAV_V1_0_Validierung | v_HFP3 | CH033854 | ✅ |  |
+| DMAV_V1_0_Validierung | v_HFP3 | CH033855 | ✅ |  |
+| DMAV_V1_0_Validierung | v_HFP3 | CH033856 | ✅ |  |
 | DMAV_V1_0_Validierung | v_Bodenbedeckung | CH043451 |  |  |
 | DMAV_V1_0_Validierung | v_Bodenbedeckung | CH043453 |  | ✅ |
 | DMAV_V1_0_Validierung | v_Bodenbedeckung | GWRA09 |  |  |
