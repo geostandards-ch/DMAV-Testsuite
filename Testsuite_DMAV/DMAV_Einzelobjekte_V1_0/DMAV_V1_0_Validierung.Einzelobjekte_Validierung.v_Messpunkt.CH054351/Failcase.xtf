@@ -41,25 +41,21 @@
         <ili:sender>ili2fme-7.2.1-aa3c48c318db91416e944ac8d2fb0142426ab234</ili:sender>
     </ili:headersection>
     <ili:datasection>
-        <!-- Der MANDATORY CONSTRAINT CH052179 wird verletzt, indem das Objekt einem falschen Geometrietyp zugeordnet wird. -->
+        <!-- Der MANDATORY CONSTRAINT CH054351 wird verletzt, durch einen Messpunkt mit den gleichen Koordinaten wie ein existierendern LFP3 -->
         <DMAV_Einzelobjekte_V1_0:Einzelobjekte ili:bid="39aa2dfa-85b8-43f7-b7a4-58ec8a748e6e" ili:kind="UPDATE">
-            <DMAV_Einzelobjekte_V1_0:Einzelobjekt ili:tid="fd741cfe-d170-4b74-a013-dfdf8bf95859" ili:operation="UPDATE">
-                <DMAV_Einzelobjekte_V1_0:Qualitaetsstandard>AV93</DMAV_Einzelobjekte_V1_0:Qualitaetsstandard>
-                <DMAV_Einzelobjekte_V1_0:Einzelobjektart>Jauchengrube_Mistlege</DMAV_Einzelobjekte_V1_0:Einzelobjektart>
-                <DMAV_Einzelobjekte_V1_0:Punktelement>
-                    <DMAV_Einzelobjekte_V1_0:Punktelement>
-                        <DMAV_Einzelobjekte_V1_0:Geometrie>
-                            <geom:coord>
-                                <geom:c1>2589415.592</geom:c1>
-                                <geom:c2>1226139.603</geom:c2>
-                            </geom:coord>
-                        </DMAV_Einzelobjekte_V1_0:Geometrie>
-                        <DMAV_Einzelobjekte_V1_0:SymbolOri>100.0</DMAV_Einzelobjekte_V1_0:SymbolOri>
-                    </DMAV_Einzelobjekte_V1_0:Punktelement>
-                </DMAV_Einzelobjekte_V1_0:Punktelement>
-                <DMAV_Einzelobjekte_V1_0:Objektstatus>real</DMAV_Einzelobjekte_V1_0:Objektstatus>
-                <DMAV_Einzelobjekte_V1_0:Entstehung ili:ref="9dca4dca-d89e-4d98-bce6-029858b91683"></DMAV_Einzelobjekte_V1_0:Entstehung>
-            </DMAV_Einzelobjekte_V1_0:Einzelobjekt>
+			<DMAV_Einzelobjekte_V1_0:Messpunkt ili:tid="39a6457d-696b-4aea-b48d-d9fe64ea91e7" ili:operation="UPDATE">
+				<DMAV_Einzelobjekte_V1_0:Nummer>8872640069</DMAV_Einzelobjekte_V1_0:Nummer>
+				<DMAV_Einzelobjekte_V1_0:Geometrie>
+					<geom:coord>
+						<geom:c1>2591336.546</geom:c1>
+						<geom:c2>1226009.484</geom:c2>
+					</geom:coord>
+				</DMAV_Einzelobjekte_V1_0:Geometrie>
+				<DMAV_Einzelobjekte_V1_0:Lagegenauigkeit>0.04</DMAV_Einzelobjekte_V1_0:Lagegenauigkeit>
+				<DMAV_Einzelobjekte_V1_0:IstLagezuverlaessig>true</DMAV_Einzelobjekte_V1_0:IstLagezuverlaessig>
+				<DMAV_Einzelobjekte_V1_0:IstExaktDefiniert>true</DMAV_Einzelobjekte_V1_0:IstExaktDefiniert>
+				<DMAV_Einzelobjekte_V1_0:Entstehung ili:ref="9dca4dca-d89e-4d98-bce6-029858b91683"/>
+			</DMAV_Einzelobjekte_V1_0:Messpunkt>
         </DMAV_Einzelobjekte_V1_0:Einzelobjekte>
     </ili:datasection>
 </ili:transfer>

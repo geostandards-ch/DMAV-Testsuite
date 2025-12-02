@@ -18,7 +18,6 @@ IMPORTS DMAV_Rohrleitungen_V1_0;
 IMPORTS DMAV_HoheitsgrenzenAV_V1_0;
 IMPORTS DMAV_Toleranzstufen_V1_0;
 IMPORTS DMAV_Gebaeudeadressen_V1_0;
-IMPORTS Gemeinden95;
 
     VIEW TOPIC FixpunkteKategorie3_Validierung = 
     DEPENDS ON DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3;
@@ -269,9 +268,9 @@ IMPORTS Gemeinden95;
             !!@ ilivalid.msg_it="Il perimetro deve coincidere con il perimetro di riferimento del bene immobile (Tolleranza 2 mm)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-/*             SET CONSTRAINT CH043451: WHERE Objektstatus==#real: (
+            SET CONSTRAINT CH043451: WHERE Objektstatus==#real: (
                    DMAVTYM_Topologie_V1_0.isGeometrySpatiallyEqual(ALL, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Liegenschaft), "DEFINED(Grundstueck->Entstehung) AND NOT(DEFINED(Grundstueck->Untergang))"), >>DMAV_Grundstuecke_V1_0.Grundstuecke.Liegenschaft->Geometrie, 0.002)
-            );  */
+            );  
 
             !!@ ilivalid.msg="Gebäude hat keinen EGID";
             !!@ ilivalid.msg_de="Gebäude hat keinen EGID";
@@ -279,16 +278,16 @@ IMPORTS Gemeinden95;
             !!@ ilivalid.msg_it="L'edificio non ha un EGID";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-           /*  MANDATORY CONSTRAINT CH043453 : (
+            MANDATORY CONSTRAINT CH043453 : (
                 (Objektstatus == #real) AND (Bodenbedeckungsart == #Gebaeude) => DEFINED(EGID)
-            ); */
+            ); 
 
             !!@ ilivalid.msg="Der gleiche EGID (Topic BB) wird für verschiedene Gebäude verwendet";
             !!@ ilivalid.msg_de="Der gleiche EGID (Topic BB) wird für verschiedene Gebäude verwendet";
             !!@ ilivalid.msg_fr="Le même EGID (topic CS) est renseigné pour plusieurs bâtiments différents";
             !!@ ilivalid.msg_it="Lo stesso EGID (topic CS) è assegnato a più edifici differenti";
             !! Umsetzung Phase 1; -> Kommentar Romedi: Gilt nur innerhalb eines Operats. Vergleich eindeutige EGID in Gebäudenummer und Gebäudeeingang
-            /* UNIQUE GWRA09 : WHERE Bodenbedeckungsart==#Gebaeude: EGID; */
+            UNIQUE GWRA09 : WHERE Bodenbedeckungsart==#Gebaeude: EGID;
 
             !!@ ilivalid.msg="EGID existiert nicht im GWR";
             !!@ ilivalid.msg_de="EGID existiert nicht im GWR";
@@ -314,10 +313,10 @@ IMPORTS Gemeinden95;
             !! Kategorie: modellübergreifend & @geow Dienstbezug
             !! Umsetzung Phase 2;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Bodenbedeckung_Validierung.v_Bodenbedeckung.CH043452)
-/*             MANDATORY CONSTRAINT CH043452 : (
-                NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, "Geometrie","DMAV_FixpunkteAVKategorie3_V1_0.LFP3", "Geometrie")) AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, "Geometrie","DMAV_Grundstuecke_V1_0.Grenzpunkt", "Geometrie"))
-                !! NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, "Geometrie","DMAV_FixpunkteAVKategorie3_V1_0.LFP3", "Geometrie")) AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, "Geometrie","DMAV_FixpunkteAVKategorie2_V1_0.LFP2", "Geometrie")) AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, "Geometrie","DMAV_Grundstuecke_V1_0.Grenzpunkt", "Geometrie"))
-            ); */
+            MANDATORY CONSTRAINT CH043452 : (
+                NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3), >>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3->Geometrie))
+                AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3), >>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3->Geometrie))
+            );
         
         END v_Messpunkt;
 
@@ -666,15 +665,6 @@ IMPORTS Gemeinden95;
             MANDATORY CONSTRAINT CH052178: (
                 (Einzelobjektart == #uebriger_Gebaeudeteil) => (objectCount(Punktelement) == 0)
             );
-			
-		    !!@ ilivalid.msg="Bei Art=Jauchengrube_Mistlege darf die Geometrie nicht in Punktelement sein";
-            !!@ ilivalid.msg_de="Bei Art=Jauchengrube_Mistlege darf die Geometrie nicht in Punktelement sein";
-            !!@ ilivalid.msg_fr="Pour les objets du Genre=fosse_purin_tas_fumier, la géométrie ne peut pas être définie dans la table Element_ponctuel";
-            !!@ ilivalid.msg_it="Per il genere Pozzo nero la geometria non deve essere del tipo puntiforme";
-            !! AGI SH: Failcase umgesetzt;
-            MANDATORY CONSTRAINT CH052179: (
-                (Einzelobjektart == #Jauchengrube_Mistlege) => (objectCount(Punktelement) == 0)
-            );
 
             !!@ ilivalid.msg="EGID existiert nicht im GWR";
             !!@ ilivalid.msg_de="EGID existiert nicht im GWR";
@@ -700,11 +690,9 @@ IMPORTS Gemeinden95;
             !!@ ilivalid.msg_it="Il punto di misura non deve essere un punto limite, PFP1, PFP2 o PFP3.";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-            /*
             MANDATORY CONSTRAINT CH054351: (
-                NOT(DMAV_PunktIn(Geometrie,"LFP1,LFP2,LFP3,Grenzpunkt"))
+                NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3), >>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3->Geometrie))
             );
-            */
 
         END v_Messpunkt;
 
@@ -912,9 +900,9 @@ IMPORTS Gemeinden95;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.HoheitsgrenzenAV_Validierung.v_Gemeinde.CH112352)
-            MANDATORY CONSTRAINT CH112352: (
+/*             MANDATORY CONSTRAINT CH112352: (
                 INTERLIS.objectCount(ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>Gemeinden95.Gemeinden.Gemeinde),"BFSNR=449"))>0
-            );
+            ); */
 
         END v_Gemeinde;
 
