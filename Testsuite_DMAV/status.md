@@ -103,43 +103,43 @@ Constraints ready: 69%
 | DMAV_V1_0_Validierung | v_Bodenbedeckung | GWRA09 |  |  |
 | DMAV_V1_0_Validierung | v_Bodenbedeckung | GWRC02a |  |  |
 | DMAV_V1_0_Validierung | v_Messpunkt | CH043452 | ✅ |  |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051151 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051152 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051153 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051154 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051155 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051156 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051157 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051158 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051159 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051160 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051161 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051162 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051163 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051164 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051165 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051651 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051652 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051653 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051659 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051660 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052151 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052152 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052153 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052154 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052155 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052156 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052157 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052158 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052159 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052162 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052163 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052164 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052165 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052166 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052171 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052177 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052178 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051151 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051152 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051153 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051154 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051155 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051156 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051157 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051158 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051159 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051160 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051161 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051162 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051163 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051164 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051165 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051651 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051652 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051653 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051659 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH051660 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052151 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052152 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052153 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052154 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052155 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052156 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052157 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052158 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052159 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052162 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052163 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052164 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052165 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052166 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052171 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052177 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052178 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Einzelobjekt | GWRC02c |  |  |
 | DMAV_V1_0_Validierung | v_Messpunkt | CH054351 |  |  |
 | DMAV_V1_0_Validierung | v_Flurname | CH070951 | ✅ |  |
