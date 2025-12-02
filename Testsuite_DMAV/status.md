@@ -98,9 +98,9 @@ Constraints ready: 69%
 | DMAV_V1_0_Validierung | v_HFP3 | CH033854 |  |  |
 | DMAV_V1_0_Validierung | v_HFP3 | CH033855 |  |  |
 | DMAV_V1_0_Validierung | v_HFP3 | CH033856 |  |  |
-| DMAV_V1_0_Validierung | v_Bodenbedeckung | CH043451 |  |  |
-| DMAV_V1_0_Validierung | v_Bodenbedeckung | CH043453 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Bodenbedeckung | GWRA09 |  |  |
+| DMAV_V1_0_Validierung | v_Bodenbedeckung | CH043451 | ✅ |  |
+| DMAV_V1_0_Validierung | v_Bodenbedeckung | CH043453 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Bodenbedeckung | GWRA09 | ✅ |  |
 | DMAV_V1_0_Validierung | v_Bodenbedeckung | GWRC02a |  |  |
 | DMAV_V1_0_Validierung | v_Messpunkt | CH043452 | ✅ |  |
 | DMAV_V1_0_Validierung | v_Einzelobjekt | CH051151 | ✅ | ✅ |
