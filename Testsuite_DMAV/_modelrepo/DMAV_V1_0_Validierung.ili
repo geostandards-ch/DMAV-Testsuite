@@ -328,6 +328,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Flächenperimeter muss mit Referenzperimeter der Liegenschaften übereinstimmen (Toleranz 2 mm)";
             !!@ ilivalid.msg_fr="Le périmètre doit être identique au périmètre de référence des biens-fonds (tolérance 2 mm)";
             !!@ ilivalid.msg_it="Il perimetro deve coincidere con il perimetro di riferimento del bene immobile (Tolleranza 2 mm)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             /*
@@ -339,6 +340,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Gebäude hat keinen EGID";
             !!@ ilivalid.msg_fr="Le bâtiment n'a pas d'EGID";
             !!@ ilivalid.msg_it="L'edificio non ha un EGID";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH043453 : (Objektstatus == #real) AND (Bodenbedeckungsart == #Gebaeude) => DEFINED(EGID);
@@ -347,6 +349,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Der gleiche EGID (Topic BB) wird für verschiedene Gebäude verwendet";
             !!@ ilivalid.msg_fr="Le même EGID (topic CS) est renseigné pour plusieurs bâtiments différents";
             !!@ ilivalid.msg_it="Lo stesso EGID (topic CS) è assegnato a più edifici differenti";
+            !! AGI SH: Failcase umgesetzt;
             !! Umsetzung Phase 1; -> Kommentar Romedi: Gilt nur innerhalb eines Operats. Vergleich eindeutige EGID in Gebäudenummer und Gebäudeeingang
             
             /*SET CONSTRAINT GWRA09: WHERE Bodenbedeckungsart==#Gebaeude:
