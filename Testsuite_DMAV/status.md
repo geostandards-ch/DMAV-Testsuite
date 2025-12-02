@@ -140,6 +140,7 @@ Constraints ready: 69%
 | DMAV_V1_0_Validierung | v_Einzelobjekt | CH052171 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Einzelobjekt | CH052177 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Einzelobjekt | CH052178 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Einzelobjekt | CH052179 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Einzelobjekt | GWRC02c |  |  |
 | DMAV_V1_0_Validierung | v_Messpunkt | CH054351 |  |  |
 | DMAV_V1_0_Validierung | v_Flurname | CH070951 | ✅ |  |
