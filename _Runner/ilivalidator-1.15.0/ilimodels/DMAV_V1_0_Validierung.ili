@@ -31,6 +31,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Hoehengeometrie darf nicht gleich 0.0 sein";
             !!@ ilivalid.msg_fr="Geomaltimetrie ne peut pas être égale à 0.0";
             !!@ ilivalid.msg_it="La quota non puo' essere uguale a 0.0, in caso di non determinazione della quota lasciare il campo vuoto";
+            !! AGI SH: Failcase umgesetzt;
             MANDATORY CONSTRAINT CH031151: (
                 Hoehengeometrie <> 0.0
             );
@@ -39,6 +40,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS1)";
             !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFP3 doit être <= 15 cm (NT1)";
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 15 cm  (GT1)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH031252: (
@@ -49,6 +51,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS2)";
             !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFP3 doit être <= 15 cm (NT2)";
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 15 cm  (GT2)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH031253: (
@@ -59,6 +62,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS3)";
             !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFP3 doit être <= 15 cm (NT3)";
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 15 cm  (GT3)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH031254: (
@@ -69,6 +73,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 30 cm sein (TS4)";
             !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFP3 doit être <= 30 cm (NT4)";
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 30 cm  (GT4)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH031255: (
@@ -79,6 +84,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 30 cm sein (TS5)";
             !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFP3 doit être <= 30 cm (NT5)";
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 30 cm  (GT5)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH031256: (
@@ -89,6 +95,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS1)";
             !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFP3 doit être <= 24 cm (NT1)";
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 24 cm  (GT1)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH031454: (
@@ -99,6 +106,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS2)";
             !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFP3 doit être <= 24 cm (NT2)";
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 24 cm  (GT2)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH031455: (
@@ -109,6 +117,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS3)";
             !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFP3 doit être <= 24 cm (NT3)";
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 24 cm  (GT3)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH031456: (
@@ -119,6 +128,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 45 cm sein (TS4)";
             !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFP3 doit être <= 45 cm (NT4)";
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 45 cm  (GT4)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH031457: (
@@ -129,6 +139,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 45 cm sein (TS5)";
             !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFP3 doit être <= 45 cm (NT5)";
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 45 cm  (GT5)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH031458: (
@@ -146,6 +157,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Hoehengeometrie darf nicht gleich 0.0 sein";
             !!@ ilivalid.msg_fr="GeomAlt ne peut pas être égale à 0";
             !!@ ilivalid.msg_it="La quota non puo' essere uguale a 0";
+            !! AGI SH: Failcase umgesetzt;
             MANDATORY CONSTRAINT CH033551: (
                 Hoehengeometrie <> 0.0
             );
@@ -154,6 +166,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Lagegenauigkeit von HFP3 muss <= 30 cm sein (TS1)";
             !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFA3 doit être <= 30 cm (NT1)";
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 30 cm  (GT1)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH033652: (
@@ -164,6 +177,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Lagegenauigkeit von HFP3 muss <= 30 cm sein (TS2)";
             !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFA3 doit être <= 30 cm (NT2)";
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 30 cm  (GT2)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH033653: (
@@ -174,6 +188,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Lagegenauigkeit von HFP3 muss <= 60 cm sein (TS3)";
             !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFA3 doit être <= 60 cm (NT3)";
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 60 cm  (GT3)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH033654: (
@@ -184,6 +199,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Lagegenauigkeit von HFP3 muss <= 150 cm sein (TS4)";
             !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFA3 doit être <= 150 cm (NT4)";
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 150 cm  (GT4)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH033655: (
@@ -194,6 +210,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Lagegenauigkeit von HFP3 muss <= 300 cm sein (TS5)";
             !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFA3 doit être <= 300 cm (NT5)";
             !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 300 cm  (GT5)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH033656: (
@@ -204,6 +221,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS1)";
             !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT1)";
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT1)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH033852: (
@@ -214,6 +232,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS2)";
             !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT2)";
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT2)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH033853: (
@@ -224,6 +243,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS2)";
             !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT3)";
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT3)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH033854: (
@@ -234,6 +254,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS4)";
             !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT4)";
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT4)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH033855: (
@@ -244,6 +265,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS5)";
             !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT5)";
             !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT5)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH033856: (
@@ -266,6 +288,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Flächenperimeter muss mit Referenzperimeter der Liegenschaften übereinstimmen (Toleranz 2 mm)";
             !!@ ilivalid.msg_fr="Le périmètre doit être identique au périmètre de référence des biens-fonds (tolérance 2 mm)";
             !!@ ilivalid.msg_it="Il perimetro deve coincidere con il perimetro di riferimento del bene immobile (Tolleranza 2 mm)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             SET CONSTRAINT CH043451: WHERE Objektstatus==#real: (
@@ -276,6 +299,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Gebäude hat keinen EGID";
             !!@ ilivalid.msg_fr="Le bâtiment n'a pas d'EGID";
             !!@ ilivalid.msg_it="L'edificio non ha un EGID";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH043453 : (
@@ -286,6 +310,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Der gleiche EGID (Topic BB) wird für verschiedene Gebäude verwendet";
             !!@ ilivalid.msg_fr="Le même EGID (topic CS) est renseigné pour plusieurs bâtiments différents";
             !!@ ilivalid.msg_it="Lo stesso EGID (topic CS) è assegnato a più edifici differenti";
+            !! AGI SH: Failcase umgesetzt;
             !! Umsetzung Phase 1; -> Kommentar Romedi: Gilt nur innerhalb eines Operats. Vergleich eindeutige EGID in Gebäudenummer und Gebäudeeingang
             UNIQUE GWRA09 : WHERE Bodenbedeckungsart==#Gebaeude: EGID;
 
