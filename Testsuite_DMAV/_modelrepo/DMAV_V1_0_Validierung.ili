@@ -815,6 +815,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="EGRID darf nicht mit der Zahl 0 beginnen";
             !!@ ilivalid.msg_fr="L'EGRID ne doit pas commencer par un 0 (zéro)";
             !!@ ilivalid.msg_it="L'EGRID non deve comincare con uno 0 (zero)";
+            !! AGI SH: Failcase umgesetzt;
             MANDATORY CONSTRAINT CH085554: (
                 substring(EGRID,0,1) != "0" 
             );
@@ -823,6 +824,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Bei Grundstueck mit istVollstaendigkeit=true und mit nur 1 Objekt in Liegenschaft muss NummerTeilgrundstueck leer sein";
             !!@ ilivalid.msg_fr="Pour un immeuble dont l'attribut Integralite=complet, et formé d'un seul objet dans la table Bien_fonds, l'attribut PartieNumeroImmeuble doit être vide";
             !!@ ilivalid.msg_it="Per i fondi con integralità = si, e un solo oggetto in Bene_immobile, numero_parte_fondo deve restare vuoto";
+            !! AGI SH: Failcase umgesetzt;
             MANDATORY CONSTRAINT CH086852: (
                 (THIS->IstVollstaendig AND elementCount(Liegenschaft) == 1) => NOT(DEFINED(Liegenschaft->NummerTeilgrundstueck)) 
             );
@@ -871,6 +873,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="NummerTeilgrundstueck muss innerhalb des gleichen Grundstuecks eindeutig sein";
             !!@ ilivalid.msg_fr="L'attribut PartieNumeroImmeubledoit être univoque pour un même immeuble";
             !!@ ilivalid.msg_it="Il NumeroParteFondo deve essere univoco all'interno dello stesso fondo";
+            !! AGI SH: Failcase umgesetzt;
             UNIQUE CH086851: NummerTeilgrundstueck, Grundstueck;
 
         END v_Liegenschaft;
@@ -884,6 +887,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="NummerTeilgrundstueck muss innerhalb des gleichen Grundstuecks eindeutig sein";
             !!@ ilivalid.msg_fr="L'attribut PartieNumeroImmeubledoit être univoque pour un même immeuble";
             !!@ ilivalid.msg_it="Il NumeroParteFondo deve essere univoco all'interno dello stesso fondo";
+            !! AGI SH: Failcase umgesetzt;
             UNIQUE CH087251: NummerTeilgrundstueck, Grundstueck;
 
             !!@ ilivalid.msg="Bei Grundstueck mit IstVollstaendig=true und mit nur 1 Objekt in SelbstaendigDauerndesRecht muss NummerTeilgrundstueck leer sein";
@@ -917,12 +921,14 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="NummerTeilgrundstueck muss innerhalb des gleichen Grundstücks eindeutig sein";
             !!@ ilivalid.msg_fr="PartieNumeroImmeuble doit être univoque à l'intérieur du même immeuble";
             !!@ ilivalid.msg_it="Il NumeroParteFondo deve essere univoco all'interno dello stesso fondo";
+            !! AGI SH: Failcase umgesetzt;
             UNIQUE CH087651: NummerTeilgrundstueck, Grundstueck;
 
             !!@ ilivalid.msg="Bei Grundstueck mit istVollstaendig=true und mit nur 1 Objekt in Bergwerk muss NummerTeilgrundstueck leer sein";
             !!@ ilivalid.msg_de="Bei Grundstueck mit istVollstaendig=true und mit nur 1 Objekt in Bergwerk muss NummerTeilgrundstueck leer sein";
             !!@ ilivalid.msg_fr="Pour un immeuble dont l'attribut EstComplete=true, et formé d'un seul objet dans la table Mine, l'attribut PartieNumeroImmeuble doit être vide";
             !!@ ilivalid.msg_it="Per i fondi con integralità = si, e un solo oggetto in miniera, numero_parte_fondo deve restare vuoto";
+            !! AGI SH: Failcase umgesetzt;
             MANDATORY CONSTRAINT CH087652: (Grundstueck->IstVollstaendig AND INTERLIS.objectCount(THIS->Bergwerk) == 1) => NOT(DEFINED(THIS->Bergwerk->NummerTeilgrundstueck));
 
         END v_Bergwerk;
@@ -942,6 +948,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Hoehe darf nicht 0.0 sein";
             !!@ ilivalid.msg_fr="L'altitude ne peut pas être égale à 0";
             !!@ ilivalid.msg_it="La quota non puo' essere 0";
+            !! AGI SH: Failcase umgesetzt;
             MANDATORY CONSTRAINT CH092551: (
                 Punktelement->Hoehengeometrie <> 0.0
             );
@@ -980,6 +987,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Flächenperimeter muss mit Referenzperimeter der Liegenschaften übereinstimmen (Toleranz 2 mm)";
             !!@ ilivalid.msg_fr="Le périmètre doit être identique au périmètre de référence des biens-fonds (tolérance 2 mm)";
             !!@ ilivalid.msg_it="Il perimetro deve coincidere con il perimetro di riferimento del bene immobile (Tolleranza 2 mm)";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             /*
@@ -1015,6 +1023,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Grenzverlauf der Kantonsgrenze muss identisch mit Bezirksgrenze sein";
             !!@ ilivalid.msg_fr="Le tracé de la limite du canton doit être identique au tracé de la limite de district";
             !!@ ilivalid.msg_it="L'andamento del confine cantonale deve corrispondere con quelli comunali";
+            !! AGI SH: Failcase umgesetzt;
             !! Umsetzung Phase 1;
             MANDATORY CONSTRAINT CH130153: (
                 DMAVTYM_Topologie_V1_1.coversWithTolerance(ObjectPool.allObjects(>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Bezirksgrenzabschnitt), >>DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Bezirksgrenzabschnitt->Geometrie, THIS, >>Geometrie, 0.002)
@@ -1060,6 +1069,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Status=real muss mit Status von Lokalisation übereinstimmen";
             !!@ ilivalid.msg_fr="Validite=reel doit correspondre a la validite de la localisation";
             !!@ ilivalid.msg_it="Stato=reale deve corrispondere con lo stato della Localizzazione";
+            !! AGI SH: Failcase umgesetzt;
             MANDATORY CONSTRAINT CH193851: (
                 (Gebaeudestatus == #real) => (Lokalisation->Lokalisationsstatus == #real)
             );
@@ -1068,6 +1078,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Bei Status=projektiert muss AttributeProvisorisch=true sein";
             !!@ ilivalid.msg_fr="Si Validite=projete, il faut que Attributs_provisoires=true";
             !!@ ilivalid.msg_it="Per la Validità= in progetto, il campo Attributi_provvisori deve essere = true";
+            !! AGI SH: Failcase umgesetzt;
             MANDATORY CONSTRAINT CH194051: (
                 (Gebaeudestatus == #projektiert) => (AttributeProvisorisch == #true)
             );
@@ -1090,6 +1101,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="In Hausnummer (Polizeinummer oder Gebaeudeversicherungsnummer) darf vor, zwischen oder nach Hausnummer und Buchstabenzusatz kein Leerschlag oder kein Trennzeichen sein";
             !!@ ilivalid.msg_fr="Il n'est pas licite d'insérer un espace ou un signe quelconque avant, entre, ou après le numéro de maison et sa particule (lettre). Concerne aussi le numéro de police ou le numéro d'assurance du bâtiment";
             !!@ ilivalid.msg_it="Per il Numero_casa, tra il numero e la lettera non devono esistere spazi vuoti,sottolineature o tratti";
+            !! AGI SH: Failcase umgesetzt;
             MANDATORY CONSTRAINT CH194451: (
                 matches(Hausnummer,"^[^\\s]+$")
             );
@@ -1098,12 +1110,14 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="EGID und EDID müssen zusammen eindeutig sein";
             !!@ ilivalid.msg_fr="La combinaison des identifiants EGID et EDID doit être univoque";
             !!@ ilivalid.msg_it="REA_EGID e EDID devono, insieme, essere univoci";
+            !! AGI SH: Failcase umgesetzt;
             UNIQUE CH194651: EGID, EDID;
 
             !!@ ilivalid.msg="Bei Gebaeudeeingang mit EGID fehlt der zugehörige EDID";
             !!@ ilivalid.msg_de="Bei Gebaeudeeingang mit EGID fehlt der zugehörige EDID";
             !!@ ilivalid.msg_fr="Une entrée de bâtiment possédant un identifiant EGID devrait aussi posséder un identifiant GWR_EDID";
             !!@ ilivalid.msg_it="Per l'entrata di edificio con REA_EGID, manca il relativo REA_EDID";
+            !! AGI SH: Failcase umgesetzt;
             MANDATORY CONSTRAINT CH194751: (
                 DEFINED(EGID) => DEFINED(EDID)
             );
@@ -1113,6 +1127,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_fr="Le même EGID, EDID est renseigné pour plusieurs bâtiments différents";
             !!@ ilivalid.msg_it="LLo stesso EGID, EDID è assegnato a più edifici differenti";
             !! Umsetzung Phase 1; -> Kommentar Romedi: Gilt nur innerhalb eines Operats. Vergleich eindeutige EGID in Gebäudenummer und Gebäudeeingang
+            !! AGI SH: Failcase umgesetzt;
             /*
             SET CONSTRAINT GWRA09a: WHERE (Gebaeudestatus == #real):
                 EGID,EDID;
@@ -1159,6 +1174,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_de="Lokalisation fehlt in der AV";
             !!@ ilivalid.msg_fr="Localisation manquante dans la MO";
             !!@ ilivalid.msg_it="Manca la localizzazione nella MU";
+            !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT GWRB03: (
@@ -1297,6 +1313,7 @@ IMPORTS DMAV_Gebaeudeadressen_V1_0;
             !!@ ilivalid.msg_fr="Entrée (EDID) sans EGID dans la table Entree batiment";
             !!@ ilivalid.msg_it="Entrata (EDID) senza EGID nella tabella Entrata edificio";
             !! Umsetzung Phase 1;
+            !! AGI SH: Failcase umgesetzt;
             MANDATORY CONSTRAINT GWRA14 : DEFINED(EDID) => DEFINED(EGID);
 
         END v_Gebaeudeeingang;
