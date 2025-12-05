@@ -166,34 +166,34 @@ Constraints ready: 69%
 | DMAV_V1_0_Validierung | v_Einzelobjekt | GWRC02c |  |  |
 | DMAV_V1_0_Validierung | v_Messpunkt | CH054351 |  |  |
 | DMAV_V1_0_Validierung | v_Flurname | CH070951 | ✅ |  |
-| DMAV_V1_0_Validierung | v_Grundstueck | CH085554 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Grundstueck | CH086852 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Grundstueck | CH085554 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Grundstueck | CH086852 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Grundstueck | CH085952 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Grundstueck | CH085551 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Liegenschaft | CH086951 | ✅ |  |
-| DMAV_V1_0_Validierung | v_Liegenschaft | CH086851 |  | ✅ |
-| DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087251 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Liegenschaft | CH086851 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087251 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087252 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087351 |  |  |
-| DMAV_V1_0_Validierung | v_Bergwerk | CH087651 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Bergwerk | CH087652 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Leitungsobjekt | CH092551 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Bergwerk | CH087651 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Bergwerk | CH087652 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Leitungsobjekt | CH092551 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Gemeinde | CH112352 | ✅ |  |
-| DMAV_V1_0_Validierung | v_Gemeindegrenze | CH113051 |  |  |
+| DMAV_V1_0_Validierung | v_Gemeindegrenze | CH113051 | ✅ |  |
 | DMAV_V1_0_Validierung | v_Bezirksgrenzabschnitt | CH120153 | ✅ | ✅ |
-| DMAV_V1_0_Validierung | v_Kantonsgrenzabschnitt | CH130153 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Kantonsgrenzabschnitt | CH130153 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Toleranzstufe | CH160351 |  |  |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH193851 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194051 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH193851 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194051 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194254 | ✅ |  |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194451 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194651 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194751 |  | ✅ |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRA09a |  | ✅ |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194451 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194651 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194751 | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRA09a | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRA17 |  |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB01 |  |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB02 |  |  |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB03 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB03 | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB04 |  |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB05 |  |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRC02 |  |  |
@@ -205,4 +205,4 @@ Constraints ready: 69%
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRC09 |  |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRC10 |  |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRC13 |  |  |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRA14 |  | ✅ |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRA14 | ✅ | ✅ |
