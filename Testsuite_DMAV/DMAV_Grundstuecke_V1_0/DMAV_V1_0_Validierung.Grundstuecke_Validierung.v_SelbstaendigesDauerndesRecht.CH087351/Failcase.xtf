@@ -79,48 +79,24 @@
         </ili:headersection>
         <ili:datasection>
                 <!-- MANDATORY CONSTRAINT CH087252: Dieses Inkrement enthält einen Stuetzpunkt, dessen Lage keinem LFP oder Grenzpunkt entspricht -->
-                <DMAV_Grundstuecke_V1_0:Grundstuecke ili:bid="62127943-3c53-444e-bb8e-65ab7f99ca43" ili:kind="UPDATE">
-                        <DMAV_Grundstuecke_V1_0:SelbstaendigesDauerndesRecht ili:tid="59cb3b0d-6bbf-48f9-8528-40dc9d60e22c">
-                                <DMAV_Grundstuecke_V1_0:NummerTeilgrundstueck>01</DMAV_Grundstuecke_V1_0:NummerTeilgrundstueck>
-                                <DMAV_Grundstuecke_V1_0:Geometrie>
-                                        <geom:surface>
-                                                <geom:exterior>
-                                                        <geom:polyline>
-                                                                <geom:coord>
-                                                                        <geom:c1>2587937.539</geom:c1>
-                                                                        <geom:c2>1226333.279</geom:c2>
-                                                                </geom:coord>
-                                                                <geom:coord>
-                                                                        <geom:c1>2587975.31</geom:c1>
-                                                                        <geom:c2>1226338.759</geom:c2>
-                                                                </geom:coord>
-                                                                <geom:coord>
-                                                                        <geom:c1>2587988.944</geom:c1>
-                                                                        <geom:c2>1226332.515</geom:c2>
-                                                                </geom:coord>
-                                                                <geom:coord>
-                                                                        <geom:c1>2587991.875</geom:c1>
-                                                                        <geom:c2>1226312.217</geom:c2>
-                                                                </geom:coord>
-                                                                <geom:coord>
-                                                                        <geom:c1>2587958.483</geom:c1>
-                                                                        <geom:c2>1226306.732</geom:c2>
-                                                                </geom:coord>
-                                                                <geom:coord>
-                                                                        <geom:c1>2587941.968</geom:c1>
-                                                                        <geom:c2>1226303.156</geom:c2>
-                                                                </geom:coord>
-                                                                <geom:coord>
-                                                                        <geom:c1>2587937.539</geom:c1>
-                                                                        <geom:c2>1226333.279</geom:c2>
-                                                                </geom:coord>
-                                                        </geom:polyline>
-                                                </geom:exterior>
-                                        </geom:surface>
-                                </DMAV_Grundstuecke_V1_0:Geometrie>
-                                <DMAV_Grundstuecke_V1_0:Flaechenmass>1433</DMAV_Grundstuecke_V1_0:Flaechenmass>
-                                <DMAV_Grundstuecke_V1_0:Grundstueck ili:ref="2f867a2a-cad6-42fe-af1c-20995027daca"></DMAV_Grundstuecke_V1_0:Grundstueck>
-                        </DMAV_Grundstuecke_V1_0:SelbstaendigesDauerndesRecht>
+                <DMAV_Grundstuecke_V1_0:Grundstuecke ili:bid="2dd5ce7d-c5fe-48ca-8748-41c84ae51b4b" ili:kind="UPDATE">
+			<DMAV_Grundstuecke_V1_0:Grenzpunkt ili:tid="9afc0fd7-af41-4643-ac7a-8247a87d2650" ili:operation="DELETE">
+				<DMAV_Grundstuecke_V1_0:Nummer>8792510006</DMAV_Grundstuecke_V1_0:Nummer>
+				<DMAV_Grundstuecke_V1_0:Geometrie>
+					<geom:coord>
+						<geom:c1>2587962.567</geom:c1>
+						<geom:c2>1225106.358</geom:c2>
+					</geom:coord>
+				</DMAV_Grundstuecke_V1_0:Geometrie>
+				<DMAV_Grundstuecke_V1_0:Lagegenauigkeit>0.07</DMAV_Grundstuecke_V1_0:Lagegenauigkeit>
+				<DMAV_Grundstuecke_V1_0:IstLagezuverlaessig>true</DMAV_Grundstuecke_V1_0:IstLagezuverlaessig>
+				<DMAV_Grundstuecke_V1_0:Punktzeichen>Stein</DMAV_Grundstuecke_V1_0:Punktzeichen>
+				<DMAV_Grundstuecke_V1_0:IstHoheitsgrenzpunkt>false</DMAV_Grundstuecke_V1_0:IstHoheitsgrenzpunkt>
+				<DMAV_Grundstuecke_V1_0:IstHoheitsgrenzsteinAlt>false</DMAV_Grundstuecke_V1_0:IstHoheitsgrenzsteinAlt>
+				<DMAV_Grundstuecke_V1_0:IstExaktDefiniert>true</DMAV_Grundstuecke_V1_0:IstExaktDefiniert>
+				<DMAV_Grundstuecke_V1_0:SymbolOri>0.0</DMAV_Grundstuecke_V1_0:SymbolOri>
+				<DMAV_Grundstuecke_V1_0:Entstehung ili:ref="30f04ceb-44fd-49cb-8326-f9c1ceed8edd"/>
+			</DMAV_Grundstuecke_V1_0:Grenzpunkt>
                 </DMAV_Grundstuecke_V1_0:Grundstuecke>
         </ili:datasection>
 </ili:transfer>

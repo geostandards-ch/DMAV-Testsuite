@@ -295,9 +295,9 @@ IMPORTS FixpunkteLV_V1_0;
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-/*             SET CONSTRAINT CH043451: WHERE Objektstatus==#real: (
+            SET CONSTRAINT CH043451: WHERE Objektstatus==#real: (
                    DMAVTYM_Topologie_V1_0.isGeometrySpatiallyEqual(ALL, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Liegenschaft), "DEFINED(Grundstueck->Entstehung) AND NOT(DEFINED(Grundstueck->Untergang))"), >>DMAV_Grundstuecke_V1_0.Grundstuecke.Liegenschaft->Geometrie, 0.002)
-            );   */
+            );  
 
             !!@ ilivalid.msg="Gebäude hat keinen EGID";
             !!@ ilivalid.msg_de="Gebäude hat keinen EGID";
@@ -306,9 +306,9 @@ IMPORTS FixpunkteLV_V1_0;
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
-/*             MANDATORY CONSTRAINT CH043453 : (
+            MANDATORY CONSTRAINT CH043453 : (
                 (Objektstatus == #real) AND (Bodenbedeckungsart == #Gebaeude) => DEFINED(EGID)
-            );  */
+            ); 
 
             !!@ ilivalid.msg="Der gleiche EGID (Topic BB) wird für verschiedene Gebäude verwendet";
             !!@ ilivalid.msg_de="Der gleiche EGID (Topic BB) wird für verschiedene Gebäude verwendet";
@@ -316,7 +316,7 @@ IMPORTS FixpunkteLV_V1_0;
             !!@ ilivalid.msg_it="Lo stesso EGID (topic CS) è assegnato a più edifici differenti";
             !! AGI SH: Failcase umgesetzt;
             !! Umsetzung Phase 1; -> Kommentar Romedi: Gilt nur innerhalb eines Operats. Vergleich eindeutige EGID in Gebäudenummer und Gebäudeeingang
-/*             UNIQUE GWRA09 : WHERE Bodenbedeckungsart==#Gebaeude: EGID; */
+            UNIQUE GWRA09 : WHERE Bodenbedeckungsart==#Gebaeude: EGID;
 
             !!@ ilivalid.msg="EGID existiert nicht im GWR";
             !!@ ilivalid.msg_de="EGID existiert nicht im GWR";
@@ -342,12 +342,12 @@ IMPORTS FixpunkteLV_V1_0;
             !! Kategorie: modellübergreifend & @geow Dienstbezug
             !! Umsetzung Phase 2;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Bodenbedeckung_Validierung.v_Bodenbedeckung.CH043452)
-/*             MANDATORY CONSTRAINT CH043452 : (
+            MANDATORY CONSTRAINT CH043452 : (
                 NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3), >>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3->Geometrie))
                 AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Grenzpunkt), >>DMAV_Grundstuecke_V1_0.Grundstuecke.Grenzpunkt->Geometrie))
                 AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>FixpunkteLV_V1_0.FixpunkteLV.LFP1), >>FixpunkteLV_V1_0.FixpunkteLV.LFP1->Geometrie))
                 AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion),"NOT(DEFINED(UntergegangenAm"), >>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion->Geometrie))
-            ); */
+            );
         
         END v_Messpunkt; 
 
@@ -781,9 +781,9 @@ IMPORTS FixpunkteLV_V1_0;
             !!@ ilivalid.msg_fr="La somme des parties de surface inscrite sous Superficie n'est pas égale à la donnée correspondante sous SuperficieTotale";
             !!@ ilivalid.msg_it="La somma delle superfici delle parti di Bene_immobile/DSSP/Miniera non corrisponde alla superficie totale del fondo";
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Grundstuecke_Validierung.v_Grundstueck.CH085952)
-/*             MANDATORY CONSTRAINT CH085952: 
+            MANDATORY CONSTRAINT CH085952: 
                 Gesamtflaechenmass == Math_V2_1.add(Math_V2_1.add(Math_V2_1.sum("THIS->Liegenschaft->Flaechenmass"),Math_V2_1.sum("THIS->SelbstaendigesDauerndesRecht->Flaechenmass")),Math_V2_1.sum("THIS->Bergwerk->Flaechenmass")
-            ); */
+            );
 
             !!@ ilivalid.msg="EGRID Prüfziffer stimmt nicht";
             !!@ ilivalid.msg_de="EGRID Prüfziffer stimmt nicht";
@@ -791,9 +791,9 @@ IMPORTS FixpunkteLV_V1_0;
             !!@ ilivalid.msg_it="La cifra di controllo EGRID è errata";
             !! Umsetzung Phase 1;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Grundstuecke_Validierung.v_Grundstueck.CH085551)
-/*             MANDATORY CONSTRAINT CH085551: (
+            MANDATORY CONSTRAINT CH085551: (
                 Math_V2_1.toNumeric(substring(EGRID, 12, 14)) == (97 - Math_V2_1.mod(Math_V2_1.toNumeric(substring(EGRID, 2, 12)), 97))
-            ); */
+            );
 
         END v_Grundstueck;
 
@@ -810,33 +810,33 @@ IMPORTS FixpunkteLV_V1_0;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Grundstuecke_Validierung.v_Liegenschaft_CH086951)
-/*             MANDATORY CONSTRAINT CH086951: (
+            MANDATORY CONSTRAINT CH086951: (
                 NOT(Grundstueck->Fiktiv) => (DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, Elements_V1_0.concat(Elements_V1_0.concat(Elements_V1_0.concat(
                                                 Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Grenzpunkt), "Geometrie"),
                                                 Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.allObjects(>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3), "Geometrie")),
                                                 Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion),"NOT(DEFINED(UntergegangenAm"), "Geometrie")),
                                                 Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.allObjects(>FixpunkteLV_V1_0.FixpunkteLV.LFP1), "Geometrie")), UNDEFINED))
-                ); */
+                );
 
             !!@ ilivalid.msg="Bei Grundstueck mit istVollstaendigkeit=true und mit nur 1 Objekt in Liegenschaft muss NummerTeilgrundstueck leer sein";
             !!@ ilivalid.msg_de="Bei Grundstueck mit istVollstaendigkeit=true und mit nur 1 Objekt in Liegenschaft muss NummerTeilgrundstueck leer sein";
             !!@ ilivalid.msg_fr="Pour un immeuble dont l'attribut Integralite=complet, et formé d'un seul objet dans la table Bien_fonds, l'attribut PartieNumeroImmeuble doit être vide";
             !!@ ilivalid.msg_it="Per i fondi con integralità = si, e un solo oggetto in Bene_immobile, numero_parte_fondo deve restare vuoto";
             !! AGI SH: Failcase umgesetzt;
-/*             MANDATORY CONSTRAINT CH086852: (
+            MANDATORY CONSTRAINT CH086852: (
                 (Grundstueck->IstVollstaendig AND INTERLIS.objectCount(THIS->Liegenschaft) == 1) => NOT(DEFINED(THIS->Liegenschaft->NummerTeilgrundstueck))
-            ); */
+            );
 
             !!@ ilivalid.msg="NummerTeilgrundstueck muss innerhalb des gleichen Grundstuecks eindeutig sein";
             !!@ ilivalid.msg_de="NummerTeilgrundstueck muss innerhalb des gleichen Grundstuecks eindeutig sein";
             !!@ ilivalid.msg_fr="L'attribut PartieNumeroImmeubledoit être univoque pour un même immeuble";
             !!@ ilivalid.msg_it="Il NumeroParteFondo deve essere univoco all'interno dello stesso fondo";
             !! AGI SH: Failcase umgesetzt;
-/*             UNIQUE CH086851: NummerTeilgrundstueck, Grundstueck; */
+            UNIQUE CH086851: NummerTeilgrundstueck, Grundstueck;
 
         END v_Liegenschaft;
 
-/*         VIEW v_SelbstaendigesDauerndesRecht
+        VIEW v_SelbstaendigesDauerndesRecht
             PROJECTION OF DMAV_Grundstuecke_V1_0.Grundstuecke.SelbstaendigesDauerndesRecht;
         =
             ALL OF SelbstaendigesDauerndesRecht;
@@ -864,16 +864,17 @@ IMPORTS FixpunkteLV_V1_0;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             MANDATORY CONSTRAINT CH087351: (
-                NOT(Grundstueck->Fiktiv) => (DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3), >>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3->Geometrie))
-                OR (DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Grenzpunkt), >>DMAV_Grundstuecke_V1_0.Grundstuecke.Grenzpunkt->Geometrie))
-                OR (DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>FixpunkteLV_V1_0.FixpunkteLV.LFP1), >>FixpunkteLV_V1_0.FixpunkteLV.LFP1->Geometrie))
-                OR (DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion),"NOT(DEFINED(UntergegangenAm"), >>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion->Geometrie))
-            );
+                NOT(Grundstueck->Fiktiv) => (DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, Elements_V1_0.concat(Elements_V1_0.concat(Elements_V1_0.concat(
+                                                Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Grenzpunkt), "Geometrie"),
+                                                Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.allObjects(>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3), "Geometrie")),
+                                                Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion),"NOT(DEFINED(UntergegangenAm"), "Geometrie")),
+                                                Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.allObjects(>FixpunkteLV_V1_0.FixpunkteLV.LFP1), "Geometrie")), UNDEFINED))
+                );
 
-        END v_SelbstaendigesDauerndesRecht; */
+        END v_SelbstaendigesDauerndesRecht;
 
 
-/*         VIEW v_Bergwerk
+        VIEW v_Bergwerk
             PROJECTION OF DMAV_Grundstuecke_V1_0.Grundstuecke.Bergwerk;
         =
             ALL OF Bergwerk;
@@ -894,7 +895,7 @@ IMPORTS FixpunkteLV_V1_0;
                 Grundstueck->IstVollstaendig AND INTERLIS.objectCount(THIS->Bergwerk) == 1) => NOT(DEFINED(THIS->Bergwerk->NummerTeilgrundstueck)
                 );
 
-        END v_Bergwerk; */
+        END v_Bergwerk;
 
 
     END Grundstuecke_Validierung;

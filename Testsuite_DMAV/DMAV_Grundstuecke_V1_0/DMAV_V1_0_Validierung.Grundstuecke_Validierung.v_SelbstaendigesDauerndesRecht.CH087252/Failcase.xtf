@@ -78,10 +78,11 @@
                 <ili:sender>ili2fme-7.2.1-aa3c48c318db91416e944ac8d2fb0142426ab234</ili:sender>
         </ili:headersection>
         <ili:datasection>
-                <!-- MANDATORY CONSTRAINT CH087351: Dieses Inkrem -->
-                <DMAV_Grundstuecke_V1_0:Grundstuecke ili:bid="62127943-3c53-444e-bb8e-65ab7f99ca43" ili:kind="UPDATE">
- 			<DMAV_Grundstuecke_V1_0:SelbstaendigesDauerndesRecht ili:tid="25f2ba8e-cd5d-4076-9805-84d88de327f1" ili:operation="UPDATE">
-				<DMAV_Grundstuecke_V1_0:Geometrie>
+                <!-- MANDATORY CONSTRAINT CH087252: indem zum gleichen Grundstueck bereits eine identische NummerTeilgrundstueck besteht. -->
+                <DMAV_Grundstuecke_V1_0:Grundstuecke ili:bid="2dd5ce7d-c5fe-48ca-8748-41c84ae51b4b" ili:kind="UPDATE">
+			<DMAV_Grundstuecke_V1_0:SelbstaendigesDauerndesRecht ili:tid="25f2ba8e-cd5d-4076-9805-84d88de327f1">
+			        <DMAV_Grundstuecke_V1_0:NummerTeilgrundstueck>01</DMAV_Grundstuecke_V1_0:NummerTeilgrundstueck>		
+                                <DMAV_Grundstuecke_V1_0:Geometrie>
 					<geom:surface>
 						<geom:exterior>
 							<geom:polyline>
@@ -94,7 +95,7 @@
 									<geom:c2>1226305.353</geom:c2>
 								</geom:coord>
 								<geom:coord>
-									<geom:c1>2588053.491</geom:c1>
+									<geom:c1>2588043.491</geom:c1>
 									<geom:c2>1226287.819</geom:c2>
 								</geom:coord>
 								<geom:coord>
@@ -112,6 +113,39 @@
 								<geom:coord>
 									<geom:c1>2588036.519</geom:c1>
 									<geom:c2>1226300.571</geom:c2>
+								</geom:coord>
+							</geom:polyline>
+						</geom:exterior>
+					</geom:surface>
+				</DMAV_Grundstuecke_V1_0:Geometrie>
+				<DMAV_Grundstuecke_V1_0:Flaechenmass>793</DMAV_Grundstuecke_V1_0:Flaechenmass>
+				<DMAV_Grundstuecke_V1_0:Grundstueck ili:ref="1265f25f-db74-4b8c-a547-e3a795b856fe"/>
+			</DMAV_Grundstuecke_V1_0:SelbstaendigesDauerndesRecht>
+                        <DMAV_Grundstuecke_V1_0:SelbstaendigesDauerndesRecht ili:tid="25f2ba8e-cd5d-4099-9805-84d88de327f1">
+			<DMAV_Grundstuecke_V1_0:NummerTeilgrundstueck>01</DMAV_Grundstuecke_V1_0:NummerTeilgrundstueck>	
+                                <DMAV_Grundstuecke_V1_0:Geometrie>
+					<geom:surface>
+						<geom:exterior>
+							<geom:polyline>
+								<geom:coord>
+									<geom:c1>2589804.978</geom:c1>
+									<geom:c2>1226657.823</geom:c2>
+								</geom:coord>
+								<geom:coord>
+									<geom:c1>2589826.72</geom:c1>
+									<geom:c2>1226670.071</geom:c2>
+								</geom:coord>
+								<geom:coord>
+									<geom:c1>2589835.819</geom:c1>
+									<geom:c2>1226654.534</geom:c2>
+								</geom:coord>
+								<geom:coord>
+									<geom:c1>2589814.182</geom:c1>
+									<geom:c2>1226641.927</geom:c2>
+								</geom:coord>
+								<geom:coord>
+									<geom:c1>2589804.978</geom:c1>
+									<geom:c2>1226657.823</geom:c2>
 								</geom:coord>
 							</geom:polyline>
 						</geom:exterior>

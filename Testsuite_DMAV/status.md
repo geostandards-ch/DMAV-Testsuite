@@ -144,12 +144,12 @@
 | DMAV_V1_0_Validierung | v_Grundstueck | CH085554 | ✅ | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Grundstueck | CH085952 | ✅ | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Grundstueck | CH085551 | ✅ | ✅ | ✅ |
-| DMAV_V1_0_Validierung | v_Liegenschaft | CH086951 | ✅ |  | ✅ |
+| DMAV_V1_0_Validierung | v_Liegenschaft | CH086951 | ✅ | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Liegenschaft | CH086851 | ✅ | ✅ |  |
-
+| DMAV_V1_0_Validierung | v_Liegenschaft | CH086852 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087251 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087252 | ✅ | ✅ |  |
-| DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087351 |  |  | ✅ |
+| DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087351 | ✅ | ✅ | ✅ |
 | DMAV_V1_0_Validierung | v_Bergwerk | CH087651 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Bergwerk | CH087652 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Leitungsobjekt | CH092551 | ✅ | ✅ |  |
@@ -161,7 +161,7 @@
 | DMAV_V1_0_Validierung | v_Toleranzstufe | CH160351 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH193851 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194051 | ✅ | ✅ |  |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194254 | ✅ |  |  |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194254 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194451 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194651 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194751 | ✅ | ✅ |  |

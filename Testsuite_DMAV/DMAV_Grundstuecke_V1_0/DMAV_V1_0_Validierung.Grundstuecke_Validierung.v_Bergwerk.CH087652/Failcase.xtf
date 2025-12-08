@@ -86,7 +86,6 @@
                 <DMAV_Grundstuecke_V1_0:Flaechenmass>6614</DMAV_Grundstuecke_V1_0:Flaechenmass>
                 <DMAV_Grundstuecke_V1_0:Grundstueck ili:ref="fc4a7d33-ea71-4eec-8821-f7445f0082a9"></DMAV_Grundstuecke_V1_0:Grundstueck>
             </DMAV_Grundstuecke_V1_0:Bergwerk>
-        </DMAV_Grundstuecke_V1_0:Grundstuecke>
     </DMAV_Grundstuecke_V1_0:Grundstuecke>
 </ili:datasection>
 </ili:transfer>
