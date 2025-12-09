@@ -346,7 +346,7 @@ IMPORTS FixpunkteLV_V1_0;
                 NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3), >>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3->Geometrie))
                 AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Grenzpunkt), >>DMAV_Grundstuecke_V1_0.Grundstuecke.Grenzpunkt->Geometrie))
                 AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>FixpunkteLV_V1_0.FixpunkteLV.LFP1), >>FixpunkteLV_V1_0.FixpunkteLV.LFP1->Geometrie))
-                AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion),"NOT(DEFINED(UntergegangenAm"), >>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion->Geometrie))
+                AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion),"NOT(DEFINED(UntergegangenAm))"), >>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion->Geometrie))
             );
         
         END v_Messpunkt; 
@@ -725,7 +725,7 @@ IMPORTS FixpunkteLV_V1_0;
                 NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3), >>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3->Geometrie))
                 AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Grenzpunkt), >>DMAV_Grundstuecke_V1_0.Grundstuecke.Grenzpunkt->Geometrie))
                 AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.allObjects(>FixpunkteLV_V1_0.FixpunkteLV.LFP1), >>FixpunkteLV_V1_0.FixpunkteLV.LFP1->Geometrie))
-                AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion),"NOT(DEFINED(UntergegangenAm"), >>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion->Geometrie))
+                AND NOT(DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion),"NOT(DEFINED(UntergegangenAm))"), >>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion->Geometrie))
             );
 
         END v_Messpunkt;
@@ -814,7 +814,7 @@ IMPORTS FixpunkteLV_V1_0;
                 NOT(Grundstueck->Fiktiv) => (DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, Elements_V1_0.concat(Elements_V1_0.concat(Elements_V1_0.concat(
                                                 Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Grenzpunkt), "Geometrie"),
                                                 Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.allObjects(>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3), "Geometrie")),
-                                                Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion),"NOT(DEFINED(UntergegangenAm"), "Geometrie")),
+                                                Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion),"NOT(DEFINED(UntergegangenAm))"), "Geometrie")),
                                                 Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.allObjects(>FixpunkteLV_V1_0.FixpunkteLV.LFP1), "Geometrie")), UNDEFINED))
                 );
 
@@ -867,7 +867,7 @@ IMPORTS FixpunkteLV_V1_0;
                 NOT(Grundstueck->Fiktiv) => (DMAVTYM_Topologie_V1_0.pointInPoints(THIS, >>Geometrie, Elements_V1_0.concat(Elements_V1_0.concat(Elements_V1_0.concat(
                                                 Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.allObjects(>DMAV_Grundstuecke_V1_0.Grundstuecke.Grenzpunkt), "Geometrie"),
                                                 Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.allObjects(>DMAV_FixpunkteAVKategorie3_V1_0.FixpunkteAVKategorie3.LFP3), "Geometrie")),
-                                                Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion),"NOT(DEFINED(UntergegangenAm"), "Geometrie")),
+                                                Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>KGKCGC_FPDS2_V1_1.FPDS2.FixpunktVersion),"NOT(DEFINED(UntergegangenAm))"), "Geometrie")),
                                                 Elements_V1_0.valuesOfPathAnyStructure(ObjectPool_V1_0.allObjects(>FixpunkteLV_V1_0.FixpunkteLV.LFP1), "Geometrie")), UNDEFINED))
                 );
 
