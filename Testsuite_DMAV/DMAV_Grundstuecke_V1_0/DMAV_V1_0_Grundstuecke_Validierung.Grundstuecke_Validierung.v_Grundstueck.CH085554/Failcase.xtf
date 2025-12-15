@@ -43,10 +43,10 @@
     <ili:datasection>
         <!-- Der MANDATORY CONSTRAINT CH085554 wird verletzt, indem der EGRID mit der Zahl 0 beginnt. -->
         <DMAV_Grundstuecke_V1_0:Grundstuecke ili:bid="2dd5ce7d-c5fe-48ca-8748-41c84ae51b4b" ili:kind="UPDATE">
-			<DMAV_Grundstuecke_V1_0:Grundstueck ili:tid="5668dd79-1dfa-421f-9e6e-667714d6141c" ili:operation="UPDATE">
+			<DMAV_Grundstuecke_V1_0:Grundstueck ili:tid="5668dd79-1dfa-421f-9e6e-667714d6141c" ili:kind="UPDATE">
 				<DMAV_Grundstuecke_V1_0:NBIdent>BE0200000115</DMAV_Grundstuecke_V1_0:NBIdent>
 				<DMAV_Grundstuecke_V1_0:Nummer>642</DMAV_Grundstuecke_V1_0:Nummer>
-				<DMAV_Grundstuecke_V1_0:EGRID>0CH2846164361</DMAV_Grundstuecke_V1_0:EGRID>
+				<DMAV_Grundstuecke_V1_0:EGRID>0H528461643618</DMAV_Grundstuecke_V1_0:EGRID>
 				<DMAV_Grundstuecke_V1_0:IstStreitig>false</DMAV_Grundstuecke_V1_0:IstStreitig>
 				<DMAV_Grundstuecke_V1_0:IstVollstaendig>true</DMAV_Grundstuecke_V1_0:IstVollstaendig>
 				<DMAV_Grundstuecke_V1_0:Grundstuecksart>Liegenschaft</DMAV_Grundstuecke_V1_0:Grundstuecksart>
