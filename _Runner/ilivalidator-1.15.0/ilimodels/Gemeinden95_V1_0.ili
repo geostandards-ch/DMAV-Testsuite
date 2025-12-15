@@ -9,10 +9,9 @@ VERSION "2025-12-02" =
         CLASS Gemeinde =
             Name: TEXT*50;
             BFSNr: 1 .. 9999;
-            Kanton: TEXT*2; !! Kantonskuerzel, z.B. ZH
-            UNIQUE: BFSNr;
+            Kanton: TEXT*2;
         END Gemeinde;
 
     END Gemeinden;
 
-END Gemeinden95_V1_0;
+END Gemeinden95_V1_0.

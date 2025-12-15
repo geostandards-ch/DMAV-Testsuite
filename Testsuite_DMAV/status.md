@@ -100,7 +100,7 @@
 | DMAV_V1_0_Validierung | v_Bodenbedeckung | CH043453 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Bodenbedeckung | GWRA09 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Bodenbedeckung | GWRC02a |  | (3) |  |
-| DMAV_V1_0_Validierung | v_Messpunkt | CH043452 | ✅ | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Messpunkt | CH043452 | ✅ | ✅ | 💡 |
 | DMAV_V1_0_Validierung | v_Einzelobjekt | CH051151 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Einzelobjekt | CH051152 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Einzelobjekt | CH051153 | ✅ | ✅ |  |
@@ -139,21 +139,21 @@
 | DMAV_V1_0_Validierung | v_Einzelobjekt | CH052177 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Einzelobjekt | CH052178 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Einzelobjekt | GWRC02c |  | (3) |  |
-| DMAV_V1_0_Validierung | v_Messpunkt | CH054351 | ✅ | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Messpunkt | CH054351 | ✅ | ✅ | 💡 |
 | DMAV_V1_0_Validierung | v_Flurname | CH070951 | ✅ | ✅ |  |
-| DMAV_V1_0_Validierung | v_Grundstueck | CH085554 | ✅ | ✅ | ✅ |
-| DMAV_V1_0_Validierung | v_Grundstueck | CH085952 | ✅ | ✅ | ✅ |
-| DMAV_V1_0_Validierung | v_Grundstueck | CH085551 | ✅ | ✅ | ✅ |
-| DMAV_V1_0_Validierung | v_Liegenschaft | CH086951 | ✅ | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_Grundstueck | CH085554 | ✅ | ✅ | 💡 |
+| DMAV_V1_0_Validierung | v_Grundstueck | CH085952 | ✅ | ✅ | 💡 |
+| DMAV_V1_0_Validierung | v_Grundstueck | CH085551 | ✅ | ✅ | 💡 |
+| DMAV_V1_0_Validierung | v_Liegenschaft | CH086951 | ✅ | ✅ | 💡 |
 | DMAV_V1_0_Validierung | v_Liegenschaft | CH086851 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Liegenschaft | CH086852 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087251 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087252 | ✅ | ✅ |  |
-| DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087351 | ✅ | ✅ | ✅ |
+| DMAV_V1_0_Validierung | v_SelbstaendigesDauerndesRecht | CH087351 | ✅ | ✅ | 💡 |
 | DMAV_V1_0_Validierung | v_Bergwerk | CH087651 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Bergwerk | CH087652 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Leitungsobjekt | CH092551 | ✅ | ✅ |  |
-| DMAV_V1_0_Validierung | v_Gemeinde | CH112352 | ✅ | ❌ (4) |  |
+| DMAV_V1_0_Validierung | v_Gemeinde | CH112352 | ✅ | ✅ (4) | 💡 |
 | DMAV_V1_0_Validierung | v_Gemeinde | CH112951 | ❌ | ❌ (2) |  |
 | DMAV_V1_0_Validierung | v_Gemeindegrenze | CH113051 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Bezirksgrenzabschnitt | CH120153 | ✅ | ✅ |  |
@@ -166,7 +166,7 @@
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194651 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | CH194751 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRA09a | ✅ | ✅ |  |
-| DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRA17 |  | (3) |  |
+| DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRA17 | ✅ | ✅ | 💡 |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB01 |  | (3) |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB02 |  | (3) |  |
 | DMAV_V1_0_Validierung | v_Gebaeudeeingang | GWRB03 | ✅ | ✅ |  |
@@ -185,7 +185,7 @@
 | DMAV_V1_0_Validierung | v_Leitungsobjekt | CH092551 | ✅ | ✅ |  |
 | DMAV_V1_0_Validierung | v_Messpunkt | CH101503 | ✅ | ✅(1)|  |
 
-(1) Erweiterung zu Checkrules_DMAVTYM_Alles V 20251117 auf Messpunkte (gemäss Modelldokumentation) <br>
-(2) Constraint CH112951 wird durch Kardinalität der ASSOCIATION GemeindeGemeindegrenze bereits eingeschränkt/geprüft und nicht redundant als Constraint formuliert <br>
+(1) Erweiterung zu Checkrules_DMAVTYM_Alles V 20251117 auf Messpunkte (gemaess Modelldokumentation) <br>
+(2) Constraint CH112951 wird durch Kardinalität der ASSOCIATION GemeindeGemeindegrenze bereits eingeschraenkt/geprueft und nicht redundant als Constraint formuliert <br>
 (3) GWR-Constraints aus Phase 3 <br>
-(4) Datenmodell GemeindenLV95 noch offen, noch kein Referenzdatensatz in INTERLIS 2.4 <br>
+(4) Datenmodell GemeindenLV95 noch offen, noch kein Referenzdatensatz in INTERLIS 2.4. Fuer Testbed wurde der Datensatz Gemeinden95 nach INTERLIS 2.4 uebersetzt <br>
