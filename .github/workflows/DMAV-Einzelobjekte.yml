@@ -1,4 +1,4 @@
-name: DMAV-Einzelobjekte
+﻿name: DMAV-Einzelobjekte
 
 on:
   pull_request:
@@ -21,4 +21,4 @@ jobs:
           distribution: 'temurin'
 
       - name: Run DMAV_Einzelobjekte_V1_0
-        run: java -jar ./_Runner/interlis-testbed-runner-1.0.1/lib/interlis-testbed-runner-1.0.1-SNAPSHOT.jar -v ./_Runner/ilivalidator-1.15.0/ilivalidator-1.15.0-SNAPSHOT.jar --config ./Testsuite_DMAV/DMAV_V1_0_Einzelobjekte_Validierung.ini ./Testsuite_DMAV/DMAV_Einzelobjekte_V1_0
+        run: java -jar ./_Runner/interlis-testbed-runner-1.0.1/lib/interlis-testbed-runner-1.0.1-SNAPSHOT.jar -v ./_Runner/ilivalidator-1.15.0/ilivalidator-1.15.0.jar --config ./Testsuite_DMAV/DMAV_V1_0_Einzelobjekte_Validierung.ini ./Testsuite_DMAV/DMAV_Einzelobjekte_V1_0

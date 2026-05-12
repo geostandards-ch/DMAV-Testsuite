@@ -30,10 +30,11 @@ IMPORTS FixpunkteLV_V1_0;
         =
             ALL OF Leitungsobjekt;
 
-            !!@ ilivalid.msg="Hoehengeometrie darf nicht 0.0 sein";
-            !!@ ilivalid.msg_de="Hoehengeometrie darf nicht 0.0 sein";
-            !!@ ilivalid.msg_fr="GeometrieAltitude ne peut pas être égale à 0.0";
-            !!@ ilivalid.msg_it="La geometria dell'altezza non deve essere uguale a 0.0";
+            !!@ name = CH092551
+            !!@ message="(CH092551) Hoehengeometrie darf nicht 0.0 sein";
+            !!@ message_de="(CH092551) Hoehengeometrie darf nicht 0.0 sein";
+            !!@ message_fr="(CH092551) GeometrieAltitude ne peut pas être égale à 0.0";
+            !!@ message_it="(CH092551) La geometria dell'altezza non deve essere uguale a 0.0";
             !! AGI SH: Failcase umgesetzt;
             MANDATORY CONSTRAINT CH092551: (
                 Punktelement->Hoehengeometrie <> 0.0
@@ -46,10 +47,11 @@ IMPORTS FixpunkteLV_V1_0;
         =
             ALL OF Messpunkt;
 
-            !!@ ilivalid.msg="Hoehengeometrie darf nicht 0.0 sein";
-            !!@ ilivalid.msg_de="Hoehengeometrie darf nicht 0.0 sein";
-            !!@ ilivalid.msg_fr="GeometrieAltitude ne peut pas être égale à 0.0";
-            !!@ ilivalid.msg_it="La geometria dell'altezza non deve essere uguale a 0.0";
+            !!@ name = CH101503
+            !!@ message="(CH101503) Hoehengeometrie darf nicht 0.0 sein";
+            !!@ message_de="(CH101503) Hoehengeometrie darf nicht 0.0 sein";
+            !!@ message_fr="(CH101503) GeometrieAltitude ne peut pas être égale à 0.0";
+            !!@ message_it="(CH101503) La geometria dell'altezza non deve essere uguale a 0.0";
             MANDATORY CONSTRAINT CH101503: (
                 Messpunkt->Hoehengeometrie <> 0.0
             );

@@ -30,11 +30,12 @@ IMPORTS FixpunkteLV_V1_0;
         =
             ALL OF Flurname;
 
-            /* !!@ ilivalid.check = warning */
-            !!@ ilivalid.msg="Flächenperimeter muss mit Referenzperimeter der Liegenschaften übereinstimmen (Toleranz 2 mm)";
-            !!@ ilivalid.msg_de="Flächenperimeter muss mit Referenzperimeter der Liegenschaften übereinstimmen (Toleranz 2 mm)";
-            !!@ ilivalid.msg_fr="Le périmètre doit être identique au périmètre de référence des biens-fonds (tolérance 2 mm)";
-            !!@ ilivalid.msg_it="Il perimetro deve corrispondere con quello dei beni immobili (Tolleranza 2 mm)";
+            /* !!@ category = warning */
+            !!@ name = CH070951
+            !!@ message="(CH070951) Flächenperimeter muss mit Referenzperimeter der Liegenschaften übereinstimmen (Toleranz 2 mm)";
+            !!@ message_de="(CH070951) Flächenperimeter muss mit Referenzperimeter der Liegenschaften übereinstimmen (Toleranz 2 mm)";
+            !!@ message_fr="(CH070951) Le périmètre doit être identique au périmètre de référence des biens-fonds (tolérance 2 mm)";
+            !!@ message_it="(CH070951) Il perimetro deve corrispondere con quello dei beni immobili (Tolleranza 2 mm)";
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
             !! Failcase für Testsuite erstellt (Testsuite_DMAV/DMAV_V1_0_Validierung/DMAV_V1_0_Validierung.Nomenklatur_Validierung.v_Flurname.CH070951)

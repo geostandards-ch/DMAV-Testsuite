@@ -30,19 +30,21 @@ IMPORTS FixpunkteLV_V1_0;
         =
             ALL OF LFP3;
 
-            !!@ ilivalid.msg="Hoehengeometrie darf nicht gleich 0.0 sein";
-            !!@ ilivalid.msg_de="Hoehengeometrie darf nicht gleich 0.0 sein";
-            !!@ ilivalid.msg_fr="GeometrieAltitude ne peut pas être égale à 0.0";
-            !!@ ilivalid.msg_it="La geometria dell'altezza non deve essere uguale a 0.0";
+            !!@ name = CH031151
+            !!@ message="(CH031151) Hoehengeometrie darf nicht gleich 0.0 sein";
+            !!@ message_de="(CH031151) Hoehengeometrie darf nicht gleich 0.0 sein";
+            !!@ message_fr="(CH031151) GeometrieAltitude ne peut pas être égale à 0.0";
+            !!@ message_it="(CH031151) La geometria dell'altezza non deve essere uguale a 0.0";
             !! AGI SH: Failcase umgesetzt;
             MANDATORY CONSTRAINT CH031151: (
                 Hoehengeometrie <> 0.0
             );
 
-            !!@ ilivalid.msg="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS1)";
-            !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS1)";
-            !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFP3 doit être <= 15 cm (NT1)";
-            !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 15 cm  (GT1)";
+            !!@ name = CH031252
+            !!@ message="(CH031252) Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS1)";
+            !!@ message_de="(CH031252) Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS1)";
+            !!@ message_fr="(CH031252) PrecisionPlanimetrie du PFP3 doit être <= 15 cm (NT1)";
+            !!@ message_it="(CH031252) La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 15 cm  (GT1)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -50,10 +52,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS1"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.15)
             );
 
-            !!@ ilivalid.msg="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS2)";
-            !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS2)";
-            !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFP3 doit être <= 15 cm (NT2)";
-            !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 15 cm  (GT2)";
+            !!@ name = CH031253
+            !!@ message="(CH031253) Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS2)";
+            !!@ message_de="(CH031253) Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS2)";
+            !!@ message_fr="(CH031253) PrecisionPlanimetrie du PFP3 doit être <= 15 cm (NT2)";
+            !!@ message_it="(CH031253) La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 15 cm  (GT2)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -61,10 +64,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS2"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.15)
             );
 
-            !!@ ilivalid.msg="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS3)";
-            !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS3)";
-            !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFP3 doit être <= 15 cm (NT3)";
-            !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 15 cm  (GT3)";
+            !!@ name = CH031254
+            !!@ message="(CH031254) Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS3)";
+            !!@ message_de="(CH031254) Lagegenauigkeit von LFP3 muss <= 15 cm sein (TS3)";
+            !!@ message_fr="(CH031254) PrecisionPlanimetrie du PFP3 doit être <= 15 cm (NT3)";
+            !!@ message_it="(CH031254) La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 15 cm  (GT3)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -72,10 +76,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS3"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.15)
             );
 
-            !!@ ilivalid.msg="Lagegenauigkeit von LFP3 muss <= 30 cm sein (TS4)";
-            !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 30 cm sein (TS4)";
-            !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFP3 doit être <= 30 cm (NT4)";
-            !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 30 cm  (GT4)";
+            !!@ name = CH031255
+            !!@ message="(CH031255) Lagegenauigkeit von LFP3 muss <= 30 cm sein (TS4)";
+            !!@ message_de="(CH031255) Lagegenauigkeit von LFP3 muss <= 30 cm sein (TS4)";
+            !!@ message_fr="(CH031255) PrecisionPlanimetrie du PFP3 doit être <= 30 cm (NT4)";
+            !!@ message_it="(CH031255) La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 30 cm  (GT4)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -83,10 +88,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS4"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.30)
             );
 
-            !!@ ilivalid.msg="Lagegenauigkeit von LFP3 muss <= 30 cm sein (TS5)";
-            !!@ ilivalid.msg_de="Lagegenauigkeit von LFP3 muss <= 30 cm sein (TS5)";
-            !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFP3 doit être <= 30 cm (NT5)";
-            !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 30 cm  (GT5)";
+            !!@ name = CH031256
+            !!@ message="(CH031256) Lagegenauigkeit von LFP3 muss <= 30 cm sein (TS5)";
+            !!@ message_de="(CH031256) Lagegenauigkeit von LFP3 muss <= 30 cm sein (TS5)";
+            !!@ message_fr="(CH031256) PrecisionPlanimetrie du PFP3 doit être <= 30 cm (NT5)";
+            !!@ message_it="(CH031256) La PrecisionePlanimetrica del PFP3 deve essere inferiore a <= 30 cm  (GT5)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -94,10 +100,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS5"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.30)
             );
 
-            !!@ ilivalid.msg="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS1)";
-            !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS1)";
-            !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFP3 doit être <= 24 cm (NT1)";
-            !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 24 cm  (GT1)";
+            !!@ name = CH031454
+            !!@ message="(CH031454) Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS1)";
+            !!@ message_de="(CH031454) Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS1)";
+            !!@ message_fr="(CH031454) PrecisionAltimetrie du PFP3 doit être <= 24 cm (NT1)";
+            !!@ message_it="(CH031454) La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 24 cm  (GT1)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -105,10 +112,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS1"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.24)
             );
 
-            !!@ ilivalid.msg="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS2)";
-            !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS2)";
-            !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFP3 doit être <= 24 cm (NT2)";
-            !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 24 cm  (GT2)";
+            !!@ name = CH031455
+            !!@ message="(CH031455) Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS2)";
+            !!@ message_de="(CH031455) Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS2)";
+            !!@ message_fr="(CH031455) PrecisionAltimetrie du PFP3 doit être <= 24 cm (NT2)";
+            !!@ message_it="(CH031455) La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 24 cm  (GT2)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -116,10 +124,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS2"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.24)
             );
 
-            !!@ ilivalid.msg="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS3)";
-            !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS3)";
-            !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFP3 doit être <= 24 cm (NT3)";
-            !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 24 cm  (GT3)";
+            !!@ name = CH031456
+            !!@ message="(CH031456) Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS3)";
+            !!@ message_de="(CH031456) Hoehengenauigkeit von LFP3 muss <= 24 cm sein (TS3)";
+            !!@ message_fr="(CH031456) PrecisionAltimetrie du PFP3 doit être <= 24 cm (NT3)";
+            !!@ message_it="(CH031456) La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 24 cm  (GT3)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -127,10 +136,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS3"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.24)
             );
 
-            !!@ ilivalid.msg="Hoehengenauigkeit von LFP3 muss <= 45 cm sein (TS4)";
-            !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 45 cm sein (TS4)";
-            !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFP3 doit être <= 45 cm (NT4)";
-            !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 45 cm  (GT4)";
+            !!@ name = CH031457
+            !!@ message="(CH031457) Hoehengenauigkeit von LFP3 muss <= 45 cm sein (TS4)";
+            !!@ message_de="(CH031457) Hoehengenauigkeit von LFP3 muss <= 45 cm sein (TS4)";
+            !!@ message_fr="(CH031457) PrecisionAltimetrie du PFP3 doit être <= 45 cm (NT4)";
+            !!@ message_it="(CH031457) La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 45 cm  (GT4)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -138,10 +148,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS4"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.45)
             );
 
-            !!@ ilivalid.msg="Hoehengenauigkeit von LFP3 muss <= 45 cm sein (TS5)";
-            !!@ ilivalid.msg_de="Hoehengenauigkeit von LFP3 muss <= 45 cm sein (TS5)";
-            !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFP3 doit être <= 45 cm (NT5)";
-            !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 45 cm  (GT5)";
+            !!@ name = CH031458
+            !!@ message="(CH031458) Hoehengenauigkeit von LFP3 muss <= 45 cm sein (TS5)";
+            !!@ message_de="(CH031458) Hoehengenauigkeit von LFP3 muss <= 45 cm sein (TS5)";
+            !!@ message_fr="(CH031458) PrecisionAltimetrie du PFP3 doit être <= 45 cm (NT5)";
+            !!@ message_it="(CH031458) La PrecisioneAltimetrica del PFP3 deve essere inferiore a <= 45 cm  (GT5)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -156,19 +167,21 @@ IMPORTS FixpunkteLV_V1_0;
         =
             ALL OF HFP3;
 
-            !!@ ilivalid.msg="Hoehengeometrie darf nicht gleich 0.0 sein";
-            !!@ ilivalid.msg_de="Hoehengeometrie darf nicht gleich 0.0 sein";
-            !!@ ilivalid.msg_fr="GeomAlt ne peut pas être égale à 0";
-            !!@ ilivalid.msg_it="La quota non puo' essere uguale a 0.0, in caso di non determinazione della quota lasciare il campo vuoto";
+            !!@ name = CH033551
+            !!@ message="(CH033551) Hoehengeometrie darf nicht gleich 0.0 sein";
+            !!@ message_de="(CH033551) Hoehengeometrie darf nicht gleich 0.0 sein";
+            !!@ message_fr="(CH033551) GeomAlt ne peut pas être égale à 0";
+            !!@ message_it="(CH033551) La quota non puo' essere uguale a 0.0, in caso di non determinazione della quota lasciare il campo vuoto";
             !! AGI SH: Failcase umgesetzt;
             MANDATORY CONSTRAINT CH033551: (
                 Hoehengeometrie <> 0.0
             );
 
-            !!@ ilivalid.msg="Lagegenauigkeit von HFP3 muss <= 30 cm sein (TS1)";
-            !!@ ilivalid.msg_de="Lagegenauigkeit von HFP3 muss <= 30 cm sein (TS1)";
-            !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFA3 doit être <= 30 cm (NT1)";
-            !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 30 cm  (GT1)";
+            !!@ name = CH033652
+            !!@ message="(CH033652) Lagegenauigkeit von HFP3 muss <= 30 cm sein (TS1)";
+            !!@ message_de="(CH033652) Lagegenauigkeit von HFP3 muss <= 30 cm sein (TS1)";
+            !!@ message_fr="(CH033652) PrecisionPlanimetrie du PFA3 doit être <= 30 cm (NT1)";
+            !!@ message_it="(CH033652) La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 30 cm  (GT1)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -176,10 +189,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS1"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.30)
             );
 
-            !!@ ilivalid.msg="Lagegenauigkeit von HFP3 muss <= 30 cm sein (TS2)";
-            !!@ ilivalid.msg_de="Lagegenauigkeit von HFP3 muss <= 30 cm sein (TS2)";
-            !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFA3 doit être <= 30 cm (NT2)";
-            !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 30 cm  (GT2)";
+            !!@ name = CH033653
+            !!@ message="(CH033653) Lagegenauigkeit von HFP3 muss <= 30 cm sein (TS2)";
+            !!@ message_de="(CH033653) Lagegenauigkeit von HFP3 muss <= 30 cm sein (TS2)";
+            !!@ message_fr="(CH033653) PrecisionPlanimetrie du PFA3 doit être <= 30 cm (NT2)";
+            !!@ message_it="(CH033653) La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 30 cm  (GT2)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -187,10 +201,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS2"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.30)
             );
 
-            !!@ ilivalid.msg="Lagegenauigkeit von HFP3 muss <= 60 cm sein (TS3)";
-            !!@ ilivalid.msg_de="Lagegenauigkeit von HFP3 muss <= 60 cm sein (TS3)";
-            !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFA3 doit être <= 60 cm (NT3)";
-            !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 60 cm  (GT3)";
+            !!@ name = CH033654
+            !!@ message="(CH033654) Lagegenauigkeit von HFP3 muss <= 60 cm sein (TS3)";
+            !!@ message_de="(CH033654) Lagegenauigkeit von HFP3 muss <= 60 cm sein (TS3)";
+            !!@ message_fr="(CH033654) PrecisionPlanimetrie du PFA3 doit être <= 60 cm (NT3)";
+            !!@ message_it="(CH033654) La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 60 cm  (GT3)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -198,10 +213,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS3"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 0.60)
             );
 
-            !!@ ilivalid.msg="Lagegenauigkeit von HFP3 muss <= 150 cm sein (TS4)";
-            !!@ ilivalid.msg_de="Lagegenauigkeit von HFP3 muss <= 150 cm sein (TS4)";
-            !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFA3 doit être <= 150 cm (NT4)";
-            !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 150 cm  (GT4)";
+            !!@ name = CH033655
+            !!@ message="(CH033655) Lagegenauigkeit von HFP3 muss <= 150 cm sein (TS4)";
+            !!@ message_de="(CH033655) Lagegenauigkeit von HFP3 muss <= 150 cm sein (TS4)";
+            !!@ message_fr="(CH033655) PrecisionPlanimetrie du PFA3 doit être <= 150 cm (NT4)";
+            !!@ message_it="(CH033655) La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 150 cm  (GT4)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -209,10 +225,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS4"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 1.50)
             );
 
-            !!@ ilivalid.msg="Lagegenauigkeit von HFP3 muss <= 300 cm sein (TS5)";
-            !!@ ilivalid.msg_de="Lagegenauigkeit von HFP3 muss <= 300 cm sein (TS5)";
-            !!@ ilivalid.msg_fr="PrecisionPlanimetrie du PFA3 doit être <= 300 cm (NT5)";
-            !!@ ilivalid.msg_it="La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 300 cm  (GT5)";
+            !!@ name = CH033656
+            !!@ message="(CH033656) Lagegenauigkeit von HFP3 muss <= 300 cm sein (TS5)";
+            !!@ message_de="(CH033656) Lagegenauigkeit von HFP3 muss <= 300 cm sein (TS5)";
+            !!@ message_fr="(CH033656) PrecisionPlanimetrie du PFA3 doit être <= 300 cm (NT5)";
+            !!@ message_it="(CH033656) La PrecisionePlanimetrica del PFA3 deve essere inferiore a <= 300 cm  (GT5)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -220,10 +237,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS5"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Lagegenauigkeit < 3.00)
             );
 
-            !!@ ilivalid.msg="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS1)";
-            !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS1)";
-            !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT1)";
-            !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT1)";
+            !!@ name = CH033852
+            !!@ message="(CH033852) Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS1)";
+            !!@ message_de="(CH033852) Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS1)";
+            !!@ message_fr="(CH033852) PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT1)";
+            !!@ message_it="(CH033852) La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT1)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -231,10 +249,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS1"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.021)
             );
 
-            !!@ ilivalid.msg="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS2)";
-            !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS2)";
-            !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT2)";
-            !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT2)";
+            !!@ name = CH033853
+            !!@ message="(CH033853) Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS2)";
+            !!@ message_de="(CH033853) Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS2)";
+            !!@ message_fr="(CH033853) PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT2)";
+            !!@ message_it="(CH033853) La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT2)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -242,10 +261,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS2"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.021)
             );
 
-            !!@ ilivalid.msg="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS3)";
-            !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS2)";
-            !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT3)";
-            !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT3)";
+            !!@ name = CH033854
+            !!@ message="(CH033854) Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS3)";
+            !!@ message_de="(CH033854) Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS2)";
+            !!@ message_fr="(CH033854) PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT3)";
+            !!@ message_it="(CH033854) La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT3)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -253,10 +273,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS3"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.021)
             );
 
-            !!@ ilivalid.msg="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS4)";
-            !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS4)";
-            !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT4)";
-            !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT4)";
+            !!@ name = CH033855
+            !!@ message="(CH033855) Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS4)";
+            !!@ message_de="(CH033855) Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS4)";
+            !!@ message_fr="(CH033855) PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT4)";
+            !!@ message_it="(CH033855) La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT4)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
@@ -264,10 +285,11 @@ IMPORTS FixpunkteLV_V1_0;
                 DMAVTYM_Topologie_V1_0.isInside(THIS, >>Geometrie, ObjectPool_V1_0.filter(ObjectPool_V1_0.allObjects(>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe), "Toleranzstufe == #TS4"), >>DMAV_Toleranzstufen_V1_0.Toleranzstufen.Toleranzstufe->Geometrie) => (Hoehengenauigkeit < 0.021)
             );
 
-            !!@ ilivalid.msg="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS5)";
-            !!@ ilivalid.msg_de="Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS5)";
-            !!@ ilivalid.msg_fr="PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT5)";
-            !!@ ilivalid.msg_it="La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT5)";
+            !!@ name = CH033856
+            !!@ message="(CH033856) Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS5)";
+            !!@ message_de="(CH033856) Hoehengenauigkeit von HFP3 muss <= 2.1 cm sein (TS5)";
+            !!@ message_fr="(CH033856) PrecisionAltimetrie du PFA3 doit être <= 2.1 cm (NT5)";
+            !!@ message_it="(CH033856) La PrecisioneAltimetrica del PFA3 deve essere inferiore a <= 2.1 cm  (GT5)";
             !! AGI SH: Failcase umgesetzt;
             !! Kategorie: modellübergreifend
             !! Umsetzung Phase 2;
