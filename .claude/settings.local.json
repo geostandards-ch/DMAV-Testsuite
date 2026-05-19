@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Select-Object -ExpandProperty Name)",
+      "WebFetch(domain:models.geo.admin.ch)",
+      "Bash(grep -E '^MODEL |^END DMAV|IMPORTS DMAV|DEPENDS ON|PROJECTION OF' c:/Data/03_GIT_Repos/DMAV_Testsuite_1_1/DMAV-Testsuite/_Runner/ilivalidator-1.15.0/ilimodels/__TRACKED_VAR__)"
+    ]
+  }
+}
