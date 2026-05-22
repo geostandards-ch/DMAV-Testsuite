@@ -109,7 +109,7 @@
                     </geom:surface>
                 </DMAV_Bodenbedeckung_V1_1:Geometrie>
                 <DMAV_Bodenbedeckung_V1_1:Qualitaetsstandard>AV93</DMAV_Bodenbedeckung_V1_1:Qualitaetsstandard>
-                <DMAV_Bodenbedeckung_V1_1:Bodenbedeckungsart>Gewaesser.fliessendes_Gewaesser</DMAV_Bodenbedeckung_V1_1:Bodenbedeckungsart>
+                <DMAV_Bodenbedeckung_V1_1:Bodenbedeckungsart>Gewaesser.stehendes_Gewaesser</DMAV_Bodenbedeckung_V1_1:Bodenbedeckungsart>
                 <DMAV_Bodenbedeckung_V1_1:Fiktiv>false</DMAV_Bodenbedeckung_V1_1:Fiktiv>
                 <DMAV_Bodenbedeckung_V1_1:Objektstatus>real</DMAV_Bodenbedeckung_V1_1:Objektstatus>
                 <DMAV_Bodenbedeckung_V1_1:Objektname>
