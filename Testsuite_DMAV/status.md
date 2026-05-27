@@ -22,6 +22,11 @@
 | DMAV_FixpunkteAVKategorie3_V1_1 | LFP3 | CH020201 | ✅ | ✅ |  |
 | DMAV_FixpunkteAVKategorie3_V1_1 | LFP3 | CH020202 | ✅ | ✅ |  |
 | DMAV_FixpunkteAVKategorie3_V1_1 | LFP3 | CH020203 | ✅ | ✅ |  |
+| DMAV_FixpunkteAVKategorie3_V1_1 | LFP3 | CH020204 | ❌ | ✅ |  |
+| DMAV_FixpunkteAVKategorie3_V1_1 | LFP3 | CH020205 | ❌ | ✅ |  |
+| DMAV_FixpunkteAVKategorie3_V1_1 | LFP3 | CH020206 | ❌ | ✅ |  |
+| DMAV_FixpunkteAVKategorie3_V1_1 | HFP3 | CH020701 | ❌ | ✅ |  |
+| DMAV_FixpunkteAVKategorie3_V1_1 | HFP3 | CH020702 | ❌ | ✅ |  |
 | DMAV_Dienstbarekeitsgrenzen_V1_1 | DiBNachfuehrung | CH050101 | ✅ | ✅ |  |
 | DMAV_Dienstbarekeitsgrenzen_V1_1 | Dienstbarkeitsgrenze | CH050301 | ✅ | ✅ |  |
 | DMAV_Dienstbarekeitsgrenzen_V1_1 | Dienstbarkeitsgrenze_Gueltig | CH050701 | ✅ |✅  |  |
