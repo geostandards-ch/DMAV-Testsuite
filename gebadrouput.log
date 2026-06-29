@@ -1,0 +1,377 @@
+Info: ilivalidator-1.15.1-INTERNAL-GEOWERKSTATT-SNAPSHOT-83e73e6c919fe9cda0230547a030333120aaa097
+Info: ili2c-5.6.8-e6f7ab6dd5cdba29afc9b24866ecb98c057d82b2
+Info: iox-ili-1.24.5-SNAPSHOT-1af01d4bf6b675a490b9f5ad44d41723fdfa3c0f
+Info: java.version 25.0.1
+Info: User <ctheiler>
+Info: Start date 2026-06-25 09:21
+Info: maxMemory 8241152 KB
+Info: dataFile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1\DMAVTYM_Alles_V1_1.xtf>
+Info: pluginFolder <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\plugins>
+Info: modeldir <%ITF_DIR;http://models.interlis.ch/;%JAR_DIR/ilimodels>
+Info: setRepositories(): uri <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1> (IliManager.java:94)
+Info: setRepositories(): uri <http://models.interlis.ch/> (IliManager.java:94)
+Info: setRepositories(): uri <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels> (IliManager.java:94)
+Info: configFile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_V1_1_Gebaeudeadressen_Validierung.ini>
+Info: setConfigValue(): modelele <PARAMETER>, param <additionalModels>, value <DMAV_V1_1_Gebaeudeadressen_Validierung> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <PARAMETER>, param <additionalModels>, value <DMAV_V1_1_Gebaeudeadressen_Validierung> (ValidationConfig.java:170)
+Info: lookup model <DMAV_DauerndeBodenverschiebungen_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: getIliFiles(): scan ili-files in folder <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>... (RepositoryAccess.java:109)
+Info: lookup model <DMAV_DauerndeBodenverschiebungen_V1_1> 2.4 in repository <http://models.interlis.ch/>
+Info: getIliFiles(): read ilimodels.xml from <http://models.interlis.ch/>... (RepositoryAccess.java:123)
+Info: lookup model <DMAV_DauerndeBodenverschiebungen_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: getIliFiles(): scan ili-files in folder <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>... (RepositoryAccess.java:109)
+Info: lookup model <DMAV_Gebaeudeadressen_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAV_Gebaeudeadressen_V1_1> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAV_Gebaeudeadressen_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAV_Nomenklatur_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAV_Nomenklatur_V1_1> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAV_Nomenklatur_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAV_Grundstuecke_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAV_Grundstuecke_V1_1> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAV_Grundstuecke_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAV_Bodenbedeckung_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAV_Bodenbedeckung_V1_1> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAV_Bodenbedeckung_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAV_Rohrleitungen_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAV_Rohrleitungen_V1_1> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAV_Rohrleitungen_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAV_FixpunkteAVKategorie3_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAV_FixpunkteAVKategorie3_V1_1> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAV_FixpunkteAVKategorie3_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAV_Einzelobjekte_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAV_Einzelobjekte_V1_1> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAV_Einzelobjekte_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAV_Dienstbarkeitsgrenzen_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAV_Dienstbarkeitsgrenzen_V1_1> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAV_Dienstbarkeitsgrenzen_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAVSUP_UntereinheitGrundbuch_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAVSUP_UntereinheitGrundbuch_V1_1> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAVSUP_UntereinheitGrundbuch_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DictionariesCH_V2> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DictionariesCH_V2> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DictionariesCH_V2> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <CoordSys> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <CoordSys> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAVTYM_Qualitaet_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAVTYM_Qualitaet_V1_0> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAVTYM_Qualitaet_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <CHAdminCodes_V2> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <CHAdminCodes_V2> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <CHAdminCodes_V2> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <Geometry_V2> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <Geometry_V2> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <Geometry_V2> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAV_Toleranzstufen_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAV_Toleranzstufen_V1_1> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAV_Toleranzstufen_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAVTYM_Vermarkung_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAVTYM_Vermarkung_V1_0> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAVTYM_Vermarkung_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAVTYM_Topologie_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAVTYM_Topologie_V1_0> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAVTYM_Topologie_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAVTYM_Geometrie_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAVTYM_Geometrie_V1_0> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAVTYM_Geometrie_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAVTYM_Modinfo_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAVTYM_Modinfo_V1_0> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAVTYM_Modinfo_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <Units> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <Units> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAV_HoheitsgrenzenAV_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAV_HoheitsgrenzenAV_V1_0> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAV_HoheitsgrenzenAV_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAVTYM_Grafik_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAVTYM_Grafik_V1_0> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAVTYM_Grafik_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <DMAV_V1_1_Gebaeudeadressen_Validierung> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <DMAV_V1_1_Gebaeudeadressen_Validierung> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <DMAV_V1_1_Gebaeudeadressen_Validierung> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <Elements_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <Elements_V1_0> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <Elements_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <ObjectPool_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <ObjectPool_V1_0> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <ObjectPool_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <KGKCGC_FPDS2_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <KGKCGC_FPDS2_V1_1> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <KGKCGC_FPDS2_V1_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <Math_V2_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <Math_V2_1> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <Math_V2_1> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <FixpunkteLV_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <FixpunkteLV_V1_0> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <FixpunkteLV_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: lookup model <Text_V2> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <Text_V2> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <OfficialIndexOfLocalities_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1/>
+Info: lookup model <OfficialIndexOfLocalities_V1_0> 2.4 in repository <http://models.interlis.ch/>
+Info: lookup model <OfficialIndexOfLocalities_V1_0> 2.4 in repository <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0/ilimodels/>
+Info: fetchFromHttpServer(): fetching <http://models.interlis.ch/refhb24/CoordSys.ili> ... (RepositoryAccess.java:1489)
+Info: fetchFromHttpServer(): fetching <http://models.interlis.ch/refhb24/Units.ili> ... (RepositoryAccess.java:1489)
+Info: fetchFromHttpServer(): fetching <http://models.interlis.ch/refhb24/Text_V2.ili> ... (RepositoryAccess.java:1489)
+Info: ilifile <C:\Users\ctheiler\.ilicache\models.interlis.ch\refhb24\CoordSys.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\ObjectPool_V1_0.ili>
+Info: ilifile <C:\Users\ctheiler\.ilicache\models.interlis.ch\refhb24\Units.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\Math_V2_1.ili>
+Info: ilifile <C:\Users\ctheiler\.ilicache\models.interlis.ch\refhb24\Text_V2.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAVTYM_Vermarkung_V1_0.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\Elements_V1_0.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAVTYM_Topologie_V1_0.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAVTYM_Geometrie_V1_0.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\CHBase_Part2_LOCALISATION_V2.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAVTYM_Modinfo_V1_0.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAVTYM_Qualitaet_V1_0.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\CHBase_Part1_GEOMETRY_V2.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\CHBase_Part4_ADMINISTRATIVEUNITS_V2.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAV_Toleranzstufen_V1_1.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAVTYM_Grafik_V1_0.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\FixpunkteLV_V1_0.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\OfficialIndexOfLocalities_V1_0.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAV_HoheitsgrenzenAV_V1_0.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAVSUP_UntereinheitGrundbuch_V1_1.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\KGKCGC_FPDS2_V1_1.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAV_Rohrleitungen_V1_1.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAV_Bodenbedeckung_V1_1.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAV_Grundstuecke_V1_1.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAV_Einzelobjekte_V1_1.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAV_DauerndeBodenverschiebungen_V1_1.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAV_FixpunkteAVKategorie3_V1_1.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAV_Dienstbarkeitsgrenzen_V1_1.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAV_Nomenklatur_V1_1.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAV_Gebaeudeadressen_V1_1.ili>
+Info: ilifile <c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\_Runner\ilivalidator-1.15.0\ilimodels\DMAV_V1_1_Gebaeudeadressen_Validierung.ili>
+Info: validate data...
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH193851>, param <msg_de>, value <(CH193851) Status=real muss mit Status von Lokalisation übereinstimmen> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH193851>, param <msg_it>, value <(CH193851) Stato=reale deve corrispondere con lo stato della Localizzazione> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH193851>, param <msg>, value <(CH193851) Status=real muss mit Status von Lokalisation übereinstimmen> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH193851>, param <msg_fr>, value <(CH193851) Validite=reel doit correspondre a la validite de la localisation> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194051>, param <msg_de>, value <(CH194051) Bei Status=projektiert muss AttributeProvisorisch=true sein> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194051>, param <msg_it>, value <(CH194051) Per la Validità= in progetto, il campo Attributi_provvisori deve essere = true> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194051>, param <msg>, value <(CH194051) Bei Status=projektiert muss AttributeProvisorisch=true sein> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194051>, param <msg_fr>, value <(CH194051) Si Validite=projete, il faut que Attributs_provisoires=true> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194254>, param <msg_de>, value <(CH194254) Gebäudeeingang muss innerhalb einer Gebäudefläche liegen oder der Attributwert von ImModul ist falsch> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194254>, param <msg_it>, value <(CH194254) L'ingresso dell'edificio deve trovarsi all'interno di un'area edificabile o il valore dell'attributo NelModulo non è corretto.> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194254>, param <msg>, value <(CH194254) Gebäudeeingang muss innerhalb einer Gebäudefläche liegen oder der Attributwert von ImModul ist falsch> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194254>, param <msg_fr>, value <(CH194254) L'EntreeBatiment doit être située à l'intérieur d'une surface de bâtiment ou la valeur de l'attribut DansModule n'est pas correcte> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194451>, param <msg_de>, value <(CH194451) In Hausnummer (Polizeinummer oder Gebaeudeversicherungsnummer) darf vor, zwischen oder nach Hausnummer und Buchstabenzusatz kein Leerschlag oder kein Trennzeichen sein> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194451>, param <msg_it>, value <(CH194451) Non ci devono essere spazi o separatori prima, tra o dopo il numero civico (numero di polizia o numero di assicurazione degli edifici) e il suffisso di lettere.> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194451>, param <msg>, value <(CH194451) In Hausnummer (Polizeinummer oder Gebaeudeversicherungsnummer) darf vor, zwischen oder nach Hausnummer und Buchstabenzusatz kein Leerschlag oder kein Trennzeichen sein> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194451>, param <msg_fr>, value <(CH194451) Il n'est pas licite d'insérer un espace ou un signe quelconque avant, entre, ou après le numéro de maison et sa particule (lettre). Concerne aussi le numéro de police ou le numéro d'assurance du bâtiment> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194651>, param <msg_de>, value <(CH194651) EGID und EDID müssen zusammen eindeutig sein> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194651>, param <msg_it>, value <(CH194651) REA_EGID e EDID devono, insieme, essere univoci> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194651>, param <msg>, value <(CH194651) EGID und EDID müssen zusammen eindeutig sein> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194651>, param <msg_fr>, value <(CH194651) La combinaison des identifiants EGID et EDID doit être univoque> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194751>, param <msg_de>, value <(CH194751) Bei Gebaeudeeingang mit EGID fehlt der zugehörige EDID> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194751>, param <msg_it>, value <(CH194751) Per l'entrata di edificio con EGID, manca il relativo EDID> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194751>, param <msg>, value <(CH194751) Bei Gebaeudeeingang mit EGID fehlt der zugehörige EDID> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.CH194751>, param <msg_fr>, value <(CH194751) Une EntreeBatiment possédant un identifiant EGID devrait aussi posséder un identifiant EDID> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRA09a>, param <msg_de>, value <(GWRA09a) Der gleiche EGID, EDID wird für verschiedene Gebäude verwendet> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRA09a>, param <msg_it>, value <(GWRA09a) Lo stesso EGID, EDID è assegnato a più edifici differenti> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRA09a>, param <msg>, value <(GWRA09a) Der gleiche EGID, EDID wird für verschiedene Gebäude verwendet> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRA09a>, param <msg_fr>, value <(GWRA09a) Le même EGID, EDID est renseigné pour plusieurs bâtiments différents> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRA17>, param <msg_de>, value <(GWRA17) EGID von Gebaeude=gueltig in Topic BB und EGID des entsprechenden Gebaeudeeinganges in Topic GEB (Im_Gebaeude=BB + Status=real) stimmen nicht überein> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRA17>, param <msg_it>, value <(GWRA17) L'EGID dell'edificio=valevole nel topic CS e l'EGID della rispettiva entrata nel topic IE (In_Edificio=CS + Validita=reale) non corrispondono> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRA17>, param <msg>, value <(GWRA17) EGID von Gebaeude=gueltig in Topic BB und EGID des entsprechenden Gebaeudeeinganges in Topic GEB (Im_Gebaeude=BB + Status=real) stimmen nicht überein> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRA17>, param <msg_fr>, value <(GWRA17) L'EGID de Batiment=valable dans le topic CS et l'EGID de l’entrée correspondante dans le topic BAT (Dans_batiment=CS + Validite=reel) ne correspondent pas> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRB03>, param <msg_de>, value <(GWRB03) Lokalisation fehlt in der AV> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRB03>, param <msg_it>, value <(GWRB03) Manca la localizzazione nella MU> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRB03>, param <msg>, value <(GWRB03) Lokalisation fehlt in der AV> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRB03>, param <msg_fr>, value <(GWRB03) Localisation manquante dans la MO> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRB04>, param <msg_de>, value <(GWRB04) Hausnummer fehlt in der AV> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRB04>, param <msg_it>, value <(GWRB04) Nella MU manca il numero civico> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRB04>, param <msg>, value <(GWRB04) Hausnummer fehlt in der AV> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRB04>, param <msg_fr>, value <(GWRB04) Numéro de maison manquant dans la MO> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRB05>, param <msg_de>, value <(GWRB05) Die Gebäudeadresse in der AV ist nicht eindeutig> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRB05>, param <msg_it>, value <(GWRB05) L'indirizzo dell'edificio nella MU non è univoco> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRB05>, param <msg>, value <(GWRB05) Die Gebäudeadresse in der AV ist nicht eindeutig> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRB05>, param <msg_fr>, value <(GWRB05) L'EGID n'existe pas dans le RegBL> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRA14>, param <msg_de>, value <(GWRA14) Eingang (EDID) ohne EGID in der Tabelle Gebaeudeeingang> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRA14>, param <msg_it>, value <(GWRA14) Entrata (EDID) senza EGID nella tabella Entrata edificio> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRA14>, param <msg>, value <(GWRA14) Eingang (EDID) ohne EGID in der Tabelle Gebaeudeeingang> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRA14>, param <msg_fr>, value <(GWRA14) Entrée (EDID) sans EGID dans la table Entree batiment> (ValidationConfig.java:170)
+Info: setConfigValue(): modelele <PARAMETER>, param <additionalModels>, value <DMAV_V1_1_Gebaeudeadressen_Validierung> (ValidationConfig.java:170)
+Info: assume unknown external objects
+Info: validate simple boundaries
+Info: first validation pass...
+Info: second validation pass...
+Info: additional model DMAV_V1_1_Gebaeudeadressen_Validierung
+Info: validate mandatory constraint DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.LFP3.CH020201...
+Info: validate mandatory constraint DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.LFP3.CH020202...
+Info: validate mandatory constraint DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.LFP3.CH020203...
+Info: validate mandatory constraint DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.LFP3.CH020204...
+Info: validate unique constraint DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.LFP3.CH020205...
+Info: validate unique constraint DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.LFP3.CH020206...
+Info: validate target of role DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.Entstehung_LFP3.Entstehung...
+Info: validate multiplicity of role DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.Entstehung_LFP3.Entstehung...
+Info: validate unique constraint DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.HFP3Nachfuehrung.CH020601...
+Info: validate multiplicity of role DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.Entstehung_HFP3.entstehender_HFP3...
+Info: validate unique constraint DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.HFP3.CH020701...
+Info: validate unique constraint DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.HFP3.CH020702...
+Info: validate target of role DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.Entstehung_HFP3.Entstehung...
+Info: validate multiplicity of role DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.Entstehung_HFP3.Entstehung...
+Info: validate unique constraint DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.LFP3Nachfuehrung.CH020101...
+Info: validate multiplicity of role DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.Entstehung_LFP3.entstehender_LFP3...
+Info: validate target of role DMAV_Nomenklatur_V1_1.Nomenklatur.Entstehung_Flurname.Entstehung...
+Info: validate multiplicity of role DMAV_Nomenklatur_V1_1.Nomenklatur.Entstehung_Flurname.Entstehung...
+Info: validate target of role DMAV_Nomenklatur_V1_1.Nomenklatur.Entstehung_Ortsname.Entstehung...
+Info: validate multiplicity of role DMAV_Nomenklatur_V1_1.Nomenklatur.Entstehung_Ortsname.Entstehung...
+Info: validate target of role DMAV_Nomenklatur_V1_1.Nomenklatur.Entstehung_Gelaendename.Entstehung...
+Info: validate multiplicity of role DMAV_Nomenklatur_V1_1.Nomenklatur.Entstehung_Gelaendename.Entstehung...
+Info: validate unique constraint DMAV_Nomenklatur_V1_1.Nomenklatur.NKNachfuehrung.CH070101...
+Info: validate multiplicity of role DMAV_Nomenklatur_V1_1.Nomenklatur.Entstehung_Flurname.entstehender_Flurname...
+Info: validate multiplicity of role DMAV_Nomenklatur_V1_1.Nomenklatur.Entstehung_Ortsname.entstehender_Ortsname...
+Info: validate multiplicity of role DMAV_Nomenklatur_V1_1.Nomenklatur.Entstehung_Gelaendename.entstehender_Gelaendename...
+Info: validate unique constraint DMAV_Grundstuecke_V1_1.Grundstuecke.Grenzpunkt_Gueltig.CH040601...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.Grenzpunkt.CH040201...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.Grenzpunkt.CH040202...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.Grenzpunkt.CH040203...
+Info: validate target of role DMAV_Grundstuecke_V1_1.Grundstuecke.Entstehung_Grenzpunkt.Entstehung...
+Info: validate target of role DMAV_Grundstuecke_V1_1.Grundstuecke.Untergang_Grenzpunkt.Untergang...
+Info: validate multiplicity of role DMAV_Grundstuecke_V1_1.Grundstuecke.Entstehung_Grenzpunkt.Entstehung...
+Info: validate multiplicity of role DMAV_Grundstuecke_V1_1.Grundstuecke.Untergang_Grenzpunkt.Untergang...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.Liegenschaft.CH041201...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.Liegenschaft.CH041401...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.Liegenschaft.CH041402...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.GrundstueckLiegenschaft.CH041301...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.GrundstueckLiegenschaft.CH041302...
+Info: validate target of role DMAV_Grundstuecke_V1_1.Grundstuecke.GrundstueckLiegenschaft.Grundstueck...
+Info: validate multiplicity of role DMAV_Grundstuecke_V1_1.Grundstuecke.GrundstueckLiegenschaft.Grundstueck...
+Info: validate unique constraint DMAV_Grundstuecke_V1_1.Grundstuecke.Grundstueck_Gueltig.CH041102...
+Info: validate unique constraint DMAV_Grundstuecke_V1_1.Grundstuecke.Grundstueck_Gueltig.CH041101...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.Grundstueck.CH040701...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.Grundstueck.CH042401...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.Grundstueck.CH042402...
+Info: validate target of role DMAV_Grundstuecke_V1_1.Grundstuecke.Entstehung_Grundstueck.Entstehung...
+Info: validate target of role DMAV_Grundstuecke_V1_1.Grundstuecke.Untergang_Grundstueck.Untergang...
+Info: validate multiplicity of role DMAV_Grundstuecke_V1_1.Grundstuecke.GrundstueckLiegenschaft.Liegenschaft...
+Info: validate multiplicity of role DMAV_Grundstuecke_V1_1.Grundstuecke.GrundstueckBergwerk.Bergwerk...
+Info: validate multiplicity of role DMAV_Grundstuecke_V1_1.Grundstuecke.Entstehung_Grundstueck.Entstehung...
+Info: validate multiplicity of role DMAV_Grundstuecke_V1_1.Grundstuecke.GrundstueckSelbstaendigesDauerndesRecht.SelbstaendigesDauerndesRecht...
+Info: validate multiplicity of role DMAV_Grundstuecke_V1_1.Grundstuecke.Untergang_Grundstueck.Untergang...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.SelbstaendigesDauerndesRecht.CH041601...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.SelbstaendigesDauerndesRecht.CH041801...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.SelbstaendigesDauerndesRecht.CH041802...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.GrundstueckSelbstaendigesDauerndesRecht.CH041701...
+Info: validate mandatory constraint DMAV_Grundstuecke_V1_1.Grundstuecke.GrundstueckSelbstaendigesDauerndesRecht.CH041702...
+Info: validate target of role DMAV_Grundstuecke_V1_1.Grundstuecke.GrundstueckSelbstaendigesDauerndesRecht.Grundstueck...
+Info: validate multiplicity of role DMAV_Grundstuecke_V1_1.Grundstuecke.GrundstueckSelbstaendigesDauerndesRecht.Grundstueck...
+Info: validate unique constraint DMAV_Grundstuecke_V1_1.Grundstuecke.GSNachfuehrung.CH040101...
+Info: validate multiplicity of role DMAV_Grundstuecke_V1_1.Grundstuecke.Entstehung_Grundstueck.entstehendes_Grundstueck...
+Info: validate multiplicity of role DMAV_Grundstuecke_V1_1.Grundstuecke.Entstehung_Grenzpunkt.entstehender_Grenzpunkt...
+Info: validate multiplicity of role DMAV_Grundstuecke_V1_1.Grundstuecke.Untergang_Grenzpunkt.untergehender_Grenzpunkt...
+Info: validate multiplicity of role DMAV_Grundstuecke_V1_1.Grundstuecke.Untergang_Grundstueck.untergehendes_Grundstueck...
+Info: validate mandatory constraint DMAV_Dienstbarkeitsgrenzen_V1_1.Dienstbarkeitsgrenzen.Dienstbarkeitsgrenze.CH050301...
+Info: validate target of role DMAV_Dienstbarkeitsgrenzen_V1_1.Dienstbarkeitsgrenzen.Entstehung_Dienstbarkeitsgrenze.Entstehung...
+Info: validate target of role DMAV_Dienstbarkeitsgrenzen_V1_1.Dienstbarkeitsgrenzen.Untergang_Dienstbarkeitsgrenze.Untergang...
+Info: validate multiplicity of role DMAV_Dienstbarkeitsgrenzen_V1_1.Dienstbarkeitsgrenzen.Untergang_Dienstbarkeitsgrenze.Untergang...
+Info: validate multiplicity of role DMAV_Dienstbarkeitsgrenzen_V1_1.Dienstbarkeitsgrenzen.Entstehung_Dienstbarkeitsgrenze.Entstehung...
+Info: validate unique constraint DMAV_Dienstbarkeitsgrenzen_V1_1.Dienstbarkeitsgrenzen.DiBNachfuehrung.CH050101...
+Info: validate multiplicity of role DMAV_Dienstbarkeitsgrenzen_V1_1.Dienstbarkeitsgrenzen.Entstehung_Dienstbarkeitsgrenze.entstehende_Dienstbarkeitsgrenze...
+Info: validate multiplicity of role DMAV_Dienstbarkeitsgrenzen_V1_1.Dienstbarkeitsgrenzen.Untergang_Dienstbarkeitsgrenze.untergehende_Dienstbarkeitsgrenze...
+Info: validate mandatory constraint DMAV_Einzelobjekte_V1_1.Einzelobjekte.Messpunkt.CH091201...
+Info: validate mandatory constraint DMAV_Einzelobjekte_V1_1.Einzelobjekte.Messpunkt.CH091202...
+Info: validate target of role DMAV_Einzelobjekte_V1_1.Einzelobjekte.Entstehung_Messpunkt.Entstehung...
+Info: validate multiplicity of role DMAV_Einzelobjekte_V1_1.Einzelobjekte.Entstehung_Messpunkt.Entstehung...
+Info: validate mandatory constraint DMAV_Einzelobjekte_V1_1.Einzelobjekte.Einzelobjekt.CH090701...
+Info: validate target of role DMAV_Einzelobjekte_V1_1.Einzelobjekte.Entstehung_Einzelobjekt.Entstehung...
+Info: validate multiplicity of role DMAV_Einzelobjekte_V1_1.Einzelobjekte.Entstehung_Einzelobjekt.Entstehung...
+Info: validate unique constraint DMAV_Einzelobjekte_V1_1.Einzelobjekte.EONachfuehrung.CH090101...
+Info: validate multiplicity of role DMAV_Einzelobjekte_V1_1.Einzelobjekte.Entstehung_Messpunkt.entstehender_Messpunkt...
+Info: validate multiplicity of role DMAV_Einzelobjekte_V1_1.Einzelobjekte.Entstehung_Einzelobjekt.entstehendes_Einzelobjekt...
+Info: validate mandatory constraint DMAV_Rohrleitungen_V1_1.Rohrleitungen.Messpunkt.CH101501...
+Info: validate mandatory constraint DMAV_Rohrleitungen_V1_1.Rohrleitungen.Messpunkt.CH101502...
+Info: validate target of role DMAV_Rohrleitungen_V1_1.Rohrleitungen.Entstehung_Messpunkt.Entstehung...
+Info: validate multiplicity of role DMAV_Rohrleitungen_V1_1.Rohrleitungen.Entstehung_Messpunkt.Entstehung...
+Info: validate target of role DMAV_Rohrleitungen_V1_1.Rohrleitungen.Entstehung_Signal.Entstehung...
+Info: validate multiplicity of role DMAV_Rohrleitungen_V1_1.Rohrleitungen.Entstehung_Signal.Entstehung...
+Info: validate mandatory constraint DMAV_Rohrleitungen_V1_1.Rohrleitungen.Leitungsobjekt.CH100501...
+Info: validate mandatory constraint DMAV_Rohrleitungen_V1_1.Rohrleitungen.Flaechenelement.CH100201...
+Info: validate target of role DMAV_Rohrleitungen_V1_1.Rohrleitungen.Entstehung_Leitungsobjekt.Entstehung...
+Info: validate multiplicity of role DMAV_Rohrleitungen_V1_1.Rohrleitungen.Entstehung_Leitungsobjekt.Entstehung...
+Info: validate unique constraint DMAV_Rohrleitungen_V1_1.Rohrleitungen.RLNachfuehrung.CH100101...
+Info: validate multiplicity of role DMAV_Rohrleitungen_V1_1.Rohrleitungen.Entstehung_Leitungsobjekt.entstehendes_Leitungsobjekt...
+Info: validate multiplicity of role DMAV_Rohrleitungen_V1_1.Rohrleitungen.Entstehung_Signal.entstehendes_Signal...
+Info: validate multiplicity of role DMAV_Rohrleitungen_V1_1.Rohrleitungen.Entstehung_Messpunkt.entstehender_Messpunkt...
+Info: validate unique constraint DMAV_V1_1_Gebaeudeadressen_Validierung.Gebaeudeadressen_Validierung.v_Gebaeudeeingang.GWRB05...
+Info: c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1\DMAVTYM_Alles_V1_1.xtf: DMAVSUP_UntereinheitGrundbuch_V1_1.UntereinheitGrundbuch BID=ebe74107-1cc0-46b3-9591-96edf6dda941 fileVersion=272deef5f608c5bde0484f08774d0925
+Info:       2 objects in CLASS DMAVSUP_UntereinheitGrundbuch_V1_1.UntereinheitGrundbuch.GrundbuchKreis
+Info: c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1\DMAVTYM_Alles_V1_1.xtf: DMAV_Bodenbedeckung_V1_1.Bodenbedeckung BID=a5145375-7ad2-4272-a462-afdbdd858167 fileVersion=272deef5f608c5bde0484f08774d0925
+Info:      19 objects in CLASS DMAV_Bodenbedeckung_V1_1.Bodenbedeckung.BBNachfuehrung
+Info:    1532 objects in CLASS DMAV_Bodenbedeckung_V1_1.Bodenbedeckung.Bodenbedeckung
+Info:    3861 objects in CLASS DMAV_Bodenbedeckung_V1_1.Bodenbedeckung.Messpunkt
+Info: c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1\DMAVTYM_Alles_V1_1.xtf: DMAV_DauerndeBodenverschiebungen_V1_1.DauerndeBodenverschiebungen BID=c8972acd-86ad-4541-a40e-57478e961216 fileVersion=272deef5f608c5bde0484f08774d0925
+Info:       1 objects in CLASS DMAV_DauerndeBodenverschiebungen_V1_1.DauerndeBodenverschiebungen.DBVNachfuehrung
+Info:       1 objects in CLASS DMAV_DauerndeBodenverschiebungen_V1_1.DauerndeBodenverschiebungen.DauerndeBodenverschiebung
+Info: c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1\DMAVTYM_Alles_V1_1.xtf: DMAV_Dienstbarkeitsgrenzen_V1_1.Dienstbarkeitsgrenzen BID=3721dc4d-3721-4411-8025-61231ab1bcd2 fileVersion=272deef5f608c5bde0484f08774d0925
+Info:       1 objects in CLASS DMAV_Dienstbarkeitsgrenzen_V1_1.Dienstbarkeitsgrenzen.DiBNachfuehrung
+Info:       2 objects in CLASS DMAV_Dienstbarkeitsgrenzen_V1_1.Dienstbarkeitsgrenzen.Dienstbarkeitsgrenze
+Info: c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1\DMAVTYM_Alles_V1_1.xtf: DMAV_Einzelobjekte_V1_1.Einzelobjekte BID=39aa2dfa-85b8-43f7-b7a4-58ec8a748e6e fileVersion=272deef5f608c5bde0484f08774d0925
+Info:      20 objects in CLASS DMAV_Einzelobjekte_V1_1.Einzelobjekte.EONachfuehrung
+Info:     666 objects in CLASS DMAV_Einzelobjekte_V1_1.Einzelobjekte.Einzelobjekt
+Info:     436 objects in CLASS DMAV_Einzelobjekte_V1_1.Einzelobjekte.Messpunkt
+Info: c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1\DMAVTYM_Alles_V1_1.xtf: DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3 BID=1331ee4d-9b33-466e-98a1-82eb52ed9c82 fileVersion=272deef5f608c5bde0484f08774d0925
+Info:       1 objects in CLASS DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.HFP3
+Info:       1 objects in CLASS DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.HFP3Nachfuehrung
+Info:     114 objects in CLASS DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.LFP3
+Info:       3 objects in CLASS DMAV_FixpunkteAVKategorie3_V1_1.FixpunkteAVKategorie3.LFP3Nachfuehrung
+Info: c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1\DMAVTYM_Alles_V1_1.xtf: DMAV_Gebaeudeadressen_V1_1.Gebaeudeadressen BID=716e91e8-aadf-4a1d-a6b3-3806c707688d fileVersion=272deef5f608c5bde0484f08774d0925
+Info:      20 objects in CLASS DMAV_Gebaeudeadressen_V1_1.Gebaeudeadressen.GANachfuehrung
+Info:     925 objects in CLASS DMAV_Gebaeudeadressen_V1_1.Gebaeudeadressen.Gebaeudeeingang
+Info:      85 objects in CLASS DMAV_Gebaeudeadressen_V1_1.Gebaeudeadressen.Lokalisation
+Info: c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1\DMAVTYM_Alles_V1_1.xtf: DMAV_Grundstuecke_V1_1.Grundstuecke BID=2dd5ce7d-c5fe-48ca-8748-41c84ae51b4b fileVersion=272deef5f608c5bde0484f08774d0925
+Info:      11 objects in CLASS DMAV_Grundstuecke_V1_1.Grundstuecke.GSNachfuehrung
+Info:    9633 objects in CLASS DMAV_Grundstuecke_V1_1.Grundstuecke.Grenzpunkt
+Info:    1468 objects in CLASS DMAV_Grundstuecke_V1_1.Grundstuecke.Grundstueck
+Info:    1458 objects in CLASS DMAV_Grundstuecke_V1_1.Grundstuecke.Liegenschaft
+Info:      12 objects in CLASS DMAV_Grundstuecke_V1_1.Grundstuecke.SelbstaendigesDauerndesRecht
+Info: c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1\DMAVTYM_Alles_V1_1.xtf: DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV BID=d5c46d9b-c956-469d-b60d-3994ab825c9e fileVersion=272deef5f608c5bde0484f08774d0925
+Info:       1 objects in CLASS DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Bezirksgrenzabschnitt
+Info:       1 objects in CLASS DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Gemeinde
+Info:       1 objects in CLASS DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Gemeindegrenze
+Info:       1 objects in CLASS DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.HHGNachfuehrung
+Info:       1 objects in CLASS DMAV_HoheitsgrenzenAV_V1_0.HoheitsgrenzenAV.Kantonsgrenzabschnitt
+Info: c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1\DMAVTYM_Alles_V1_1.xtf: DMAV_Nomenklatur_V1_1.Nomenklatur BID=1f021f89-505b-419b-80c2-d80130307a8c fileVersion=272deef5f608c5bde0484f08774d0925
+Info:     169 objects in CLASS DMAV_Nomenklatur_V1_1.Nomenklatur.Flurname
+Info:       3 objects in CLASS DMAV_Nomenklatur_V1_1.Nomenklatur.Gelaendename
+Info:       2 objects in CLASS DMAV_Nomenklatur_V1_1.Nomenklatur.NKNachfuehrung
+Info:       3 objects in CLASS DMAV_Nomenklatur_V1_1.Nomenklatur.Ortsname
+Info: c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1\DMAVTYM_Alles_V1_1.xtf: DMAV_Rohrleitungen_V1_1.Rohrleitungen BID=59a240f8-8e77-4206-9c2c-e1ad3212a482 fileVersion=272deef5f608c5bde0484f08774d0925
+Info:       2 objects in CLASS DMAV_Rohrleitungen_V1_1.Rohrleitungen.Leitungsobjekt
+Info:       1 objects in CLASS DMAV_Rohrleitungen_V1_1.Rohrleitungen.Messpunkt
+Info:       1 objects in CLASS DMAV_Rohrleitungen_V1_1.Rohrleitungen.RLNachfuehrung
+Info:       1 objects in CLASS DMAV_Rohrleitungen_V1_1.Rohrleitungen.Signal
+Info: c:\Data\03_GIT_Repos\DMAV_Testsuite_1_1\DMAV-Testsuite\Testsuite_DMAV\DMAV_Gebaeudeadressen_V1_1\DMAVTYM_Alles_V1_1.xtf: DMAV_Toleranzstufen_V1_1.Toleranzstufen BID=b0dd459e-8e72-4df4-a341-9f407158e87a fileVersion=272deef5f608c5bde0484f08774d0925
+Info:       2 objects in CLASS DMAV_Toleranzstufen_V1_1.Toleranzstufen.TSNachfuehrung
+Info:      11 objects in CLASS DMAV_Toleranzstufen_V1_1.Toleranzstufen.Toleranzstufe
+Error: java.util.NoSuchElementException
+Error:     java.base/java.util.ArrayList$Itr.next(ArrayList.java:1053)
+Error:     ch.interlis.iox_j.validator.Validator.validateUnique(Validator.java:4061)
+Error:     ch.interlis.iox_j.validator.Validator.visitStructEle(Validator.java:1441)
+Error:     ch.interlis.iox_j.validator.Validator.validateUniquenessConstraint(Validator.java:1432)
+Error:     ch.interlis.iox_j.validator.Validator.iterateThroughAllObjects(Validator.java:1024)
+Error:     ch.interlis.iox_j.validator.Validator.doSecondPass(Validator.java:742)
+Error:     org.interlis2.validator.Validator.validate(Validator.java:598)
+Error:     org.interlis2.validator.Validator.runValidation(Validator.java:85)
+Error:     org.interlis2.validator.Main.main(Main.java:253)
+Info: ...validation failed
+Info: close(): LinkPool KEY: size 42630, filesize 19612244 <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp8786961618712495818> (BTree.java:396)
+Info: close(): LinkPool KEY: keySize min 0, max 48 (BTree.java:397)
+Info: close(): LinkPool KEY: valueSize min 0, max 8 (BTree.java:398)
+Info: close(): LinkPool VAL: filesize 511560 <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp6077401786798472918> (BTreeImpl.java:78)
+Info: close(): LinkPool VAL: valueSize min 0, max 8, updates 19660 (BTreeImpl.java:79)
+Info: close(): ObjectPool: filesize 109239, updates 0, <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp1542397971019403957> (ObjPoolImpl2.java:69)
+Info: close(): ItfAreaPolygon2Linetable: filesize 105605, updates 0, <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp7915578667015491607> (ObjPoolImpl2.java:69)
+Info: close(): ObjectPool: filesize 4476350, updates 0, <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp3616286702254481027> (ObjPoolImpl2.java:69)
+Info: close(): ObjectPool: filesize 3108, updates 0, <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp7460746930570463252> (ObjPoolImpl2.java:69)
+Info: close(): ObjectPool: filesize 57439, updates 0, <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp3996161003615673508> (ObjPoolImpl2.java:69)
+Info: close(): ObjectPool: filesize 555971, updates 0, <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp3694000705465566782> (ObjPoolImpl2.java:69)
+Info: close(): ItfAreaPolygon2Linetable: filesize 435070, updates 0, <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp6273041926824568257> (ObjPoolImpl2.java:69)
+Info: close(): ObjectPool: filesize 1998, updates 0, <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp8772077896882338408> (ObjPoolImpl2.java:69)
+Info: close(): ObjectPool: filesize 1041601, updates 0, <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp7444271639028709742> (ObjPoolImpl2.java:69)
+Info: close(): ObjectPool: filesize 32596, updates 0, <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp3082613293327326292> (ObjPoolImpl2.java:69)
+Info: close(): ObjectPool: filesize 2621, updates 0, <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp104686338212550356> (ObjPoolImpl2.java:69)
+Info: close(): ObjectPool: filesize 665234, updates 0, <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp5795852908182648313> (ObjPoolImpl2.java:69)
+Info: close(): ObjectPool: filesize 5161400, updates 0, <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp8780889941129108268> (ObjPoolImpl2.java:69)
+Info: close(): ObjectPool: filesize 249, updates 0, <C:\Users\ctheiler\AppData\Local\Temp\ioxtmp4252286446631373834> (ObjPoolImpl2.java:69)
+Info: End date 2026-06-25 09:22 validation took 00h:00m:00s.0000ms

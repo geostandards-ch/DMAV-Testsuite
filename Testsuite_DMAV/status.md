@@ -176,7 +176,7 @@
 | DMAV_V1_1_Gebaeudeadressen_Validierung | v_Gebaeudeeingang | GWRB02 |  | (3) |  |
 | DMAV_V1_1_Gebaeudeadressen_Validierung | v_Gebaeudeeingang | GWRB03 | ✅ | ✅ |  |
 | DMAV_V1_1_Gebaeudeadressen_Validierung | v_Gebaeudeeingang | GWRB04 | ✅ | ✅ |  |
-| DMAV_V1_1_Gebaeudeadressen_Validierung | v_Gebaeudeeingang | GWRB05 |  | (3) |  |
+| DMAV_V1_1_Gebaeudeadressen_Validierung | v_Gebaeudeeingang | GWRB05 | ✅ | ✅ |  |
 | DMAV_V1_1_Gebaeudeadressen_Validierung | v_Gebaeudeeingang | GWRC02 |  | (3) |  |
 | DMAV_V1_1_Gebaeudeadressen_Validierung | v_Gebaeudeeingang | GWRC03 |  | (3) |  |
 | DMAV_V1_1_Gebaeudeadressen_Validierung | v_Gebaeudeeingang | GWRC04 |  | (3) |  |
