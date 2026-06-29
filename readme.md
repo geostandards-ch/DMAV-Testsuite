@@ -7,7 +7,7 @@ Die nich im Hauptmodelle enthaltenen Constraints wurden in zusätzlichen Validie
 * DMAV_V1_0_FixpunkteKategorie3_Validierung
 * DMAV_V1_0_Gebaeudeadressen_Validierung
 * DMAV_V1_0_Grundstuecke_Validierung
-* DMAV_V1_0_HoheitsgrenzenAV_Validierung
+* DMAV_HoheitsgrenzenAV_Validierung_V1_0
 * DMAV_V1_0_Nomenklatur_Validierung
 * DMAV_V1_0_Rohrleitungen_Validierung
 * DMAV_V1_0_Toleranzstufen_Validierung
@@ -46,7 +46,7 @@ java -jar ./_Runner/interlis-testbed-runner-1.0.1/lib/interlis-testbed-runner-1.
 
 DMAV_HoheitsgrenzenAV_V1_0:
 ```
-java -jar ./_Runner/interlis-testbed-runner-1.0.1/lib/interlis-testbed-runner-1.0.1-SNAPSHOT.jar -v ./_Runner/ilivalidator-1.15.0/ilivalidator-1.15.0-SNAPSHOT.jar --config ./Testsuite_DMAV/DMAV_V1_0_HoheitsgrenzenAV_Validierung.ini ./Testsuite_DMAV/DMAV_HoheitsgrenzenAV_V1_0
+java -jar ./_Runner/interlis-testbed-runner-1.0.1/lib/interlis-testbed-runner-1.0.1-SNAPSHOT.jar -v ./_Runner/ilivalidator-1.15.0/ilivalidator-1.15.0-SNAPSHOT.jar --config ./Testsuite_DMAV/DMAV_HoheitsgrenzenAV_Validierung_V1_0.ini ./Testsuite_DMAV/DMAV_HoheitsgrenzenAV_V1_0
 ```
 
 DMAV_Grundstuecke_V1_0:
