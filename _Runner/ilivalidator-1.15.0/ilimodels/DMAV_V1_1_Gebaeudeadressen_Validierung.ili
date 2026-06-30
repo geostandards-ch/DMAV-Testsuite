@@ -21,14 +21,18 @@ IMPORTS DMAV_Toleranzstufen_V1_1;
 IMPORTS DMAV_Gebaeudeadressen_V1_1;
 IMPORTS KGKCGC_FPDS2_V1_1;
 IMPORTS FixpunkteLV_V1_0;
+IMPORTS OfficialIndexOfLocalities_V1_0;
 
     VIEW TOPIC Gebaeudeadressen_Validierung = 
-    DEPENDS ON DMAV_Gebaeudeadressen_V1_1.Gebaeudeadressen;
+    DEPENDS ON DMAV_Gebaeudeadressen_V1_1.Gebaeudeadressen, OfficialIndexOfLocalities_V1_0.OfficialIndexOfLocalities;
   
         VIEW v_Gebaeudeeingang
             PROJECTION OF DMAV_Gebaeudeadressen_V1_1.Gebaeudeadressen.Gebaeudeeingang;
         =
             ALL OF Gebaeudeeingang;
+            !! Geometrische Verknüpfung zu OfficialIndexOfLocalities_V1_0 erstellen
+            Zip: REFERENCE TO (EXTERNAL) OfficialIndexOfLocalities_V1_0.OfficialIndexOfLocalities.ZIP
+                    := DMAVTYM_Topologie_V1_0.geometricFilter(Gebaeudeeingang, >>Geometrie, allObjects(>OfficialIndexOfLocalities_V1_0.OfficialIndexOfLocalities.ZIP), >>OfficialIndexOfLocalities_V1_0.OfficialIndexOfLocalities.ZIP->Geometry);
 
             /* !!@ category = warning */
             !!@ name = CH193851
@@ -170,11 +174,7 @@ IMPORTS FixpunkteLV_V1_0;
             !!@ message_fr="(GWRB05) L'EGID n'existe pas dans le RegBL";
             !!@ message_it="(GWRB05) L'indirizzo dell'edificio nella MU non è univoco";
             !! Umsetzung Phase 2;
-            /*
-            MANDATORY CONSTRAINT GWRB05: (
-                (Gebaeudestatus == #real) => DMAV_GWR("B05")
-            );
-            */
+            UNIQUE GWRB05: WHERE Gebaeudestatus == #real: Zip->ZIP4, Zip->Locality->LocalityName, Lokalisation->LokalisationNummer, Hausnummer;
 
             !!@ name = GWRC02
             !!@ message="(GWRC02) EGID existiert nicht im GWR";
