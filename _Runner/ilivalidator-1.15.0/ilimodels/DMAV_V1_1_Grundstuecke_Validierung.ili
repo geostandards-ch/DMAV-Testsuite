@@ -1,6 +1,6 @@
 INTERLIS 2.4;
 
-MODEL DMAV_V1_1_Grundstuecke_Validierung (de) 
+MODEL DMAV_Grundstuecke_Validierung_V1_1 (de) 
 AT "https://www.kgk-cgc.ch/" 
 VERSION "2025-03-30" =
   
@@ -170,4 +170,4 @@ IMPORTS FixpunkteLV_V1_0;
 
     END Grundstuecke_Validierung;
 
-END DMAV_V1_1_Grundstuecke_Validierung.
+END DMAV_Grundstuecke_Validierung_V1_1.

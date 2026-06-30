@@ -189,6 +189,116 @@
 | DMAV_V1_1_Gebaeudeadressen_Validierung | v_Gebaeudeeingang | GWRA14 | ✅ | ✅ |  |
 | DMAV_V1_1_Gebaeudeadressen_Validierung | v_Leitungsobjekt | CH092551 | ✅ | ✅ |  |
 | DMAV_V1_1_Gebaeudeadressen_Validierung | v_Messpunkt | CH101503 | ✅ | ✅(1)|  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_LFP3 | CH031151 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_LFP3 | CH031252 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_LFP3 | CH031253 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_LFP3 | CH031254 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_LFP3 | CH031255 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_LFP3 | CH031256 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_LFP3 | CH031454 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_LFP3 | CH031455 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_LFP3 | CH031456 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_LFP3 | CH031457 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_LFP3 | CH031458 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_HFP3 | CH033551 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_HFP3 | CH033652 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_HFP3 | CH033653 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_HFP3 | CH033654 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_HFP3 | CH033655 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_HFP3 | CH033656 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_HFP3 | CH033852 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_HFP3 | CH033853 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_HFP3 | CH033854 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_HFP3 | CH033855 | ✅ | ✅ |  |
+| DMAV_FixpunkteKategorie3_Validierung_V1_1 | v_HFP3 | CH033856 | ✅ | ✅ |  |
+| DMAV_Bodenbedeckung_Validierung_V1_1 | v_Bodenbedeckung | CH043451 | ✅ | ✅ |  |
+| DMAV_Bodenbedeckung_Validierung_V1_1 | v_Bodenbedeckung | CH043453 | ✅ | ✅ |  |
+| DMAV_Bodenbedeckung_Validierung_V1_1 | v_Bodenbedeckung | GWRA09 | ✅ | ✅ |  |
+| DMAV_Bodenbedeckung_Validierung_V1_1 | v_Bodenbedeckung | GWRC02a |  | (3) |  |
+| DMAV_Bodenbedeckung_Validierung_V1_1 | v_Messpunkt | CH043452 | ✅ | ✅ | 💡 |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051151 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051152 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051153 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051154 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051155 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051156 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051157 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051158 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051159 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051160 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051161 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051162 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051163 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051164 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051165 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051651 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051652 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051653 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051659 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH051660 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052151 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052152 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052153 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052154 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052155 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052156 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052157 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052158 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052159 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052162 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052163 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052164 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052165 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052166 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052171 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052177 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | CH052178 | ✅ | ✅ |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Einzelobjekt | GWRC02c |  | (3) |  |
+| DMAV_Einzelobjekte_Validierung_V1_1 | v_Messpunkt | CH054351 | ✅ | ✅ | 💡 |
+| DMAV_Nomenklatur_Validierung_V1_1 | v_Flurname | CH070951 | ✅ | ✅ |  |
+| DMAV_Grundstuecke_Validierung_V1_1 | v_Grundstueck | CH085554 | ✅ | ✅ | 💡 |
+| DMAV_Grundstuecke_Validierung_V1_1 | v_Grundstueck | CH085952 | ✅ | ✅ | 💡 |
+| DMAV_Grundstuecke_Validierung_V1_1 | v_Grundstueck | CH085551 | ✅ | ✅ | 💡 |
+| DMAV_Grundstuecke_Validierung_V1_1 | v_Liegenschaft | CH086951 | ✅ | ✅ | 💡 |
+| DMAV_Grundstuecke_Validierung_V1_1 | v_Liegenschaft | CH086851 | ✅ | ✅ |  |
+| DMAV_Grundstuecke_Validierung_V1_1 | v_Liegenschaft | CH086852 | ✅ | ✅ |  |
+| DMAV_Grundstuecke_Validierung_V1_1 | v_SelbstaendigesDauerndesRecht | CH087251 | ✅ | ✅ |  |
+| DMAV_Grundstuecke_Validierung_V1_1 | v_SelbstaendigesDauerndesRecht | CH087252 | ✅ | ✅ |  |
+| DMAV_Grundstuecke_Validierung_V1_1 | v_SelbstaendigesDauerndesRecht | CH087351 | ✅ | ✅ | 💡 |
+| DMAV_Grundstuecke_Validierung_V1_1 | v_Bergwerk | CH087651 | ✅ | ✅ |  |
+| DMAV_Grundstuecke_Validierung_V1_1 | v_Bergwerk | CH087652 | ✅ | ✅ |  |
+| DMAV_Rohrleitungen_Validierung_V1_1 | v_Leitungsobjekt | CH092551 | ✅ | ✅ |  |
+| DMAV_HoheitsgrenzenAV_Validierung_V1_0 | v_Gemeinde | CH112352 | ✅ | ✅ (4) | 💡 |
+| DMAV_HoheitsgrenzenAV_Validierung_V1_0 | v_Gemeinde | CH112951 | ❌ | ❌ (2) |  |
+| DMAV_HoheitsgrenzenAV_Validierung_V1_0 | v_Gemeindegrenze | CH113051 | ✅ | ✅ |  |
+| DMAV_HoheitsgrenzenAV_Validierung_V1_0 | v_Bezirksgrenzabschnitt | CH120153 | ✅ | ✅ |  |
+| DMAV_HoheitsgrenzenAV_Validierung_V1_0 | v_Kantonsgrenzabschnitt | CH130153 | ✅ | ✅ |  |
+| DMAV_Toleranzstufen_Validierung_V1_1 | v_Toleranzstufe | CH160351 | ✅ | ✅ |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | CH193851 | ✅ | ✅ |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | CH194051 | ✅ | ✅ |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | CH194254 | ✅ | ✅ |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | CH194451 | ✅ | ✅ |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | CH194651 | ✅ | ✅ |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | CH194751 | ✅ | ✅ |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRA09a | ✅ | ✅ |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRA17 | ✅ | ✅ | 💡 |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRB01 |  | (3) |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRB02 |  | (3) |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRB03 | ✅ | ✅ |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRB04 | ✅ | ✅ |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRB05 |  | (3) |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRC02 |  | (3) |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRC03 |  | (3) |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRC04 |  | (3) |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRC05 |  | (3) |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRC07 |  | (3) |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRC08 |  | (3) |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRC09 |  | (3) |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRC10 |  | (3) |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRC13 |  | (3) |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Gebaeudeeingang | GWRA14 | ✅ | ✅ |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Leitungsobjekt | CH092551 | ✅ | ✅ |  |
+| DMAV_Gebaeudeadressen_Validierung_V1_1 | v_Messpunkt | CH101503 | ✅ | ✅(1)|  |
 
 (1) Erweiterung zu Checkrules_DMAVTYM_Alles V 20251117 auf Messpunkte (gemaess Modelldokumentation) <br>
 (2) Constraint CH112951 wird durch Kardinalität der ASSOCIATION GemeindeGemeindegrenze bereits eingeschraenkt/geprueft und nicht redundant als Constraint formuliert <br>
